@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="renderer" content="webkit">
+	<meta property="qc:admins" content="1051105554536547046375" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="keywords" content="会员结算系统">
+	<meta name="description" content="会员结算系统">
+
+	<title>会员管理系统</title>
+	<link href="__PUBLIC__/css/jquery.mobile.custom.structure.min.css"  rel="stylesheet" />
+	<link href="__PUBLIC__/bootstrap/css/bootstrap.min.css"  rel="stylesheet" />
+	<link href="__PUBLIC__/css/engine.css"  rel="stylesheet" />
+
+	<script type="text/javascript" src="__PUBLIC__/js/mtopt-3.0-min.js" ></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-2.1.3.min.js" ></script>
+	<script type="text/javascript">
+        $.browser = $.browser || {};
+        $.browser.msie = false;
+        $(document).on("mobileinit", function () {
+            $.support.cors = true;
+            $.mobile.allowCrossDomainPages = true;
+            $.mobile.pushStateEnabled = false;
+            $.mobile.defaultPageTransition = "slidefade";
+            $.mobile.pageLoadErrorMessage = "页面加载出错";
+            $.mobile.loader.prototype.options.theme = "c";
+            $.mobile.buttonMarkup.hoverDelay = "false";
+        });
+	</script>
+	<style type="text/css">
+		body{background:url(__PUBLIC__/images/login.jpg) no-repeat;background-size:100%;}
+		.container{padding-top:8em;}
+		.form-title{font-size:2.7em;text-align:center;height:110px;margin-top:20px;}
+		.form-title img{width:200px;}
+		.form-control{margin-bottom:1.8em;height:2.8em;}
+	</style>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.mobile.custom.js" ></script>
+	<script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js" ></script>
+	<script type="text/javascript" src="__PUBLIC__/js/engine.js" ></script>
+</head>
+<body>
+<div class="form-title">
+	
+</div>
+<div class="container">
+	<div class="col-xs-12">
+		<input id="moblie" type="text" class="form-control" placeholder="请输入手机号"  required="required" />
+	</div>
+	<div class="col-xs-12">
+		<input id="password" type="password" class="form-control" placeholder="请输入密码"  required="required" />
+	</div>
+	<div class="col-xs-5">
+		<input id="checkcode" name="checkcode" type="text" class="form-control" placeholder="验证码" required="required" />
+	</div>
+	<div class="col-xs-7">
+		<div class="img-thumbnail" style="width:100%;height: 2.6em;overflow:hidden;">
+			<img id="checkimg" alt="验证码" class="img-responsive" style="width:10em;height:2.4em;" />
+			<!--<a class="reloadverify" title="换一张" href="javascript:void(0)" onclick="fleshVerify();">-->
+				<!--<img id="verifyImg" class="verifyimg reloadverify" alt="点击切换" style="width:10em;height:2.4em;"-->
+					 <!--src="{:U('/User/Center/builder_verify_img')}" >-->
+			<!--</a>-->
+		</div>
+
+
+
+	</div>
+	<div class="col-xs-12">
+		<button id="btn_enter" class="btn btn-danger btn-block" type="button">立即登录</button>
+	</div>
+</div>
+<script language="JavaScript">
+    function fleshVerify() {
+        //重载验证码
+//        var time = new Date().getTime();
+//        document.getElementById('verifyImg').src = '/User/Center/builder_verify_img/' + time;
+    }
+</script>
+<script type="text/javascript">
+    var pck = {
+        init: function () {
+            m.node("#checkimg").click(function () {
+                var checkcode = m.node("#checkimg");
+                var randomstr = m.random.string().capitalAlphabet(16);
+                checkcode.attr("src", "/User/Center/builder_verify_img/" + randomstr);
+            });
+            m.node("#checkimg").click();
+        }
+    }
+    pck.init();
+    m.node("#btn_enter").click(function () {
+        engine.news("正在验证账户...", 99999);
+        var moblie = m.node("#moblie").value();
+        var password = m.node("#password").value();
+        var checkcode = m.node("#checkcode").value();
+        if (moblie.length <= 0) {
+            engine.news("请输入手机号", 1800);
+            return;
+        }
+        if (password.length <= 0) {
+            engine.news("请输入密码", 1800);
+            return;
+        }
+        if (checkcode.length <= 0) {
+            engine.news("请输入验证码", 1800);
+            return;
+        }
+        var ajax = m.ajax("/User/Center/api_login_submit", null, function (obj) {
+            var jso = m.json.getObject(obj);
+            if (jso.Success == true) {
+                engine.news("登录成功正在跳转...", 99999);
+                if (m.queryString("url") != null) {
+                    m.redirect(m.encry.url.decode(m.queryString("url")));
+                }
+                else {
+                    m.redirect("/User/Center/index");
+                }
+            }
+            else {
+                if (jso.Error == -10003) {
+                    engine.news("验证码错误", 1800);
+                }
+                else if (jso.Error == -10001) {
+                    engine.news("用户名或者密码错误", 1800);
+                }
+                else {
+                    engine.news(jso.Data, 2000);
+                }
+            }
+            m.node("#checkimg").click();
+        });
+        ajax.data.add("moblie", moblie);
+        ajax.data.add("password", password);
+        ajax.data.add("checkcode", checkcode);
+        ajax.send();
+    });
+</script>
+</body>
+</html>
+
+
+
+
