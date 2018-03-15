@@ -56,7 +56,7 @@ body {
 				<td>
 					<div class="code" data-toggle="tooltip" data-placement="bottom" title="点击修改排序" onclick="changeCode(this)"><?php echo ($vv["code"]); ?></div>
 					<div class="form-inline" style="display:none;">
-					<input type="text" class="form-control" style="width:50px;" name="code" value="<?php echo ($vv["code"]); ?>">
+					<input type="text" class="form-control" style="width:50px;" id="code" name="code" value="<?php echo ($vv["code"]); ?>">
 					<button class="btn btn-success btn-sm savecode" onclick="update(this,'<?php echo ($vv["id"]); ?>','bannar')" data="<?php echo ($vv["id"]); ?>" alt="bannar">保存</button>
 					</div>
 					</td>
@@ -219,6 +219,8 @@ body {
 				
 			}
 			function update(obj,id,type,code){
+			
+			$a=document.getElementById("code").value;
 				layer.confirm('确定要修改这条数据吗？', {
 				  btn: ['确定','取消'] //按钮
 				}, function(){
@@ -226,7 +228,7 @@ body {
 						type:'post',
 						url:"<?php echo U('change_shop_bannar');?>",
 						dataType:'json',
-						data:{'id':id,'type':type,'code':code},
+						data:{'id':id,'type':type,'code':$a},
 						success:function(){
 							layer.msg('修改成功', {icon: 1});
 							$(obj).parent().parent().remove();
