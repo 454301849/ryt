@@ -85,7 +85,7 @@
 		<label class="control-label">开户姓名</label>
 		<input id="bankuser_" type="text" class="form-control" placeholder="请输入开户姓名" />
 		<label class="control-label">手机</label>
-		<input id="moblie_" type="text" class="form-control" placeholder="请输入手机" />
+		<input id="moblie_" type="text" class="form-control" placeholder="请输入手机" / >
 		<label class="control-label">邮箱</label>
 		<input id="email_" type="text" class="form-control" placeholder="请输入邮箱" />
 		<label class="control-label">邮编</label>
@@ -337,6 +337,8 @@
         {
            return encodeURI(obj);
         }
+
+
 </script>
 </body>
 </html>

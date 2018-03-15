@@ -125,6 +125,9 @@
                 else if (jso.Error == -10001) {
                     engine.news("用户名或者密码错误", 1800);
                 }
+                else if (jso.Error == -10002) {
+                    engine.news("您的账户余额不足，请联系客服电话：400-1099-758", 3800);
+                }
                 else {
                     engine.news(jso.Data, 2000);
                 }

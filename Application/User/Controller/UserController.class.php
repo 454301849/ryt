@@ -49,6 +49,9 @@ class UserController extends Controller{
 
 
 
+
+
+
 	public function api_register_submit(){
 
         //为该用户创建身份信息
@@ -89,8 +92,27 @@ class UserController extends Controller{
 		$add_data['password'] = md5(urldecode($_POST['password']));
 		$add_data['second_password'] = md5(urldecode($_POST['safeword']));
 		$add_data['truename'] = urldecode($_POST['username']);
+        //验证身份证号码
+        $idcard = urldecode($_POST['idcard']);
+        $user_idcard= $users->where(" idcard = '$idcard'")->find();
+        if($user_idcard){
+            $msg['Error'] = '-1088';
+            $msg['Data'] = '该身份证号码已被注册';
+            echo json_encode($msg);
+            exit;
+        }
 		$add_data['idcard'] = urldecode($_POST['idcard']);
+
 		$add_data['bankid'] = urldecode($_POST['bankid']);
+        //验证银行卡号
+        $bankno = urldecode($_POST['bankno']);
+        $user_bankno= $users->where(" bankno = '$bankno'")->find();
+        if($user_bankno){
+            $msg['Error'] = '-1089';
+            $msg['Data'] = '该银行卡号已被使用，请更换卡片';
+            echo json_encode($msg);
+            exit;
+        }
 		$add_data['bankno'] = urldecode($_POST['bankno']);
 		$add_data['bankuser'] = urldecode($_POST['bankuser']);
 		$add_data['bankname'] = urldecode($_POST['bankname']);
