@@ -45,9 +45,15 @@
 <div class="form-title">
 	
 </div>
+<<<<<<< HEAD
 <div class="container">
 	<div class="col-xs-12">
 		<input id="moblie" type="text" class="form-control" placeholder="请输入手机号"  required="required" />
+=======
+<div class="container" style="margin:0 auto;width:80%;">
+	<div class="col-xs-12">
+		<input id="moblie" type="text" class="form-control" placeholder="请输入手机号或账号"  required="required" />
+>>>>>>> 0ca8b1786fe97b8790c8bf6865c940e58038204b
 	</div>
 	<div class="col-xs-12">
 		<input id="password" type="password" class="form-control" placeholder="请输入密码"  required="required" />
@@ -56,16 +62,24 @@
 		<input id="checkcode" name="checkcode" type="text" class="form-control" placeholder="验证码" required="required" />
 	</div>
 	<div class="col-xs-7">
+<<<<<<< HEAD
 		<div class="img-thumbnail" style="width:100%;height: 2.6em;overflow:hidden;">
 			<img id="checkimg" alt="验证码" class="img-responsive" style="width:10em;height:2.4em;" />
+=======
+		<div class="img-thumbnail" style="width:10em;height: 2.6em;overflow:hidden;">
+			<img id="checkimg"  alt="验证码" class="img-responsive" style="width:10em;height:2.4em;" />
+>>>>>>> 0ca8b1786fe97b8790c8bf6865c940e58038204b
 			<!--<a class="reloadverify" title="换一张" href="javascript:void(0)" onclick="fleshVerify();">-->
 				<!--<img id="verifyImg" class="verifyimg reloadverify" alt="点击切换" style="width:10em;height:2.4em;"-->
 					 <!--src="<?php echo U('/User/Center/builder_verify_img');?>" >-->
 			<!--</a>-->
 		</div>
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 0ca8b1786fe97b8790c8bf6865c940e58038204b
 	</div>
 	<div class="col-xs-12">
 		<button id="btn_enter" class="btn btn-danger btn-block" type="button">立即登录</button>
@@ -125,9 +139,12 @@
                 else if (jso.Error == -10001) {
                     engine.news("用户名或者密码错误", 1800);
                 }
+<<<<<<< HEAD
                 else if (jso.Error == -10002) {
                     engine.news("您的账户余额不足，请联系客服电话：400-1099-758", 3800);
                 }
+=======
+>>>>>>> 0ca8b1786fe97b8790c8bf6865c940e58038204b
                 else {
                     engine.news(jso.Data, 2000);
                 }

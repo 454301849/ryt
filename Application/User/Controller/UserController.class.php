@@ -49,9 +49,6 @@ class UserController extends Controller{
 
 
 
-
-
-
 	public function api_register_submit(){
 
         //为该用户创建身份信息
@@ -92,6 +89,7 @@ class UserController extends Controller{
 		$add_data['password'] = md5(urldecode($_POST['password']));
 		$add_data['second_password'] = md5(urldecode($_POST['safeword']));
 		$add_data['truename'] = urldecode($_POST['username']);
+
         //验证身份证号码
         $idcard = urldecode($_POST['idcard']);
         $user_idcard= $users->where(" idcard = '$idcard'")->find();
@@ -113,6 +111,7 @@ class UserController extends Controller{
             echo json_encode($msg);
             exit;
         }
+
 		$add_data['bankno'] = urldecode($_POST['bankno']);
 		$add_data['bankuser'] = urldecode($_POST['bankuser']);
 		$add_data['bankname'] = urldecode($_POST['bankname']);

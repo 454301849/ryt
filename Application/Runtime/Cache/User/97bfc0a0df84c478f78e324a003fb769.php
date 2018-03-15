@@ -62,7 +62,11 @@
 		      <!-- <option value='2'>购物币</option> -->
 		</select>
 		<label class="control-label">转账金额</label>
+<<<<<<< HEAD
 		<input id="money_" type="text" class="form-control" placeholder="请输入转账金额" />
+=======
+		<input id="money_" type="text" class="form-control" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder="请输入转账金额" />
+>>>>>>> 0ca8b1786fe97b8790c8bf6865c940e58038204b
 		<label class="control-label">备注</label>
 		<input id="remarks_" type="text" class="form-control" placeholder="请输入备注信息" />
 		<label class="control-label">二级密码</label>

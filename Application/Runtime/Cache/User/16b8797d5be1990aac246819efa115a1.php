@@ -61,7 +61,11 @@
 </div>
 <div class="pg-form">
     <label class="control-label">转换金额</label>
+<<<<<<< HEAD
     <input id="number_" type="text" class="form-control" placeholder="转换金额">
+=======
+    <input id="number_" type="text" class="form-control" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder="转换金额">
+>>>>>>> 0ca8b1786fe97b8790c8bf6865c940e58038204b
     <label class="control-label">二级密码</label>
     <input id="safeword_" type="password" class="form-control" placeholder="二级密码">
 

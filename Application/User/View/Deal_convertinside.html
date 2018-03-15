@@ -60,8 +60,10 @@
     <a class="list-group-item">可转数量：{$user_info.jjb}</a>
 </div>
 <div class="pg-form">
-    <label class="control-label">转换金额</label>
-    <input id="number_" type="text" class="form-control" placeholder="转换金额">
+
+    <label class="control-label">转换金额</label>			<!--加一个禁止输入特殊符号的限制-->
+    <input id="number_" type="text" class="form-control" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder="转换金额">
+
     <label class="control-label">二级密码</label>
     <input id="safeword_" type="password" class="form-control" placeholder="二级密码">
 

@@ -49,9 +49,15 @@
             </fieldset>
             <fieldset>
                 <div class="form-group">
+<<<<<<< HEAD
                     <label class="col-sm-2 control-label">转账金额</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control input-sm" id="money" placeholder="扣率：0%">
+=======
+                    <label class="col-sm-2 control-label" >转账金额</label>
+                    <div class="col-sm-10">
+                        <input type="text" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"  class="form-control input-sm" id="money" placeholder="扣率：0%">
+>>>>>>> 0ca8b1786fe97b8790c8bf6865c940e58038204b
                     </div>
                 </div>
             </fieldset>

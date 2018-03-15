@@ -71,7 +71,11 @@ to{color:green;}
 <script>
 	if (window.top!=window.self){
 		console.log('333');
+<<<<<<< HEAD
 		window.top.location="index.html"; //这是重要的！
+=======
+		window.top.location="index.htm"; //这是重要的！
+>>>>>>> 0ca8b1786fe97b8790c8bf6865c940e58038204b
 	}else{
 		console.log('eeeeeeeeeeee');
 	}

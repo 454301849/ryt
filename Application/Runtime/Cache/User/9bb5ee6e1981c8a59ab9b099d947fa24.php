@@ -75,17 +75,29 @@
 		<label class="control-label">确认安全密码</label>
 		<input id="csafeword_" type="password" class="form-control" placeholder="请输入确认安全密码" />
 		<label class="control-label">身份证</label>
+<<<<<<< HEAD
 		<input id="idcard_" type="text" class="form-control" placeholder="请输入会员身份证"  />
 		<label class="control-label">开户银行</label>
 		<select id="bankid_" class="form-control" ></select>
 		<label class="control-label">开户卡号</label>
 		<input id="bankno_" type="text" class="form-control" placeholder="请输入开户卡号" />
+=======
+		<input id="idcard_" type="text" class="form-control" placeholder="请输入会员身份证" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"   />
+		<label class="control-label">开户银行</label>
+		<select id="bankid_" class="form-control" ></select>
+		<label class="control-label">开户卡号</label>
+		<input id="bankno_" type="text" class="form-control"  onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"  placeholder="请输入开户卡号" />
+>>>>>>> 0ca8b1786fe97b8790c8bf6865c940e58038204b
 		<label class="control-label">开户地址</label>
 		<input id="bankname_" type="text" class="form-control" placeholder="请输入开户地址"  />
 		<label class="control-label">开户姓名</label>
 		<input id="bankuser_" type="text" class="form-control" placeholder="请输入开户姓名" />
 		<label class="control-label">手机</label>
+<<<<<<< HEAD
 		<input id="moblie_" type="text" class="form-control" placeholder="请输入手机" / >
+=======
+		<input id="moblie_" type="text" class="form-control"  onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"  placeholder="请输入手机号" />
+>>>>>>> 0ca8b1786fe97b8790c8bf6865c940e58038204b
 		<label class="control-label">邮箱</label>
 		<input id="email_" type="text" class="form-control" placeholder="请输入邮箱" />
 		<label class="control-label">邮编</label>
@@ -203,9 +215,15 @@
                 if (username.length <= 0) {
                     engine.news("请输入真实姓名", 1800);
                     return;
+<<<<<<< HEAD
                 }
                 if (idcard.length <= 0) {
                     engine.news("请输入身份证", 1800);
+=======
+                }//修改-身份证只能输入18位
+                if (idcard.length <= 17||idcard.length >= 19) {
+                    engine.news("请输入18位的身份证", 1800);
+>>>>>>> 0ca8b1786fe97b8790c8bf6865c940e58038204b
                     return;
                 }
                 if (bankid == null || bankid.length <= 0) {
@@ -223,9 +241,15 @@
                 if (bankname.length <= 0) {
                     engine.news("请输入开户地址", 1800);
                     return;
+<<<<<<< HEAD
                 }
                 if (moblie.length <= 0) {
                     engine.news("请输入手机", 1800);
+=======
+                }//修改-手机号只能输入11位
+                if (moblie.length <= 10 || moblie.length >= 12) {
+                    engine.news("请输入11位的手机号", 1800);
+>>>>>>> 0ca8b1786fe97b8790c8bf6865c940e58038204b
                     return;
                 }
                 if (place == null || place.length <= 0) {
@@ -337,8 +361,11 @@
         {
            return encodeURI(obj);
         }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 0ca8b1786fe97b8790c8bf6865c940e58038204b
 </script>
 </body>
 </html>

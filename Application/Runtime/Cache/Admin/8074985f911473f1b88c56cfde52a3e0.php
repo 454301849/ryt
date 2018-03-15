@@ -119,8 +119,13 @@
 						<legend>详细信息</legend>
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>身份证</label>
+<<<<<<< HEAD
 							<div class="col-sm-10">
 								<input type="text" class="form-control" id="idcard"  value="370123199303031012" placeholder="请输入会员身份证" >
+=======
+							<div class="col-sm-10"><!--加一个禁止输入特殊符号的限制-->
+								<input type="text" class="form-control"  onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" id="idcard"  value="370123199303031012" placeholder="请输入会员身份证" >
+>>>>>>> 0ca8b1786fe97b8790c8bf6865c940e58038204b
 							</div>
 						</div>
 					</fieldset>
@@ -143,8 +148,13 @@
 					<fieldset>
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>开户卡号</label>
+<<<<<<< HEAD
 							<div class="col-sm-10">
 								<input type="text" class="form-control" value="1238980480480" id="bankno" placeholder="请输入开户卡号" >
+=======
+							<div class="col-sm-10">	<!--加一个禁止输入特殊符号的限制-->				
+								<input type="text" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" class="form-control" value="1238980480480" id="bankno" placeholder="请输入开户卡号" >
+>>>>>>> 0ca8b1786fe97b8790c8bf6865c940e58038204b
 							</div>
 						</div>
 					</fieldset>
@@ -166,9 +176,15 @@
 					</fieldset>
 					<fieldset>
 						<div class="form-group">
+<<<<<<< HEAD
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>手机</label >
 							<div class="col-sm-10">
 								<input type="text" class="form-control" value="" id="moblie" >
+=======
+							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>手机号</label >
+							<div class="col-sm-10"><!--加一个禁止输入特殊符号的限制-->
+								<input type="text" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" class="form-control" value="" id="moblie" >
+>>>>>>> 0ca8b1786fe97b8790c8bf6865c940e58038204b
 							</div>
 						</div>
 					</fieldset>
@@ -325,9 +341,15 @@
                     if (username.length <= 0) {
                         engine.news("请输入真实姓名", 3000);
                         return;
+<<<<<<< HEAD
                     }
                     if (idcard.length <= 0) {
                         engine.news("请输入身份证", 3000);
+=======
+                    }//修改-身份证只能输入18位
+                    if (idcard.length <= 17||idcard.length >= 19) {
+                        engine.news("请输入18位的身份证", 3000);
+>>>>>>> 0ca8b1786fe97b8790c8bf6865c940e58038204b
                         return;
                     }
                     if (bankid == null || bankid.length <= 0) {
@@ -345,10 +367,17 @@
                     if (bankname.length <= 0) {
                         engine.news("请输入开户地址", 3000);
                         return;
+<<<<<<< HEAD
                     }
                     if (moblie.length <= 0) {
                      //   engine.news("请输入手机号", 3000);
                      //   return;
+=======
+                    }//修改-手机号只能输入11位
+                    if (moblie.length <= 10 || moblie.length >= 12) {
+                        engine.news("请输入11位的手机号", 3000);
+                        return;
+>>>>>>> 0ca8b1786fe97b8790c8bf6865c940e58038204b
                     }
                     if (place == null || place.length <= 0) {
                    //     engine.news("请选择地区", 3000);
