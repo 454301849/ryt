@@ -4279,3 +4279,343 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
 
+[ 2018-03-15T16:08:28+08:00 ] 127.0.0.1 /User/Center/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `wx_hbrecord` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `wx_ztrecord` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `wx_users` WHERE `user_id` = 1028 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `nickname` FROM `wx_users` WHERE `user_id` = 1027 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_daili_info` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `wx_daili_info`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000912s ]
+
+[ 2018-03-15T16:08:29+08:00 ] 127.0.0.1 /User/Center/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wx_hbrecord` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `wx_ztrecord` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wx_users` WHERE `user_id` = 1028 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `nickname` FROM `wx_users` WHERE `user_id` = 1027 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_daili_info` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `wx_daili_info`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000865s ]
+
+[ 2018-03-15T16:08:30+08:00 ] 127.0.0.1 /User/Center/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `wx_hbrecord` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `wx_ztrecord` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `wx_users` WHERE `user_id` = 1028 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `nickname` FROM `wx_users` WHERE `user_id` = 1027 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_daili_info` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `wx_daili_info`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007112s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000867s ]
+
+[ 2018-03-15T16:08:31+08:00 ] 127.0.0.1 /User/Center/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `wx_hbrecord` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `wx_ztrecord` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `wx_users` WHERE `user_id` = 1028 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `nickname` FROM `wx_users` WHERE `user_id` = 1027 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_daili_info` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wx_daili_info`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000882s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000920s ]
+
+[ 2018-03-15T16:08:32+08:00 ] 127.0.0.1 /User/Deal/convertinside
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_name = 'M001028' ) LIMIT 1   [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2018-03-15T16:09:55+08:00 ] 127.0.0.1 /User/Deal/convert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2018-03-15T16:10:21+08:00 ] 127.0.0.1 /User/Deal/transfer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+NOTIC: [8] Undefined index: two_Verify D:\phpStudy\WWW\slh\Application\User\Controller\DealController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined variable: user_id D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\c7b13deeb32a9602b1e2d0f4c29ea0f4.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001371s ]
+
+[ 2018-03-15T16:10:23+08:00 ] 127.0.0.1 /User/Center/api_authentication_submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `wx_users` WHERE ( user_name= 'M001028'  )  [ RunTime:0.0057s ]
+
+[ 2018-03-15T16:10:26+08:00 ] 127.0.0.1 /User/Center/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `wx_hbrecord` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `wx_ztrecord` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `wx_users` WHERE `user_id` = 1028 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `nickname` FROM `wx_users` WHERE `user_id` = 1027 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_daili_info` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `wx_daili_info`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001076s ]
+
+[ 2018-03-15T16:10:28+08:00 ] 127.0.0.1 /User/Deal/transfer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0181s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_name = 'M001028' ) LIMIT 1   [ RunTime:0.0052s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined variable: user_code D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\97bfc0a0df84c478f78e324a003fb769.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001125s ]
+
+[ 2018-03-15T16:10:30+08:00 ] 127.0.0.1 /User/User/memberlevel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `wx_memberlevel`  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001218s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001282s ]
+
+[ 2018-03-15T16:10:30+08:00 ] 127.0.0.1 /User/User/memberarea
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+NOTIC: [8] Undefined index: register_area_default D:\phpStudy\WWW\slh\Application\User\Controller\UserController.class.php 第 307 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2018-03-15T16:10:31+08:00 ] 127.0.0.1 /User/User/bank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+SQL: SHOW COLUMNS FROM `wx_bank` [ RunTime:0.0219s ]
+SQL: SELECT * FROM `wx_bank`  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000824s ]
+
+[ 2018-03-15T16:10:32+08:00 ] 127.0.0.1 /User/User/place
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+SQL: SHOW COLUMNS FROM `wx_region` [ RunTime:0.0384s ]
+SQL: SELECT * FROM `wx_region` WHERE (  PARENT_ID = '1' )  [ RunTime:0.0128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000984s ]
+
+[ 2018-03-15T16:11:15+08:00 ] 127.0.0.1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0180s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M001028' ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1028'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1028'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2018-03-15T16:11:34+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+
+[ 2018-03-15T16:11:34+08:00 ] 127.0.0.1 /User/Center/builder_verify_img/NTLISRSKEEWIJKAU
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001446s ]
+

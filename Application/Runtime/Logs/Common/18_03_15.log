@@ -62,3 +62,11 @@ ERR: 无法加载模块:Favicon
 NOTIC: [2] include(./Application//Public/exception.tpl): failed to open stream: No such file or directory D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
 NOTIC: [2] include(): Failed opening './Application//Public/exception.tpl' for inclusion (include_path='.;C:\php\pear') D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
 
+[ 2018-03-15T16:10:47+08:00 ] 127.0.0.1 /Uploads/20180228/5a96478f106b5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+ERR: 无法加载模块:Uploads
+NOTIC: [2] include(./Application//Public/exception.tpl): failed to open stream: No such file or directory D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening './Application//Public/exception.tpl' for inclusion (include_path='.;C:\php\pear') D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+
