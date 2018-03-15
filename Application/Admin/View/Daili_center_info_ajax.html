@@ -1,0 +1,51 @@
+<div class="panel-body">
+		<div class="table-responsive">
+			<table class="table table-striped table-bordered table-hover" style="font-size: 14px;">
+				<thead>
+				<tr>
+					<td style="width:50px;">序号</td>
+					<td>会员编号</td>
+					<td>姓名</td>
+					<td>级别</td>
+					<td>推荐人</td>
+					<td>安置人</td>
+					<td>注册日期</td>
+					<td>状态</td>
+					<td>操作</td>
+					<td>详情</td>
+				</tr>
+				</thead>
+				<tbody>
+				<volist name="info" id="vv" key="kk">
+					<tr class="form-item">
+						<td>{$kk}</td>
+						<td>{$vv.user_name}</td>
+						<td>{$vv.truename}</td>
+						<td>{$vv.name}</td>
+						<td>{$vv.rusername}</td>
+						<td>{$vv.pusername}</td>
+						<td>{$vv.reg_time|date="Y-m-d",###}</td>
+						 <if condition="$vv['register'] eq '1'">
+							<td style="color:green;">已激活</td>
+							<else />
+							<td style="color:red;">未激活</td>
+						</if> <if condition="$vv['register'] eq '1'">
+							<td>已激活</td>
+							<else />
+							<td>
+								<a id="user_name{$vv.id}"  class="button"  onclick="pckzs.activate('{$vv.user_name}')">去激活</a>
+							</td>
+						</if>
+						<td><a href="{:U('User/recmlist_detail',array('user_name'=>$vv['user_name']))}" target="main-frame">查看详情</a></td>
+					</tr>
+				</volist>
+
+				</tbody>
+			</table>
+		</div>
+		<center>
+	<ul class="pagination" style="margin:0px;">
+		{$page}
+	</ul>
+</center>
+	</div>

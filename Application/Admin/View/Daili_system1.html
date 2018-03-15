@@ -1,0 +1,299 @@
+<!--<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+<link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="__PUBLIC__/bootstrap/css/font-awesome.min.css">
+<link rel="stylesheet" href="__PUBLIC__/admin/css/base.css">
+<link href="__PUBLIC__/admin/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+<style>
+.btn-default{background:#44b549;color:#fff;}
+.form-group{padding:5px 0;}
+</style>
+<div class="container-fluid main">
+	<div class="main-top"><span class="glyphicon glyphicon-tasks" aria-hidden="true"> </span> 奖金设置</div>
+	<div class="main-content">
+		<div>
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs" role="tablist">
+		    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">见点奖设置</a></li>
+		    <li role="presentation"><a href="#shengji" aria-controls="shengji" role="tab" data-toggle="tab">升级设置</a></li>
+		    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">其它设置</a></li>
+		  </ul>
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+		    <div role="tabpanel" class="tab-pane active" id="home">
+		    	
+		    	<div class="well" style="margin-top:20px;padding-bottom:60px;">
+				<h5 class="" style="padding:5px 10px;line-height:30px;"></h5>
+		    		<form class="form-horizontal" action="__SELF__" method="post" enctype="multipart/form-data"  onsubmit="return check()">
+					  <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label">第一层见点奖</label>
+					    <div class="col-sm-2">
+					      <input type="text"  class="form-control" id="input4" name="first_jd" value="{$daili_info[0]['first_jd']}" placeholder="">
+					    </div>
+						<label for="inputPassword3" class="col-sm-2 control-label">第二层见点奖</label>
+					    <div class="col-sm-2">
+					      <input type="text"  class="form-control" id="input4" name="second_jd" value="{$daili_info[0]['second_jd']}" placeholder="">
+					    </div>
+						<label for="inputPassword3" class="col-sm-2 control-label">第三层见点奖</label>
+					    <div class="col-sm-2">
+					      <input type="text"  class="form-control" id="input4" name="third_jd" value="{$daili_info[0]['third_jd']}" placeholder="">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label">第四层见点奖</label>
+					    <div class="col-sm-2">
+					      <input type="text"  class="form-control" id="input4" name="four_jd" value="{$daili_info[0]['four_jd']}" placeholder="">
+					    </div>
+						<label for="inputPassword3" class="col-sm-2 control-label">第五层见点奖</label>
+					    <div class="col-sm-2">
+					      <input type="text"  class="form-control" id="input4" name="five_jd" value="{$daili_info[0]['five_jd']}" placeholder="">
+					    </div>
+						<label for="inputPassword3" class="col-sm-2 control-label">第六层见点奖</label>
+					    <div class="col-sm-2">
+					      <input type="text"  class="form-control" id="input4" name="six_jd" value="{$daili_info[0]['six_jd']}" placeholder="">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label">第七层见点奖</label>
+					    <div class="col-sm-2">
+					      <input type="text"  class="form-control" id="input4" name="seven_jd" value="{$daili_info[0]['seven_jd']}" placeholder="">
+					    </div>
+						<label for="inputPassword3" class="col-sm-2 control-label">第八层见点奖</label>
+					    <div class="col-sm-2">
+					      <input type="text"  class="form-control" id="input4" name="eight_jd" value="{$daili_info[0]['eight_jd']}" placeholder="">
+						</div>
+						<label for="inputPassword3" class="col-sm-2 control-label">第九层见点奖</label>
+					    <div class="col-sm-2">
+					      <input type="text"  class="form-control" id="input4" name="nine_jd" value="{$daili_info[0]['nine_jd']}" placeholder="">
+					    </div>
+					  </div>
+
+					  <input type="hidden" name="daili_id" value="{$daili_info[0]['id']}">
+					    <div class="col-sm-offset-2 col-sm-10">
+					      <button type="submit" class="btn btn-default" onclick="if (confirm('确定要修改吗？')) return true; else return false;"> 保　存 </button>
+					    </div>
+					  
+					</form>
+				</div>
+		    </div>
+		   
+		    <div role="tabpanel" class="tab-pane" id="shengji">
+
+
+
+				<div class="well">
+					<form class="form-horizontal" action="__SELF__" method="post" enctype="multipart/form-data"  >
+						<h5 class="alert alert-success" style="padding:5px 10px;line-height:30px;">会员0级 设置</h5>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-sm-2 control-label">提现积分</label>
+							<div class="input-group col-sm-2 ">
+								<input type="text"  class="form-control" id="input4" name="zero_tx" value="{$daili_info[0]['zero_tx']}" placeholder="">
+								<span class="input-group-addon">%</span>
+							</div>
+							<label for="inputPassword3" class="col-sm-2 control-label">爱心积分</label>
+							<div class="input-group col-sm-2">
+								<input type="text"  class="form-control" id="input4" name="zero_sj" value="{$daili_info[0]['zero_sj']}" placeholder="">
+								<span class="input-group-addon">%</span>
+							</div>
+							<label for="inputPassword3" class="col-sm-2 control-label">购物积分</label>
+							<div class="input-group col-sm-2">
+								<input type="text"  class="form-control" id="input4" name="zero_gw" value="{$daili_info[0]['zero_gw']}" placeholder="">
+								<span class="input-group-addon">%</span>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-sm-2 control-label">升级所需积分积分</label>
+							<div class="col-sm-2">
+								<input type="text"  class="form-control" id="input4" name="zero_xsj" value="{$daili_info[0]['zero_xsj']}" placeholder="">
+							</div>
+							<!--<label for="inputPassword3" class="col-sm-2 control-label">第八层见点奖</label>-->
+							<!--<div class="col-sm-2">-->
+								<!--<input type="text"  class="form-control" id="input4" name="eight_hongbao" value="{$daili_info[0]['eight_hongbao']}" placeholder="">-->
+							<!--</div>-->
+							<!--<label for="inputPassword3" class="col-sm-2 control-label">第九层见点奖</label>-->
+							<!--<div class="col-sm-2">-->
+								<!--<input type="text"  class="form-control" id="input4" name="nine_hongbao" value="{$daili_info[0]['nine_hongbao']}" placeholder="">-->
+							<!--</div>-->
+						</div>
+						<h5 class="alert alert-success" style="padding:5px 10px;line-height:30px;">会员1级 设置</h5>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-sm-2 control-label">提现积分</label>
+							<div class="input-group col-sm-2 ">
+								<input type="text"  class="form-control" id="input4" name="first_tx" value="{$daili_info[0]['first_tx']}" placeholder="">
+								<span class="input-group-addon">%</span>
+							</div>
+							<label for="inputPassword3" class="col-sm-2 control-label">升级积分</label>
+							<div class="input-group col-sm-2">
+								<input type="text"  class="form-control" id="input4" name="first_sj" value="{$daili_info[0]['first_sj']}" placeholder="">
+								<span class="input-group-addon">%</span>
+							</div>
+							<label for="inputPassword3" class="col-sm-2 control-label">购物积分</label>
+							<div class="input-group col-sm-2">
+								<input type="text"  class="form-control" id="input4" name="first_gw" value="{$daili_info[0]['first_gw']}" placeholder="">
+								<span class="input-group-addon">%</span>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-sm-2 control-label">升级所需积分</label>
+							<div class="col-sm-2">
+								<input type="text"  class="form-control" id="input4" name="first_xsj" value="{$daili_info[0]['first_xsj']}" placeholder="">
+							</div>
+							<!--<label for="inputPassword3" class="col-sm-2 control-label">第八层见点奖</label>-->
+							<!--<div class="col-sm-2">-->
+								<!--<input type="text"  class="form-control" id="input4" name="eight_hongbao" value="{$daili_info[0]['eight_hongbao']}" placeholder="">-->
+							<!--</div>-->
+							<!--<label for="inputPassword3" class="col-sm-2 control-label">第九层见点奖</label>-->
+							<!--<div class="col-sm-2">-->
+								<!--<input type="text"  class="form-control" id="input4" name="nine_hongbao" value="{$daili_info[0]['nine_hongbao']}" placeholder="">-->
+							<!--</div>-->
+						</div>
+						<h5 class="alert alert-success" style="padding:5px 10px;line-height:30px;">会员2级 设置</h5>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-sm-2 control-label">提现积分</label>
+							<div class="input-group col-sm-2 ">
+								<input type="text"  class="form-control" id="input4" name="second_tx" value="{$daili_info[0]['second_tx']}" placeholder="">
+								<span class="input-group-addon">%</span>
+							</div>
+							<label for="inputPassword3" class="col-sm-2 control-label">平台管理费</label>
+							<div class="input-group col-sm-2">
+								<input type="text"  class="form-control" id="input4" name="second_gl" value="{$daili_info[0]['second_gl']}" placeholder="">
+								<span class="input-group-addon">%</span>
+							</div>
+							<label for="inputPassword3" class="col-sm-2 control-label">购物积分</label>
+							<div class="input-group col-sm-2">
+								<input type="text"  class="form-control" id="input4" name="second_gw" value="{$daili_info[0]['second_gw']}" placeholder="">
+								<span class="input-group-addon">%</span>
+							</div>
+						</div>
+						<input type="hidden" name="daili_id" value="{$daili_info[0]['id']}" >
+					  <div class="form-group">
+					    <div class="col-sm-offset-2 col-sm-10">
+					      <button type="submit" class="btn btn-default" onclick="if (confirm('确定要修改吗？')) return true; else return false;"> 保　存 </button>
+					    </div>
+					  </div>
+					</form>
+				</div>
+		    </div>
+		    <div role="tabpanel" class="tab-pane" id="messages">
+				<div class="well">
+					<form class="form-horizontal" action="__SELF__" method="post" enctype="multipart/form-data"  >
+						<h5 class="alert alert-success" style="padding:5px 10px;line-height:30px;">奖金设置</h5>
+						<div class="form-group">
+							<label for="inputPassword3" class="col-sm-2 control-label">提现手续费</label>
+							<div class=" input-group col-sm-2">
+								<input type="text"  class="form-control" id="input4" name="tx_sxf" value="{$daili_info[0]['tx_sxf']}" placeholder="">
+								<span class="input-group-addon">%</span>
+							</div>
+							<!--<label for="inputPassword3" class="col-sm-2 control-label">积分积分</label>-->
+							<!--<div class="col-sm-2">-->
+								<!--<input type="text"  class="form-control" id="input4" name="eight_hongbao" value="{$daili_info[0]['eight_hongbao']}" placeholder="">-->
+							<!--</div>-->
+							<!--<label for="inputPassword3" class="col-sm-2 control-label">购物积分</label>-->
+							<!--<div class="col-sm-2">-->
+								<!--<input type="text"  class="form-control" id="input4" name="nine_hongbao" value="{$daili_info[0]['nine_hongbao']}" placeholder="">-->
+							<!--</div>-->
+						</div>
+					  <input type="hidden" name="daili_id" value="{$daili_info[0]['id']}" >
+					  <div class="form-group">
+					    <div class="col-sm-offset-2 col-sm-10">
+					      <button type="submit" class="btn btn-default" onclick="if (confirm('确定要修改吗？')) return true; else return false;"> 保　存 </button>
+					    </div>
+					  </div>
+					</form>
+				</div>
+		    </div>
+
+		  </div>
+
+		</div>
+		
+	</div>
+</div>
+<style>
+.yulan img{width:100%}
+</style>
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="__PUBLIC__/admin/js/bootstrap.min.js"></script>
+
+
+<script src="__PUBLIC__/admin/js/area.js" type="text/javascript"></script>
+ <script src="__PUBLIC__/admin/js/fileinput.js" type="text/javascript"></script>
+<script src="__PUBLIC__/admin/js/fileinput_locale_zh.js" type="text/javascript"></script>
+<script src="__PUBLIC__/admin/layer/layer.js"></script>
+<script>
+
+	$('#myTabs a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+function yulan(obj){
+	var abc = $(obj).attr("class");
+ var url = $(obj).parent().prev().children().val();
+	var yulan = layer.open({
+		type: 1,
+		title: false,
+		//area: ['640px', '320px'],
+		closeBtn: true,
+		maxmin: true,
+		shadeClose: true,
+		skin: 'yulan',
+		content: '<img src="/'+url+'">'
+	});	//layer.full(yulan);
+}
+function yulan2(){
+	var url = $('#pic_url2').val();
+	if(url != '' ){
+		layer.open({
+			type: 1,
+			title: false,
+			area: ['320px', '450px'],
+			closeBtn: true,
+			maxmin: true,
+			shadeClose: true,
+			skin: 'yulan',
+			content: '<img src="/'+url+'">'
+		});	
+	}
+}
+function del(obj){
+	layer.confirm('确定要删除这条数据吗？', {
+	  btn: ['确定','取消'] //按钮
+	}, function(){
+	  var id = $(obj).attr("data");
+	$.ajax({
+		type: "POST",
+		url: "{:U('delbanner')}",
+		dataType: "json",
+		data: {"id":id},
+		success: function(json){
+			if(json.success==1){
+				$(obj).parent().parent().css("display",'none');
+			}else{
+				layer.msg("处理失败，请重新尝试");				
+			}
+		},
+		error:function(){
+			layer.msg("发生异常！");
+		}
+		
+	});
+	}, function(){
+	  
+	});
+	
+}
+$("#file-3").fileinput({
+			showUpload: false,
+			showCaption: false,
+			browseClass: "btn btn-default",
+			fileType: "any",
+	        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>"
+		});
+$("#file-4").fileinput({
+			showUpload: false,
+			showCaption: false,
+			browseClass: "btn btn-default",
+			fileType: "any",
+	        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>"
+		});	
+
+</script>

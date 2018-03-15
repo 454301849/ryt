@@ -1,0 +1,87 @@
+ <link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/iosOverlay.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/simple-line-icons.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/animate.min.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/font-awesome.min.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/engine.css" rel="stylesheet" />
+<style>
+	body{
+		background-image:url('__PUBLIC__/images/max.jpg');
+		background-repeat:no-repeat;background-attachment:fixed;
+		background-size:cover;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='__PUBLIC__/images/max.jpg',sizingMethod='scale');}
+</style>
+
+<script type="text/javascript" src="__PUBLIC__/admin/js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/mtopt-3.0-min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/bootstrap.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/engine.js"></script>
+<section>
+            <div class="content-wrapper">
+                
+<h3>
+   转款记录
+</h3>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <td class="td-title col-sm-2 ">流水号：</td>
+                        <td>{$dealid}</td>
+                    </tr>
+                    <tr>
+                        <td class="td-title">转款人编号：</td>
+                        <td>{$transfer_info.zusername}</td>
+                    </tr>
+                    <tr>
+                        <td class="td-title">转款人姓名：</td>
+                        <td>{$transfer_info.ztruename}</td>
+                    </tr>
+                    <tr>
+                        <td class="td-title">收款人编号：</td>
+                        <td>{$transfer_info.susername}</td>
+                    </tr>
+                    <tr>
+                        <td class="td-title">收款人姓名：</td>
+                        <td>{$transfer_info.struename}</td>
+                    </tr>
+                    <tr>
+                        <td class="td-title">交易类型：</td>
+                        <td>[转账]<if condition="($transfer_info.type eq 1) "> 奖金币
+										<elseif condition="$transfer_info.type eq 2"/>购物币
+										<else /> 其他
+										</if></td>
+                    </tr>
+                    <tr>
+                        <td class="td-title">交易状态：</td>
+                        <td>完成</td>
+                    </tr>
+                    <tr>
+                        <td class="td-title">说明：</td>
+                        <td>内部转账</td>
+                    </tr>
+                    <tr>
+                        <td class="td-title">备注：</td>
+                        <td>{$transfer_info.remarks}</td>
+                    </tr>
+                    <tr>
+                        <td class="td-title">交易金额：</td>
+                        <td>{$transfer_info.money}</td>
+                    </tr>
+                    <tr>
+                        <td class="td-title">实际到帐：</td>
+                        <td>{$transfer_info.money}</td>
+                    </tr>
+                    <tr>
+                        <td class="td-title">处理时间：</td>
+                        <td>{$transfer_info.createtime|date="Y-m-d H:i:s",###}</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+            </div>
+        </section>
