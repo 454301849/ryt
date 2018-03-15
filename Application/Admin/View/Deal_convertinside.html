@@ -1,0 +1,130 @@
+ <link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/iosOverlay.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/simple-line-icons.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/animate.min.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/font-awesome.min.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/engine.css" rel="stylesheet" />
+<style>
+	body{
+		background-image:url('__PUBLIC__/images/max.jpg');
+		background-repeat:no-repeat;background-attachment:fixed;
+		background-size:cover;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='__PUBLIC__/images/max.jpg',sizingMethod='scale');}
+</style>
+
+<script type="text/javascript" src="__PUBLIC__/admin/js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/mtopt-3.0-min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/bootstrap.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/engine.js"></script>
+<section>
+            <div class="content-wrapper">
+                
+<h3>
+    奖金币转电子币
+</h3>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <td class="td-title">会员编号：</td>
+                        <td>10000</td>
+                    </tr>
+                    <tr>
+                        <td class="td-title">奖金币：</td>
+                        <td>10.00000</td>
+                    </tr>
+                    <tr>
+                        <td class="td-title">电子币：</td>
+                        <td>2596.00000</td>
+                    </tr>
+                    <tr>
+                        <td class="td-title">转换比例：</td>
+                        <td>100%</td>
+                    </tr>
+                    <tr>
+                        <td class="td-title">可转数量：</td>
+                        <td>10.00000</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="form-horizontal">
+            <fieldset>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">转换金额</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control input-sm" id="number" value="1">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">二级密码</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control input-sm" id="safeword">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group">
+                    <div class="col-sm-4 col-sm-offset-2">
+                        <button id="btn_enter" type="button" class="btn btn-primary">确认转换</button>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var pck = {
+        submit: function () {
+            var safeword = m.node("#safeword").value();
+            var number = m.node("#number").value();
+            //非空判断
+            if (number.length <= 0) {
+                engine.news("请输入购买份数", 3000);
+                return;
+            }
+            if (safeword.length <= 0) {
+                engine.news("请输入二级密码", 3000);
+                return;
+            }
+            var val = confirm("确定执行转换?");
+            if (val == true) {
+                //发送请求
+                engine.news("正在提交...", 999999);
+                var ajax = m.ajax("/Deal/api_convertinside_submit", null, function (jso) {
+                    var jso = m.json.getObject(jso);
+                    switch (jso.Error) {
+                        case 0:
+                            engine.news("转换成功", 3000, true);
+                            break;
+                        case -10002:
+                            engine.news("转换成功", 3000);
+                            break;
+                        default:
+                            engine.news(jso.Data, 3000);
+                            break;
+                    }
+                });
+                ajax.data.add("number", number);
+                ajax.data.add("safeword", safeword);
+                ajax.send();
+            }
+        },
+        //加载页面
+        init: function () { }
+    }
+    pck.init();
+    m.event("ready").add(function () {
+        m.node("#btn_enter").click(pck.submit);
+    });
+</script>
+            </div>
+        </section>

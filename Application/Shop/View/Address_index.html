@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="baidu-site-verification" content="t7oDT96Amk">
+    <title>
+      收货地址
+    </title>
+    <script src="__PUBLIC__/shop/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/layer-mobile/layer.js"></script>
+    <!--  <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="__PUBLIC__/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/weui.min.css">
+   <script src="__PUBLIC__/admin/js/jquery-1.11.3.min.js"></script>
+ <link rel="stylesheet" href="__PUBLIC__/layer-mobile/need/layer.css">
+  </head>
+  
+  <body style="background:#efedf1">
+    <div class="container-fulid" style="background:;padding-bottom:20px;">
+      <div class="bd">
+        <div class="weui_panel weui_panel_access" style="background:#;">
+          <div class="weui_panel_hd" style="color:#555">
+            选择收货地址[<span style="color:#f00;">☆为默认地址</span>]
+            <a href="/Shop/Address/create"><span style="float:right;color:#555;">新增地址</span></a>
+          </div>
+          <volist name="address_info" id="vv" key="kk" >
+          <div class="weui_panel_hd" style="color:#555">
+           <a href="/Shop/Index/categrey?id={$vv.address_id};location.reload() ">
+              <p class="cart_g_name" style="word-wrap: break-word;word-break: normal;margin:10px  20px;">
+               {$kk}  {$vv.address}  {$vv.username} <if condition="$vv['state'] eq 1"><span style="color:#f00;">☆</span></if><a href="/Shop/Address/update?id={$vv.address_id}"  style="float:right;color:#555;">修改</a>
+              </p>
+            </a>
+            </div>
+          </volist>  
+        </div>
+      </div>
+    </div>
+    <!-- <i class="icon-spinner icon-spin"></i> Spinner icon when loading content... -->
+  </body>
+  <script>
+  $(document).ready(function() {
+	  /*location.reload();
+      exit;*/
+  });
+  </script>
+
+</html>

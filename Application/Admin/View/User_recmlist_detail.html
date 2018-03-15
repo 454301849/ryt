@@ -1,0 +1,92 @@
+<link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/iosOverlay.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/simple-line-icons.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/animate.min.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/font-awesome.min.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/engine.css" rel="stylesheet" />
+<style>
+	body{
+		background-image:url('__PUBLIC__/images/max.jpg');
+		background-repeat:no-repeat;background-attachment:fixed;
+		background-size:cover;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='__PUBLIC__/images/max.jpg',sizingMethod='scale');
+	}
+	.td-title{
+		width:12em;
+	}
+</style>
+
+<script type="text/javascript" src="__PUBLIC__/admin/js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/mtopt-3.0-min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/bootstrap.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/engine.js"></script>
+<section>
+	<div class="content-wrapper">
+
+		<h3>
+			基础信息
+		</h3>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="table-responsive">
+					<table class="table table-striped table-bordered table-hover">
+						<thead>
+						<tr>
+							<td class="td-title">真实姓名：</td>
+							<td>{$info.truename}</td>
+						</tr>
+						<tr>
+							<td class="td-title">身份证：</td>
+							<td>{$info.idcard}</td>
+						</tr>
+						<tr>
+							<td class="td-title">手机：</td>
+							<td>{$info.moblie}</td>
+						</tr>
+						<tr>
+							<td class="td-title">邮箱：</td>
+							<td>{$info.email}</td>
+						</tr>
+						<tr>
+							<td class="td-title">邮编：</td>
+							<td>{$info.zipcode}</td>
+						</tr>
+						<tr>
+							<td class="td-title">地址：</td>
+							<td>{$info.address}</td>
+						</tr>
+						<tr>
+							<td class="td-title">所属安置位置：</td>
+							<td>{$info.area_name}</td>
+						</tr>
+						<tr>
+							<td class="td-title">成员等级：</td>
+							<td>{$info.level}</td>
+						</tr>
+						<tr>
+							<td class="td-title">推荐人：</td>
+							<td>{$info.rusername}</td>
+						</tr>
+						<tr>
+							<td class="td-title">安置人：</td>
+							<td>{$info.pusername}</td>
+						</tr>
+						<tr>
+							<td class="td-title">代理中心：</td>
+							<td>{$info.centername}</td>
+						</tr>
+						<tr>
+							<td class="td-title">创建时间：</td>
+							<td>{$info.reg_time|date="Y-m-d H:i:s",###}</td>
+						</tr>
+						<tr>
+							<td class="td-title">编辑时间：</td>
+							<td>{$info.after_time|date="Y-m-d H:i:s",###}</td>
+						</tr>
+						</thead>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

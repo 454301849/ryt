@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<title>系统管理后台</title>
+
+	<link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet" />
+	<link href="__PUBLIC__/admin/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="__PUBLIC__/admin/css/engine.css" rel="stylesheet" />
+	<link href="__PUBLIC__/admin/css/iosOverlay.css" rel="stylesheet" />
+
+	<style>
+		body{background-image:url('__PUBLIC__/images/max.jpg');
+			background-repeat:no-repeat;
+			background-attachment:fixed;
+			background-size:cover;
+			/*-webkit-touch-callout: none;*/
+			/*-webkit-user-select: none;*/
+			/*-khtml-user-select: none;*/
+			/*-moz-user-select: none;*/
+			/*-ms-user-select: none;*/
+			/*user-select: none;*/
+			line-height:19px;
+			filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Images/background/001/max.jpg',sizingMethod='scale');}
+	</style>
+
+	<style type="text/css">
+		.bg-glass{background-color:none;}
+		.list-group-item,.list-group-item:hover,.list-group-item:focus{background-color:transparent !important;color:#fff !important;border:none}
+		.table-newbordered{
+			-moz-border-bottom-colors: none;
+			-moz-border-left-colors: none;
+			-moz-border-right-colors: none;
+			-moz-border-top-colors: none;
+			border-collapse: separate;
+			border-color: #ddd #ddd #ddd -moz-use-text-color;
+			border-image: none;
+			border-radius: 4px;
+			border-style: solid solid solid none;
+			border-width: 1px 1px 1px 0;
+		}
+		.table-newbordered th, .table-newbordered td {
+			border-left: 1px solid #ddd;
+		}
+		.table th, .table td {
+			padding: 8px;
+			text-align: center;
+		}
+		img{
+			height:30px;
+		}
+		.tablebcolor{
+			background: #0B7EBF;
+			/*color: ;*/
+		}
+		.tablebcolor1{
+			background: firebrick;
+		}
+		.tablebcolor2{
+			background: #0bb20c;
+		}
+		.tablebcolor3{
+			background: #8c3900;
+		}
+		.tablebcolor4{
+			background: darkmagenta;
+		}
+		.tablebcolor5{
+			background: #1006F1;
+		}
+		ul{ width: 100%; margin: 0; padding: 0; overflow: auto;}
+		ul li{ float: right;width:4%;text-align: center;color: #fff;}
+		@media screen and (max-width:1200px) {
+			#one{
+				width: 50%;
+			}
+		}
+	</style>
+	<script type="text/javascript" src="__PUBLIC__/admin/js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/admin/js/mtopt-3.0-min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/admin/js/bootstrap.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/admin/js/spin.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/admin/js/iosOverlay.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/admin/js/engine.js"></script>
+<body >
+
+<section>
+	<div class="content-wrapper">
+
+		<h3>
+			会员网络图
+		</h3>
+		<div class="panel panel-default" style="margin-bottom:12px;">
+			<div class="input-group">
+				<input type="text" class="form-control" id="search_id" style="height:35px;" value="{$info.user_name}" placeholder="请输入会员编号">
+				<span class="input-group-btn">
+            <button class="btn btn-default" onclick="pck.search()" style="margin-left: 2px;z-index: 2;border-radius:4px;height: 35px;" type="button">查询数据</button>
+        </span>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<ul style="list-style: none;" id="one">
+					<li class="tablebcolor" >未激活</li>
+					<li class="tablebcolor1">普卡会员</li>
+					<li class="tablebcolor2">金卡会员</li>
+					<li class="tablebcolor3">钻卡会员</li>
+					<!--<li class="tablebcolor4">金钻会员</li>-->
+					<!--<li class="tablebcolor5">省代理</li>-->
+				</ul>
+				<div class="table-responsive">
+					<table  width="100%" height="500" cellpadding="3" cellspacing="1" border="0" align="center" >
+						<td  height="120" colspan="6" align="center">
+							<table   title="{$info['name']}" class="tablebcolor{$info['register'] == 1 ?$info['level']:''}" width="120"  cellpadding="3" cellspacing="1" border="1px solid red;" align="center" class="table1" >
+								<tr>
+									<td  colspan="2" align="center">
+										<font color="#fff">{$info['user_name']?$info['user_name']:'--'}</font>
+									</td>
+								</tr>
+								<tr>
+									<td  colspan="2" align="center">{$info['truename']?$info['truename']:'--'}</td>
+								</tr>
+								<tr>
+									<if condition="$info['reg_time'] eq '0' or $ainfo['reg_time'] eq ''">
+									<td  colspan="2" align="center">--</td>
+										<else />
+									<td  colspan="2" align="center">{$info.reg_time|date="Y-m-d",###}</td>
+									</if>
+
+								</tr>
+								<tr>
+									<td colspan="2" align="center"><font color="#000">{$info['recount']?$info['recount']:'0'}</font></td>
+								</tr>
+								<tr>
+									<td align="center" ><font color="#000">{$info['area1']?$info['area1']:'0'}</font></td>
+									<td align="center" ><font color="#000">{$info['area2']?$info['area2']:"0"}</font></td>
+								</tr>
+								<tr>
+									<td colspan="2" align="center" ><font color="#000">{$info['plevel']?$info['plevel']:'0'}层</font></td>
+								</tr>
+							</table></td>
+						</tr>
+						<tr>
+							<td height="36" colspan="6" align="center" style="padding: 6px;">
+								<img src="__PUBLIC__/admin/images/t_tree_bottom_l.png"  height="30">
+								<img src="__PUBLIC__/admin/images/t_tree_line.png" alt=""  width="25%" height="30"  style="margin-left: -0.7%">
+								<img src="__PUBLIC__/admin/images/t_tree_top.png"  height="30"  style="margin-left: -0.7%;margin-right: -0.7%">
+								<img src="__PUBLIC__/admin/images/t_tree_line.png" alt=""  width="25%" height="30"  style="margin-right: -0.7%">
+								<img src="__PUBLIC__/admin/images/t_tree_bottom_r.png" height="30"></td>
+						</tr>
+						<tr>
+							<td width="50%" height="103" colspan="2"  align="center">
+								<table title="{$ainfo['name']}" class="tablebcolor{$ainfo['register'] == 1 ?$ainfo['level']:''}" width="120" cellpadding="3" cellspacing="1" border="1px solid red;" align="center" class="table1">
+									<tr>
+										<if condition="$info['user_id'] eq ''">
+											<td style="font-color:black;" colspan="2" align="center">
+												--
+											</td>
+											<else />
+											<if condition="$ainfo['user_name'] eq ''">
+												<td style="font-color:black;" colspan="2" align="center">
+													<a href="{:U('User/register',array('user_name'=>$info['user_name'],'area'=>'1'))}" target="main-frame">注册</a>
+												</td>
+												<else />
+												<td style="font-color:black;" colspan="2" align="center">
+													<a href="{:U('User/memberlists',array('user_name'=>$ainfo['user_name']))}" target="main-frame">{$ainfo['user_name']}</a>
+												</td>
+											</if>
+										</if>
+									</tr>
+									<tr>
+										<td  colspan="2" align="center">{$ainfo['truename']?$ainfo['truename']:'--'}</td>
+									</tr>
+									<tr>
+										<if condition="$ainfo['reg_time'] eq '0' or $ainfo['reg_time'] eq ''">
+											<td  colspan="2" align="center">--</td>
+											<else />
+											<td  colspan="2" align="center">{$ainfo.reg_time|date="Y-m-d",###}</td>
+										</if>
+									</tr>
+									<tr>
+										<td  colspan="2" align="center"><font color="#000">{$ainfo['recount']?$ainfo['recount']:'0'}</font></td>
+									</tr>
+									<tr>
+										<td  align="center" ><font color="#000">{$ainfo['area1']?$ainfo['area1']:'0'}</font></td>
+										<td  align="center" ><font color="#000">{$ainfo['area2']?$ainfo['area2']:"0"}</font></td>
+									</tr>
+									<tr>
+										<td colspan="2" align="center" ><font color="#000">{$ainfo['plevel']?$ainfo['plevel']:'0'}层</font></td>
+									</tr>
+								</table></td>
+							<td width="50%" colspan="4" align="center">
+								<table title="{$binfo['name']}" class="tablebcolor{$binfo['register'] == 1 ?$binfo['level']:''}"  width="120" cellpadding="3" cellspacing="1" border="1px solid red;" align="center" class="table1">
+									<tr>
+										<if condition="$info['user_id'] eq ''">
+											<td style="font-color:black;" colspan="2" align="center">
+												--
+											</td>
+											<else />
+											<if condition="$binfo['user_name'] eq ''">
+												<td style="font-color:black;" colspan="2" align="center">
+													<a href="{:U('User/register',array('user_name'=>$info['user_name'],'area'=>'2'))}" target="main-frame">注册</a>
+												</td>
+												<else />
+												<td style="font-color:black;" colspan="2" align="center">
+													<a href="{:U('User/memberlists',array('user_name'=>$binfo['user_name']))}" target="main-frame">{$binfo['user_name']}</a>
+												</td>
+											</if>
+										</if>
+									</tr>
+									<tr>
+										<td style="" colspan="2" align="center">{$binfo['truename']?$binfo['truename']:'--'}</td>
+									</tr>
+									<tr>
+										<if condition="$binfo['reg_time'] eq '0' or $binfo['reg_time'] eq ''">
+											<td  colspan="2" align="center">--</td>
+											<else />
+											<td  colspan="2" align="center">{$binfo.reg_time|date="Y-m-d",###}</td>
+										</if>
+									</tr>
+									<tr>
+										<td  colspan="2" align="center"><font color="#000">{$binfo['recount']?$binfo['recount']:'0'}</font></td>
+									</tr>
+									<tr>
+										<td  align="center" ><font color="#000">{$binfo['area1']?$binfo['area1']:'0'}</font></td>
+										<td  align="center" ><font color="#000">{$binfo['area2']?$binfo['area2']:"0"}</font></td>
+									</tr>
+									<tr>
+										<td  colspan="2" align="center" ><font color="#000">{$binfo['plevel']?$binfo['plevel']:'0'}层</font></td>
+									</tr>
+
+								</table></td>
+						</tr>
+						<tr>
+							<td height="36" colspan="2" align="center" style="padding: 6px;">
+								<img src="__PUBLIC__/admin/images/t_tree_bottom_l.png" alt=""  height="30">
+								<img src="__PUBLIC__/admin/images/t_tree_line.png" alt=""  width="25%" height="30" style="margin-left: -1%">
+								<img src="__PUBLIC__/admin/images/t_tree_top.png" alt=""  height="30" style="margin-left: -1%;margin-right: -1%">
+								<img src="__PUBLIC__/admin/images/t_tree_line.png" alt=""  width="25%" height="30" style="margin-right: -1%">
+								<img src="__PUBLIC__/admin/images/t_tree_bottom_r.png" alt="" height="30"></td>
+							<td colspan="4" align="center">
+								<img src="__PUBLIC__/admin/images/t_tree_bottom_l.png" alt=""  height="30">
+								<img src="__PUBLIC__/admin/images/t_tree_line.png" alt=""  width="25%" height="30" style="margin-left: -1%">
+								<img src="__PUBLIC__/admin/images/t_tree_top.png" alt=""  height="30" style="margin-left: -1%;margin-right: -1%">
+								<img src="__PUBLIC__/admin/images/t_tree_line.png" alt=""  width="25%" height="30" style="margin-right: -1%">
+								<img src="__PUBLIC__/admin/images/t_tree_bottom_r.png" alt="" height="30"></td>
+						</tr>
+						<tr>
+							<td align="center" valign="top">
+					<table title="{$alinfo['name']}"  class="tablebcolor{$alinfo['register'] == 1 ?$alinfo['level']:''}" width="120" cellpadding="3" cellspacing="1" border="1px solid red;" align="center" class="table1">
+									<tr>
+										<if condition="$ainfo['user_id'] eq ''">
+											<td style=" font-color:black;" colspan="2" align="center">
+												--
+											</td>
+											<else />
+											<if condition="$alinfo['user_name'] eq ''">
+												<td style="font-color:black;" colspan="2" align="center">
+													<a href="{:U('User/register',array('user_name'=>$ainfo['user_name'],'area'=>'1'))}" target="main-frame">注册</a>
+												</td>
+												<else />
+												<td style=" font-color:black;" colspan="2" align="center">
+													<a href="{:U('User/memberlists',array('user_name'=>$alinfo['user_name']))}" target="main-frame">{$alinfo['user_name']}</a>
+												</td>
+											</if>
+										</if>
+									</tr>
+									<tr>
+										<td colspan="2" align="center">{$alinfo['truename']?$alinfo['truename']:'--'}</td>
+									</tr>
+									<tr>
+										<if condition="$alinfo['reg_time'] eq '0' or $alinfo['reg_time'] eq ''">
+											<td  colspan="2" align="center">--</td>
+											<else />
+											<td  colspan="2" align="center">{$alinfo.reg_time|date="Y-m-d",###}</td>
+										</if>
+									</tr>
+									<tr>
+										<td  colspan="2" align="center"><font color="#000">{$alinfo['recount']?$alinfo['recount']:'0'}</font></td>
+									</tr>
+									<tr>
+										<td  align="center" ><font color="#000">{$alinfo['area1']?$alinfo['area1']:'0'}</font></td>
+										<td  align="center" ><font color="#000">{$alinfo['area2']?$alinfo['area2']:"0"}</font></td>
+									</tr>
+									<tr>
+										<td colspan="2" align="center" ><font color="#000">{$alinfo['plevel']?$alinfo['plevel']:'0'}层</font></td>
+									</tr>
+
+								</table></td>
+							<td align="center" valign="top">
+								<table title="{$arinfo['name']}" class="tablebcolor{$arinfo['register'] == 1 ?$arinfo['level']:''}" width="120" cellpadding="3" cellspacing="1" border="1px solid red;" align="center" class="table1">
+									<tr>
+										<if condition="$ainfo['user_id'] eq ''">
+											<td style="font-color:black;" colspan="2" align="center">
+												--
+											</td>
+											<else />
+											<if condition="$arinfo['user_name'] eq ''">
+												<td style="font-color:black;" colspan="2" align="center">
+													<a href="{:U('User/register',array('user_name'=>$ainfo['user_name'],'area'=>'2'))}" target="main-frame">注册</a>
+												</td>
+												<else />
+												<td style="font-color:black;" colspan="2" align="center">
+													<a href="{:U('User/memberlists',array('user_name'=>$arinfo['user_name']))}" target="main-frame">{$arinfo['user_name']}</a>
+												</td>
+											</if>
+										</if>
+
+									</tr>
+									<tr>
+										<td  colspan="2" align="center">{$arinfo['truename']?$arinfo['truename']:'--'}</td>									</tr>
+									</tr>
+									<tr>
+										<if condition="$arinfo['reg_time'] eq '0' or $arinfo['reg_time'] eq ''">
+											<td  colspan="2" align="center">--</td>
+											<else />
+											<td  colspan="2" align="center">{$arinfo.reg_time|date="Y-m-d",###}</td>
+										</if>
+									</tr>
+									<tr>
+										<td  colspan="2" align="center"><font color="#000">{$arinfo['recount']?$arinfo['recount']:'0'}</font></td>
+									</tr>
+									<tr>
+										<td  align="center" ><font color="#000">{$arinfo['area1']?$arinfo['area1']:'0'}</font></td>
+										<td  align="center" ><font color="#000">{$arinfo['area2']?$arinfo['area2']:"0"}</font></td>
+									</tr>
+									<tr>
+										<td  colspan="2" align="center" ><font color="#000">{$arinfo['plevel']?$arinfo['plevel']:'0'}层</font></td>
+									</tr>
+
+								</table></td>
+							<td align="center" valign="top">
+								<table title="{$blinfo['name']}" class="tablebcolor{$blinfo['register'] == 1 ?$blinfo['level']:''}" width="120" cellpadding="3" cellspacing="1" border="1px solid red;" align="center" class="table1">
+									<tr>
+										<if condition="$binfo['user_id'] eq ''">
+											<td style="font-color:black;" colspan="2" align="center">
+												--
+											</td>
+											<else />
+											<if condition="$blinfo['user_name'] eq ''">
+												<td style="font-color:black;" colspan="2" align="center">
+													<a href="{:U('User/register',array('user_name'=>$binfo['user_name'],'area'=>'1'))}" target="main-frame">注册</a>
+												</td>
+												<else />
+												<td style="font-color:black;" colspan="2" align="center">
+													<a href="{:U('User/memberlists',array('user_name'=>$blinfo['user_name']))}" target="main-frame">{$blinfo['user_name']}</a>
+												</td>
+											</if>
+										</if>
+
+									</tr>
+									<tr>
+										<td colspan="2" align="center">{$blinfo['truename']?$blinfo['truename']:'--'}</td>									</tr>
+									</tr>
+									<tr>
+										<if condition="$blinfo['reg_time'] eq '0' or $blinfo['reg_time'] eq ''">
+											<td  colspan="2" align="center">--</td>
+											<else />
+											<td  colspan="2" align="center">{$blinfo.reg_time|date="Y-m-d",###}</td>
+										</if>
+									</tr>
+									<tr>
+										<td  colspan="2" align="center"><font color="#000">{$blinfo['recount']?$blinfo['recount']:'0'}</font></td>
+									</tr>
+									<tr>
+										<td   align="center" ><font color="#000">{$blinfo['area1']?$blinfo['area1']:'0'}</font></td>
+										<td   align="center" ><font color="#000">{$blinfo['area2']?$blinfo['area2']:"0"}</font></td>
+									</tr>
+									<tr>
+										<td style="" colspan="2" align="center" ><font color="#000">{$blinfo['plevel']?$blinfo['plevel']:'0'}层</font></td>
+									</tr>
+								</table></td>
+							<td colspan="3" align="center" valign="top">
+								<table title="{$brinfo['name']}" class="tablebcolor{$brinfo['register'] == 1 ?$brinfo['level']:''}"  width="120" cellpadding="3" cellspacing="1" border="1px solid red;" align="center" class="table1">
+									<tr>
+										<if condition="$binfo['user_id'] eq ''">
+											<td colspan="2" align="center">
+												--
+											</td>
+											<else />
+											<if condition="$brinfo['user_name'] eq ''">
+												<td colspan="2" align="center">
+													<a href="{:U('User/register',array('user_name'=>$binfo['user_name'],'area'=>'2'))}" target="main-frame">注册</a>
+												</td>
+												<else />
+												<td  colspan="2" align="center">
+													<a href="{:U('User/memberlists',array('user_name'=>$brinfo['user_name']))}" target="main-frame">{$brinfo['user_name']}</a>
+												</td>
+											</if>
+										</if>
+
+									</tr>
+									<tr>
+										<td  colspan="2" align="center">{$brinfo['truename']?$brinfo['truename']:'--'}</td>
+									</tr>
+									<tr>
+										<if condition="$brinfo['reg_time'] eq '0' or $brinfo['reg_time'] eq ''">
+											<td  colspan="2" align="center">--</td>
+											<else />
+											<td  colspan="2" align="center">{$brinfo.reg_time|date="Y-m-d",###}</td>
+										</if>
+									</tr>
+									<tr>
+										<td  colspan="2" align="center">{$brinfo['recount']?$brinfo['recount']:'0'}</td>
+									</tr>
+									<tr>
+										<td  align="center" >{$brinfo['area1']?$brinfo['area1']:'0'}</td>
+										<td  align="center" >{$brinfo['area2']?$brinfo['area2']:"0"}</td>
+									</tr>
+									<tr>
+										<td  colspan="2" align="center" >{$brinfo['plevel']?$brinfo['plevel']:'0'}层</td>
+									</tr>
+
+								</table></td>
+						</tr>
+					</table>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+<script type="text/javascript">
+    var pck = {
+        search: function () {
+            var rootid = m.node("#search_id").value();
+            //非空判断
+			console.log(rootid);
+            if (rootid.length <= 0) {
+                engine.news("请输入要查询的编号", 3000);
+                return;
+            }
+            m.redirect("../User/memberlists?user_name=" + rootid);
+        },
+        init: function () {
+            m.node("#btn_enter").click(pck.search);
+        }
+    }
+    pck.init();
+</script>
+
+</body></html>

@@ -1,0 +1,1 @@
+a:1:{i:0;a:8:{s:6:"app_id";s:1:"2";s:6:"wxname";s:12:"都尚商城";s:4:"wxid";s:8:"dushang8";s:6:"weixin";s:0:"";s:5:"appid";s:18:"wx2a5004e96ddba61c";s:9:"appsecret";s:32:"381addc2429ad248e1fd0f8daed2c19c";s:6:"machid";s:10:"1231238102";s:4:"mkey";s:32:"3TSVklHJhoX18xFdh1wF5E71xsav081Z";}}

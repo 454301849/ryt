@@ -1,0 +1,1 @@
+a:3:{s:13:"subscribe_all";N;s:8:"shop_all";N;s:10:"shop_share";N;}
