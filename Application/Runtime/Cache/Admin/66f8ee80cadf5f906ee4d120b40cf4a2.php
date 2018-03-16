@@ -20,7 +20,11 @@
 		<h3>
 			申请历史记录
 		</h3>
+<<<<<<< HEAD
 		<a href="#" onclick="history.back(-1)"><button class="btn btn-success btn-sm savecode">返回</button></a>
+=======
+
+>>>>>>> f7480ed461cb18589ea3e7b49a90aa18a317fdf2
 		<div class="panel panel-default">
 			<div class="panel-body">
 				<div class="table-responsive">

@@ -33,8 +33,16 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label">充值奖金币</label>
                     <div class="col-sm-10">
+<<<<<<< HEAD
 											<!--加一个禁止输入特殊符号的限制-->
                         <input type="text" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"  class="form-control input-sm" id="money" placeholder="请输入充值金额">
+=======
+<<<<<<< HEAD
+                        <input type="text" class="form-control input-sm" id="money" placeholder="请输入充值金额">
+=======
+                        <input type="text" class="form-control input-sm" id="money" placeholder="请输入充值金额" style="width:250px;">
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
+>>>>>>> f7480ed461cb18589ea3e7b49a90aa18a317fdf2
                     </div>
                 </div>
             </fieldset>

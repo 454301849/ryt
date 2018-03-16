@@ -69,12 +69,21 @@ to{color:green;}
 </div>
 	<script src="/Public/admin/layer/layer.js"></script>
 <script>
+<<<<<<< HEAD
+	//if (window.top!=window.self){
+	//	console.log('333');
+	//	window.top.location="index.html"; //这是重要的！
+	//}else{
+	//	console.log('eeeeeeeeeeee');
+	//}
+=======
 	if (window.top!=window.self){
 		console.log('333');
 		window.top.location="index.html"; //这是重要的！
 	}else{
 		console.log('eeeeeeeeeeee');
 	}
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 
 
 	$('.btn-success').click(function(){

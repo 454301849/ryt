@@ -30,6 +30,7 @@ class ActionController extends Controller
             foreach ($get_role_action as $value) {
                 array_push($actions,$value['rule_name']);
             }
+
             if(!in_array($rule,$actions)){
                 session(null);
                 $this->error('没有该访问权限，请重新登录', U('User/index'));

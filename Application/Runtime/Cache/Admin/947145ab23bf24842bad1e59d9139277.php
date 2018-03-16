@@ -54,10 +54,18 @@ body {
 			<?php if(is_array($bannar)): $kk = 0; $__LIST__ = $bannar;if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($kk % 2 );++$kk;?><tr>
 				<td><?php echo ($kk); ?></td>
 				<td ><img src="/<?php echo ($vv["pic_url"]); ?>" onclick="yulan(this)"></td>
+<<<<<<< HEAD
 				<td><!--修改排序-->
 					<div class="code" data-toggle="tooltip" data-placement="bottom"><?php echo ($vv["code"]); ?></div>
 					<div class="form-inline" style="display:block;">
 						<button class="btn btn-success btn-sm savecode" onclick="update(this,'<?php echo ($vv["id"]); ?>','bannar')" data="<?php echo ($vv["id"]); ?>" alt="bannar" title="点击修改排序">保存</button>
+=======
+				<td>
+					<div class="code" data-toggle="tooltip" data-placement="bottom" title="点击修改排序" onclick="changeCode(this)"><?php echo ($vv["code"]); ?></div>
+					<div class="form-inline" style="display:none;">
+					<input type="text" class="form-control" style="width:50px;" name="code" value="<?php echo ($vv["code"]); ?>">
+					<button class="btn btn-success btn-sm savecode" data="<?php echo ($vv["id"]); ?>" alt="bannar">保存</button>
+>>>>>>> f7480ed461cb18589ea3e7b49a90aa18a317fdf2
 					</div>
 				</td>
 				<td class="text-right">
@@ -127,7 +135,7 @@ body {
 			  </div>
 			  <input type="hidden" name="ad" value="1" >
 			  <input type="hidden" name="id" id="ad-edit" value="" >
-			  <button type="submit" class="btn btn-default">保存</button>
+			   <button type="submit" class="btn btn-default">保存</button>
 			  </form>
 			  <div style="clear:both"></div>
 		
@@ -221,6 +229,7 @@ body {
 						}
 					});
 				}, function(){
+<<<<<<< HEAD
 				});
 				
 			}//排序方法
@@ -270,6 +279,8 @@ body {
 						}
 					});
 				}, function(){
+=======
+>>>>>>> f7480ed461cb18589ea3e7b49a90aa18a317fdf2
 				  
 				});
 				

@@ -79,12 +79,7 @@
         </tr>
             <?php if(is_array($info)): $kk = 0; $__LIST__ = $info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($kk % 2 );++$kk;?><tr>
                 <td><?php echo ($vv["order_sn"]); ?></td>
-                <td>
-				
-				<?php if(($vv["state"] == 1) OR ($name > 100) ): ?>已发货
-				 <?php elseif($vv["state"] == 2): ?>已收货
-				 <?php else: ?> 等待发货<?php endif; ?>
-				</td>
+                <td><?php if(($vv["state"] == 1) ): ?>已发货<?php else: ?>等待发货<?php endif; ?></td>
                 <td><?php echo ($vv["total_fee"]); ?></td>
                 <td>
                     <a class="btn btn-danger btn-xs" href="/User/Product/orderdetail?id=<?php echo ($vv["order_id"]); ?>">详情</a>

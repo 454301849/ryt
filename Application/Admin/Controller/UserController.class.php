@@ -18,6 +18,7 @@ class UserController extends ActionController
 			$arr = array();
 			$username = $_POST['username'];
 			$password = $_POST['password'];
+
 			$info = M('admin')->where(" username = '{$username}' ")->select();
 
 
@@ -60,7 +61,13 @@ class UserController extends ActionController
 
         $users = M('users');
         $code = $users->field("max(user_name) as newno")->find();
-        $Newcode = 'M'.str_pad(substr($code['newno'],1,6)+1,6,"0",STR_PAD_LEFT);
+        
+        
+        
+        //M后6位数改为8位
+        $Newcode = 'M'.str_pad(substr($code['newno'],1,8)+1,8,"0",STR_PAD_LEFT);
+
+
         $info= $users->where(" user_name = '$ruser_name'")->find();
         $recmid= $info['pid'];
         $centerid= $info['daili'];

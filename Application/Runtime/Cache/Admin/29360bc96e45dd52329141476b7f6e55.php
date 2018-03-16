@@ -45,7 +45,15 @@ body {
 			  </ul>
 			  
 		 <!-- Tab panes -->
+<<<<<<< HEAD
 	  <form class="form-horizontal" action="/Admin/Shop/goodedit.html?good_id=12" method="post" onsubmit="" enctype="multipart/form-data" >
+=======
+<<<<<<< HEAD
+	  <form class="form-horizontal" action="/Admin/Shop/goodedit.html?good_id=7" method="post" onsubmit="" enctype="multipart/form-data" >
+=======
+	  <form class="form-horizontal" action="/Admin/Shop/goodadd.html" method="post" onsubmit="" enctype="multipart/form-data" >
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
+>>>>>>> f7480ed461cb18589ea3e7b49a90aa18a317fdf2
 	  <div class="tab-content well" style="margin-top:30px;border:1px solid #dddddd;padding:10px 2%;">
 	  
 		<div role="tabpanel" class="tab-pane active" id="home">
@@ -67,19 +75,21 @@ body {
 				</div>
 			</div>					
 			<div class="form-group">
+<<<<<<< HEAD
 				<label for="inputEmail3" class="col-sm-2 control-label">商品积分</label>
+=======
+				<label for="inputEmail3" class="col-sm-2 control-label">奖金币</label>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 				<div class="input-group col-sm-6">
 				  <span class="input-group-addon" id="basic-addon1">￥</span>
-															<!--加一个禁止输入特殊符号的限制-->
-					<input type="text" class="form-control" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" id="good_price" name="good_price" value="<?php echo ($good_info['good_price']); ?>" placeholder="">
+					<input type="text" class="form-control" id="good_price" name="good_price" value="<?php echo ($good_info['good_price']); ?>" placeholder="">
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="inputEmail3" class="col-sm-2 control-label">市场价格</label>
 				<div class="input-group col-sm-6">
 				  <span class="input-group-addon" id="basic-addon1">￥</span>
-															<!--加一个禁止输入特殊符号的限制-->
-					<input type="text" class="form-control" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" id="market_price" name="market_price" value="<?php echo ($good_info['market_price']); ?>" placeholder="">
+					<input type="text" class="form-control" id="market_price" name="market_price" value="<?php echo ($good_info['market_price']); ?>" placeholder="">
 				</div>
 			</div>
 			<!--  -->
@@ -87,8 +97,7 @@ body {
 				<label for="inputEmail3" class="col-sm-2 control-label">商品库存</label>
 				<div class="input-group col-sm-6">
 				  <span class="input-group-addon" id="basic-addon1">正整数</span>
-															<!--加一个禁止输入特殊符号的限制-->
-					<input type="text" class="form-control" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" id="number" name="number" value="<?php echo ($good_info['number']); ?>" placeholder="">
+					<input type="text" class="form-control" id="number" name="number" value="<?php echo ($good_info['number']); ?>" placeholder="">
 				</div>
 			</div>
 			<div style="clear:both"></div>

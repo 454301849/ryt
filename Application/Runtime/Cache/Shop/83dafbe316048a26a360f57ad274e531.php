@@ -80,7 +80,11 @@ wx.ready(function(){
        <div class="searchnew" id="searchContainer" style="width:100%;padding:10px 0;">
 			<div class="products-search-item" style="margin-top:0;">
 				<div class="main-nav-search ">
-				<form action="/Shop/Index/search.html" method="post">
+<<<<<<< HEAD
+				<form action="/Shop/Index/search.html?gid=2" method="post">
+=======
+				<form action="/Shop/Index/search.html?gid=4" method="post">
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 					<div class="input-group">
 						<input autocomplete="off" id="input-main-nav-search" class="form-control" name="keyword" value="<?php echo ($keyword); ?>" style="width:98%;" title="产品搜索" placeholder="产品搜索" type="search">
 						<span class="input-group-btn"><button class="btn5 submit" type="submit" id="btnSearch"><i class="search-icon"></i></button></span>

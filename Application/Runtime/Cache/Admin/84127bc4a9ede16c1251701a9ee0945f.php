@@ -83,7 +83,11 @@
 							</div>
 							<div class="col-xs-8 pv-lg">
 								<div class="h2 mt0"><?php echo ($userinfo['gwb']?$userinfo['gwb']:0); ?></div>
+<<<<<<< HEAD
 								<div class="text-uppercase">购物积分</div>
+=======
+								<div class="text-uppercase">购物金币</div>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</div>
