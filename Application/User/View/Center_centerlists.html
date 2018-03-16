@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="renderer" content="webkit">
+	<meta property="qc:admins" content="1051105554536547046375" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="keywords" content="会员结算系统">
+	<meta name="description" content="会员结算系统">
+
+	<title>移动结算平台</title>
+	<link href="__PUBLIC__/css/jquery.mobile.custom.structure.min.css"  rel="stylesheet" />
+	<link href="__PUBLIC__/bootstrap/css/bootstrap.min.css"  rel="stylesheet" />
+	<link href="__PUBLIC__/css/engine.css"  rel="stylesheet" />
+
+	<script type="text/javascript" src="__PUBLIC__/js/mtopt-3.0-min.js" ></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-2.1.3.min.js" ></script>
+	<script type="text/javascript">
+        $.browser = $.browser || {};
+        $.browser.msie = false;
+        $(document).on("mobileinit", function () {
+            $.support.cors = true;
+            $.mobile.allowCrossDomainPages = true;
+            $.mobile.pushStateEnabled = false;
+            $.mobile.defaultPageTransition = "slidefade";
+            $.mobile.pageLoadErrorMessage = "页面加载出错";
+            $.mobile.loader.prototype.options.theme = "c";
+            $.mobile.buttonMarkup.hoverDelay = "false";
+        });
+	</script>
+	<style type="text/css">
+		body{background:#BDE3FA;}
+		.container{padding-top:2em;}
+		.form-title{font-size:2.7em;text-align:center;height:110px;margin-top:120px;}
+		.form-title img{width:200px;}
+		.form-control{margin-bottom:1.8em;height:2.8em;}
+	</style>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.mobile.custom.js" ></script>
+	<script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js" ></script>
+	<script type="text/javascript" src="__PUBLIC__/js/engine.js" ></script>
+</head>
+<body>
+<!--标题样式-->
+<div class="mn-content ui-page ui-page-theme-a ui-page-active" data-role="page" data-url="/User/Center/centerlists" data-external-page="true" tabindex="0" style="min-height: 635.2px;">
+<table class="table table-hover table-condensed">
+    <tbody><tr>
+        <td>编号</td>
+        <td>等级</td>
+        <td>操作</td>
+        <td style="width:80px;">操作</td>
+    </tr>
+    <volist name="info" id="vv" key="kk">
+        <tr>
+            <td>{$vv.user_name}</td>
+            <td>{$vv.name}</td>
+            <if condition="$user['daili'] neq '0'">
+            
+            <if condition="$vv['register'] eq '1'">
+			<td>已激活</td>
+			<else />
+			<td><a id="user_name{$vv.id}"  class="button"  onclick="pckzs.activate('{$vv.user_name}')">去激活</a></td>
+			</if>
+			 
+			 <else />
+			 
+			 <if condition="$vv['register'] eq '1'">
+			<td>已激活</td>
+			<else />
+			<td>未激活</td>
+			</if>
+			 
+			 </if>
+            <td>
+                <a href="/User/User/detail?id={$vv.user_id}" class="btn btn-danger btn-xs">会员详情</a>
+            </td>
+        </tr>
+       </volist>
+     </tbody>
+</table>
+<ul class="pager">
+      {$page}     
+</ul>
+<!--隐藏域开始-->
+<input type="hidden" class="HD_PAGE_0677A2901357AEA2CD928604AAD020A7" value="0">
+<input type="hidden" class="HD_SIZE_0677A2901357AEA2CD928604AAD020A7" value="15">
+<input type="hidden" class="HD_COUNT_0677A2901357AEA2CD928604AAD020A7" value="7">
+<!--隐藏域结束-->
+<script type="text/javascript">
+
+            var pckzs = {
+                activate: function (user_name) {
+                    var cenname = $('#cenname').val();
+
+                    //非空判断
+                    if (user_name.length <= 0) {
+                        engine.news("输入编号有误", 3000);
+                        return;
+                    }
+
+                    engine.news("正在激活...", 999999);
+                    //发送请求
+                    var ajax = m.ajax("/User/Center/recmlist_activate", null, function (jso) {
+                        var jso = m.json.getObject(jso);
+                        switch (jso.Error) {
+                            case '0':
+                                engine.news("激活会员成功", 3000, true);
+                                setTimeout(function () {
+                                    m.reload();
+                                   // m.redirect('/Admin/Daili/center_info?user_name=' + cenname);
+                                }, 1500);
+                                break;
+                            case '-30002':
+                                engine.news("激活失败,该会员已激活", 3000);
+                                break;
+                            case '-30003':
+                                engine.news("激活失败,推荐人未激活", 3000);
+                                break;
+                            case '-30001':
+                                engine.news("报单币不足,请及时充值", 3000);
+                                break;
+                            default:
+                                engine.news(jso.Data, 3000);
+                                break;
+                        }
+                    });
+                    ajax.data.add("user_name", user_name);
+                    ajax.send();
+                },
+                init: function () { }
+            };
+            pckzs.init();
+
+            $(document).ready(function () {
+                $('.button').click(function(){
+                	$(this).button('loading');
+                	$(this).removeAttr('onclick');
+                });
+        });
+		</script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/iosOverlay.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/simple-line-icons.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/animate.min.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/font-awesome.min.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/engine.css" rel="stylesheet" />
+<style>
+	body{
+		background-image:url('__PUBLIC__/images/max.jpg');
+		background-repeat:no-repeat;background-attachment:fixed;
+		background-size:cover;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='__PUBLIC__/images/max.jpg',sizingMethod='scale');
+	}
+	.td-title{
+		width:12em;
+	}
+</style>
+
+<script type="text/javascript" src="__PUBLIC__/admin/js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/mtopt-3.0-min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/spin.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/iosOverlay.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/bootstrap.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/js/engine.js"></script>
+<section>
+	<div class="content-wrapper">
+
+		<h3>
+			基础信息
+		</h3>
+		<!--<div style="text-align:right;">-->
+			<!--<a class="btn btn-primary mb-lg" href="{:U('User/sortlist_upgrade_detail',array('user_name'=>$info['user_name']))}" target="main-frame">查看升级记录</a>-->
+		<!--</div>-->
+		<div class="panel panel-default">
+
+			<div class="panel-body">
+				<div class="table-responsive">
+					<table class="table table-striped table-bordered table-hover">
+						<thead>
+						<tr>
+							<td class="col-lg-3">编号：</td>
+							<td class="col-lg-3">{$info.user_name}</td>
+							<td class="col-lg-3">真实姓名：</td>
+							<td class="col-lg-3">{$info.truename}</td>
+						</tr>
+						<tr>
+							<td class="col-lg-3">手机：</td>
+							<td class="col-lg-3">{$info.moblie}</td>
+							<td class="col-lg-3">身份证：</td>
+							<td class="col-lg-3">{$info.idcard}</td>
+						</tr>
+						<tr>
+							<td class="col-lg-3">邮箱：</td>
+							<td class="col-lg-3">{$info.email}</td>
+							<td class="col-lg-3">邮编：</td>
+							<td class="col-lg-3">{$info.zipcode}</td>
+						</tr>
+						<tr>
+							<td class="col-lg-3">地址：</td>
+							<td class="col-lg-3">{$info.address}</td>
+						</tr>
+
+						<tr>
+							<td class="col-lg-3">所属安置位置：</td>
+							<td>
+								<!--<if condition="$info.area eq 1 "> A区-->
+									<!--<else /> B区-->
+								<!--</if>-->
+								{$info.area_name}
+								<!--<select id="area" class="form-control">-->
+							       <!--<option value="1"  <if condition="$info.area eq  1">selected</if>  >A区</option>-->
+                                    <!--<option value="2" <if condition="$info.area eq  2">selected</if>>B区</option>-->
+                                    <!--</select>-->
+							</td>
+							<td class="col-lg-3">成员等级：</td>
+							<td>
+								<!--<select id="level" class="form-control">-->
+									<!--<volist name="levelinfo" id="vo">-->
+										<!--<if condition="$vo['id'] eq  $info['level']">-->
+										<!--<option  value="{$vo.id}" selected />{$vo.name} [价格:{$vo.money}]</option>-->
+											<!--<else />-->
+											<!--<option  value="{$vo.id}" />{$vo.name} [价格:{$vo.money}]</option>-->
+										<!--</if>-->
+									<!--</volist>-->
+								<!--</select>-->
+								<!--<input id="ylevel" value="{$info['level']}" type="hidden"/>-->
+							</td>
+						</tr>
+						<tr>
+							<td class="col-lg-3">推荐人：</td>
+							<td>{$info.rusername}</td>
+							<!--<td><input type="text"  id="recmid"  value="{$info.rusername}"  style="color:#666;"/></td>-->
+							<td class="col-lg-3">安置人：</td>
+							<!--<td><input type="text"  id="parentid"  value="{$info.pusername}"  style="color:#666;"/></td>-->
+							<td>{$info.pusername}</td>
+						</tr>
+						<tr>
+							<td class="col-lg-3">代理中心：</td>
+							<td>{$info.centername}</td>
+							<!--<td class="col-lg-3">单类型：</td>-->
+							<!--<td>-->
+							<!--<select id="single" class="form-control"></select>-->
+							<!---->
+							<!--</td>-->
+							<td class="col-lg-3">奖金是否发放：</td>
+							<td>
+								<select id="single" class="form-control"></select>
+
+							</td>
+						</tr>
+						<tr>
+							<td class="col-lg-3">创建时间：</td>
+							<td>{$info.reg_time|date="Y-m-d H:i:s",###}</td>
+							<td class="col-lg-3">编辑时间：</td>
+							<td>{$info.after_time|date="Y-m-d H:i:s",###}</td>
+						</tr>
+						<tr>
+							<td>
+								<br>
+								<div class="col-sm-3 col-sm-offset-2" style="display: none;">
+									<input id="id" name="id" value="{$info.user_id}" type="hidden">
+									<button id="btn_enter" class="btn btn-primary" type="button">升级</button>
+								</div>
+								<if condition="$info.user_id neq 1">
+								<div class="col-sm-4">
+									<button  id="btn_reset" class="btn btn-primary"  onclick="reset();"  type="button">重置密码</button>
+								</div>
+
+								<div class="col-sm-3 ">
+									<button  id="btn_update" class="btn btn-primary"  onclick="update();"  type="button">修改</button>
+								</div>
+								</if>
+							</td>
+						</tr>
+						</thead>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+        var pck = {
+            submit: function () {
+                var id = m.node("#id").value();
+                var newlevel = m.node("#level").value();
+                var level = m.node("#ylevel").value();
+
+                if (level == newlevel) {
+                    engine.news("两次所选等级一样,升级失败", 3000);
+                    return;
+                }
+
+                if (newlevel < level) {
+                    engine.news("等级比原来等级低,升级失败", 3000);
+                    return;
+                }
+
+
+                engine.news("正在提交...", 99999, true);
+                var ajax = m.ajax("{:U('Admin/User/api_sortlist_upgrade')}", null, function (jso) {
+                    var jso = m.json.getObject(jso);
+                    switch (jso.Error) {
+                        case 0:
+                            engine.news("升级成功", 3000);
+                            m.reload(true);
+                            break;
+                        case -10000:
+                            engine.news("升级失败", 3000);
+                            break;
+                        default:
+                            engine.news(jso.Data, 3000);
+                            break;
+                    }
+                });
+                ajax.data.add("user_id", id);
+                ajax.data.add("level", level);
+                ajax.data.add("newlevel", newlevel);
+                ajax.send();
+            },
+            init: function () { }
+        }
+        pck.init();
+        $(function () {
+        	engine.ajax.membergrant(0, function (json) {
+                var selt = m.node("#single");
+                selt.html("");
+                for (var i in json) {
+                    selt.append("<option value='" + json[i].id + "'>" + json[i].name  + "</option>");
+                }
+                m.node("#single").value("<?php echo $info['grant']; ?>");
+        	});
+            m.node("#btn_enter").click(pck.submit);
+        });
+        
+        function reset(){
+        	var id = $('#id').val();
+        	var val =  confirm('确定重置密码?');
+        	if(val){
+        		engine.news("正在重置...", 99999, true);
+        		 $.post("/Admin/User/reset_password",{user_id:id},function(str){
+        			    result = eval('(' + str + ')');
+        			  //  alert(result.Data);
+        			    engine.news(result.Data, 3000);
+        			  });
+        	}
+        }
+        
+        function update(){
+        	var id = $('#id').val();
+//        	var area  = $('#area').val();
+//        	var recmid = $('#recmid').val();
+//        	var parentid = $('#parentid').val();
+        	var single = $('#single').val();
+//        	var val =  confirm('确定修改?');
+//        	if(val){
+        		engine.news("正在修改...", 99999, true);
+//        		 $.post("/Admin/User/api_update_grant_submit",{'id':id,'area':area,'recmid':recmid,'parentid':parentid,'single':single},function(str){
+        		 $.post("/Admin/User/api_update_grant_submit",{'id':id,'single':single},function(str){
+        			    result = eval('(' + str + ')');
+        			  //  alert(result.Data);
+        			    engine.news(result.Data, 3000);
+        			  });
+//        	}
+        }
+	</script>
+</section>

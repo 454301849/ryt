@@ -1,0 +1,95 @@
+<link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/iosOverlay.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/simple-line-icons.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/animate.min.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/font-awesome.min.css" rel="stylesheet" />
+<link href="__PUBLIC__/admin/css/engine.css" rel="stylesheet" />
+<style>
+	body{
+		background-image:url('__PUBLIC__/images/max.jpg');
+		background-repeat:no-repeat;background-attachment:fixed;
+		background-size:cover;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='__PUBLIC__/images/max.jpg',sizingMethod='scale');}
+	.alert-success{
+		background-color:transparent;
+	}
+	.btn-default{background:#44b549;color:#fff;}
+	.form-group1:hover{background:#fff;}
+	.form-group{padding:10px 0;}
+	.well{
+		color:#fff;
+		border:none;
+		background-image:url('__PUBLIC__/images/max.jpg');
+		background-repeat:no-repeat;
+		background-size:cover;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='__PUBLIC__/images//max.jpg',sizingMethod='scale');}
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+		background-color: #05336f;
+		color: #fff;
+	}
+	.nav-tabs > li > a:hover {
+		border: 1px solid rgb(221, 230, 233) !important;
+	}
+</style>
+
+<section>
+	<div class="content-wrapper">
+		<h3>
+			角色管理
+		</h3>
+
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist" >
+			<li role="presentation" class="active"><a href="{:U('Rbac/index')}"  role="tab" data-toggle="tab" style="background-color:transparent;border-radius:3px;">角色管理</a></li>
+			<li role="presentation"><a href="{:U('Rbac/roleadd')}" aria-controls="messages" role="tab" data-toggle="tab" style="background-color:transparent;border-radius:3px;border:0px;">添加角色</a></li>
+		</ul>
+		<div class="panel panel-default">
+		<!--<form action="{:U('Rbac/listorders')}" method="post">-->
+			<div id="list">
+				<div class="panel-body">
+					<div class="table-responsive">
+						<table class="table table-striped table-bordered table-hover" style="font-size: 14px;">
+							<thead>
+							<tr>
+								<td style="width:50px;">ID</td>
+								<td>角色名称</td>
+								<td>角色描述</td>
+								<td>状态</td>
+								<td>操作</td>
+							</tr>
+							</thead>
+							<tbody>
+
+				<foreach name="roles" item="vo">
+					<tr>
+						<td>{$vo.id}</td>
+						<td>{$vo.name}</td>
+						<td>{$vo.remark}</td>
+						<td>
+							<if condition="$vo['status'] eq 1">
+								<font color="red">√</font>
+								<else />
+								<font color="red">╳</font>
+							</if>
+						</td>
+						<td>
+							<if condition="$vo['id'] eq 1">
+								<font color="#cccccc">权限设置</font>|<!-- <a href="javascript:open_iframe_dialog('{:U('rbac/member',array('id'=>$vo['id']))}','成员管理');">成员管理</a> | -->
+								<font color="#cccccc">编辑</font> | <font color="#cccccc">删除</font>
+								<else />
+								<a href="{:U('Rbac/authorize',array('id'=>$vo['id']))}">权限设置</a>|
+								<a href="{:U('Rbac/roleedit',array('id'=>$vo['id']))}">编辑</a>|
+								<a class="js-ajax-delete" href="{:U('Rbac/roledelete',array('id'=>$vo['id']))}">删除</a>
+							</if>
+						</td>
+					</tr>
+				</foreach>
+				</tbody>
+			</table>
+		</div>
+</div>
+	</div>
+		</div>
+		</div>
+
+</section>
