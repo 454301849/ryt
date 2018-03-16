@@ -1,0 +1,148 @@
+[ 2018-03-16T08:59:25+08:00 ] 127.0.0.1 /Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `wx_admin` [ RunTime:0.0811s ]
+SQL: SHOW COLUMNS FROM `wx_role` [ RunTime:0.0213s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001826s ]
+
+[ 2018-03-16T09:02:26+08:00 ] 127.0.0.1 /Admin/User/index.html?time=Fri%20Mar%2016%202018%2009:02:25%20GMT+0800%20(%E4%B8%AD%E5%9B%BD%E6%A0%87%E5%87%86%E6%97%B6%E9%97%B4)
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+SQL: SHOW COLUMNS FROM `wx_admin` [ RunTime:0.0267s ]
+SQL: SHOW COLUMNS FROM `wx_role` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `wx_admin` WHERE (  username = 'admin'  )  [ RunTime:0.0012s ]
+SQL: UPDATE `wx_admin` SET `ip`='127.0.0.1',`last_time`='2018' WHERE (  id = '1'  ) [ RunTime:0.0483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001887s ]
+
+[ 2018-03-16T09:02:28+08:00 ] 127.0.0.1 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2018-03-16T09:02:29+08:00 ] 127.0.0.1 /Admin/Index/newleft.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001848s ]
+SQL: SHOW COLUMNS FROM `wx_menu` [ RunTime:0.0378s ]
+SQL: SELECT * FROM `wx_menu` WHERE ( parentid = 0 ) ORDER BY `listorder` ASC  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_menu` WHERE ( parentid = 187 ) ORDER BY `listorder` ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_menu` WHERE ( parentid = 191 ) ORDER BY `listorder` ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_menu` WHERE ( parentid = 198 ) ORDER BY `listorder` ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_menu` WHERE ( parentid = 203 ) ORDER BY `listorder` ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_menu` WHERE ( parentid = 109 ) ORDER BY `listorder` ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_menu` WHERE ( parentid = 139 ) ORDER BY `listorder` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001067s ]
+
+[ 2018-03-16T09:02:29+08:00 ] 127.0.0.1 /Admin/Index/newtop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001278s ]
+
+[ 2018-03-16T09:02:31+08:00 ] 127.0.0.1 /Admin/Index/newmain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0982s ]
+SQL: SELECT * FROM `wx_users` WHERE ( user_id = 1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wx_bonus` [ RunTime:0.0103s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '16' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '15' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '14' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '13' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '12' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '11' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '10' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '09' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '08' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '07' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '06' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '05' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '04' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '03' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '02' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '01' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_systemyeji` [ RunTime:0.0174s ]
+SQL: SELECT * FROM `wx_systemyeji` WHERE year(ydate) = '2018' AND month(ydate) = '03' AND day(ydate) = '16' ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Division by zero D:\phpStudy\WWW\slh\Application\Admin\Controller\IndexController.class.php 第 109 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\slh\Application\Admin\Controller\IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000936s ]
+
