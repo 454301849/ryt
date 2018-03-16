@@ -69,14 +69,11 @@ body {
 				</div>
 			</div>					
 			<div class="form-group">
-				<label for="inputEmail3" class="col-sm-2 control-label">商品积分</label>
+
+				<label for="inputEmail3" class="col-sm-2 control-label">奖金币</label>
 				<div class="input-group col-sm-6">
 				  <span class="input-group-addon" id="basic-addon1">￥</span>
-
-
-															<!--加一个禁止输入特殊符号的限制-->
 					<input type="text" class="form-control" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" id="good_price" name="good_price" value="{$good_info['good_price']}" placeholder="">
-
 
 				</div>
 			</div>
@@ -84,10 +81,9 @@ body {
 				<label for="inputEmail3" class="col-sm-2 control-label">市场价格</label>
 				<div class="input-group col-sm-6">
 				  <span class="input-group-addon" id="basic-addon1">￥</span>
-
-
 															<!--加一个禁止输入特殊符号的限制-->
 					<input type="text" class="form-control" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" id="market_price" name="market_price" value="{$good_info['market_price']}" placeholder="">
+
 
 
 				</div>
@@ -101,8 +97,6 @@ body {
 
 															<!--加一个禁止输入特殊符号的限制-->
 					<input type="text" class="form-control" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" id="number" name="number" value="{$good_info['number']}" placeholder="">
-
-
 				</div>
 			</div>
 			<div style="clear:both"></div>

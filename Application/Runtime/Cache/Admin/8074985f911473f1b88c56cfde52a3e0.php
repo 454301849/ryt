@@ -31,7 +31,11 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>会员编号</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<input type="text" class="form-control" id="id" value="<?php echo ($user_code); ?>" placeholder="请输入会员编号"  disabled>
+=======
+								<input type="text" class="form-control" id="id" value="<?php echo ($user_code); ?>" placeholder="请输入会员编号"    style="width:250px;" disabled>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -39,7 +43,11 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>推荐人</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<input type="text" class="form-control" id="recmid" value="<?php echo ($recmid); ?>" placeholder="请输入推荐人编号">
+=======
+								<input type="text" class="form-control" id="recmid" value="<?php echo ($recmid); ?>" placeholder="请输入推荐人编号"    style="width:250px;">
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -47,7 +55,11 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>安置人</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<input type="text" class="form-control" value="<?php echo ($parentid); ?>" id="parentid" placeholder="请输入安置人编号">
+=======
+								<input type="text" class="form-control" value="<?php echo ($parentid); ?>" id="parentid" placeholder="请输入安置人编号"   style="width:250px;">
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -55,7 +67,11 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>代理中心</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<input type="text" class="form-control" id="centerid"  value="<?php echo ($centerid); ?>"  placeholder="请输入代理中心编号">
+=======
+								<input type="text" class="form-control" id="centerid"  value="<?php echo ($centerid); ?>"  placeholder="请输入代理中心编号"   style="width:250px;">
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -63,7 +79,11 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>安置位置</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<select id="area" class="form-control"></select>
+=======
+								<select id="area" class="form-control"   style="width:250px;"></select>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -78,8 +98,13 @@
 					<fieldset>
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>会员等级</label>
+<<<<<<< HEAD
 							<div class="col-sm-10">
 								<select id="level" class="form-control"></select>
+=======
+							<div class="col-sm-10" >
+								<select id="level" class="form-control"   style="width:250px;"></select>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -87,7 +112,11 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>登录密码</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<input type="password" class="form-control" value="admin" id="password" >
+=======
+								<input type="password" class="form-control" value="admin" id="password"    style="width:250px;">
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -95,7 +124,11 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>确认登录密码</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<input type="password" class="form-control"  value="admin" id="cpassword" >
+=======
+								<input type="password" class="form-control"  value="admin" id="cpassword"    style="width:250px;">
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -103,7 +136,11 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>安全密码</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<input type="password" class="form-control"  value="admin" id="safeword" >
+=======
+								<input type="password" class="form-control"  value="admin" id="safeword"    style="width:250px;">
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -111,7 +148,11 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>确认安全密码</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<input type="password" class="form-control"  value="admin" id="csafeword" >
+=======
+								<input type="password" class="form-control"  value="admin" id="csafeword"  style="width:250px;"  >
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -120,7 +161,11 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>身份证</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<input type="text" class="form-control" id="idcard"  value="370123199303031012" placeholder="请输入会员身份证" >
+=======
+								<input type="text" class="form-control" id="idcard"  value="370123199303031012" placeholder="请输入会员身份证"   style="width:250px;" >
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -128,7 +173,11 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>真实姓名</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<input type="text" class="form-control" value="子轩" id="username" placeholder="请输入真实姓名" >
+=======
+								<input type="text" class="form-control" value="子轩" id="username" placeholder="请输入真实姓名"    style="width:250px;">
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -136,7 +185,11 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>开户银行</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<select id="bankid" class="form-control"></select>
+=======
+								<select id="bankid" class="form-control"   style="width:250px;"></select>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -144,15 +197,25 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>开户卡号</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<input type="text" class="form-control" value="1238980480480" id="bankno" placeholder="请输入开户卡号" >
+=======
+								<input type="text" class="form-control" value="1238980480480" id="bankno" placeholder="请输入开户卡号"   style="width:250px;" >
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
 					<fieldset>
 						<div class="form-group">
+<<<<<<< HEAD
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>开户地址</label>
 							<div class="col-sm-10">
 								<input type="text" class="form-control" value="北京朝阳区"  id="bankname" placeholder="请输入开户地址" >
+=======
+							<label class="col-sm-2 control-label"><label style="color:orangered" >*</label>开户地址</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" value="北京朝阳区"  id="bankname" placeholder="请输入开户地址"    style="width:250px;">
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -160,15 +223,24 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>开户姓名</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<input type="text" class="form-control" value="你还" id="bankuser" placeholder="请输入开户姓名" >
+=======
+								<input type="text" class="form-control" value="你还" id="bankuser" placeholder="请输入开户姓名 "    style="width:250px;">
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
 					<fieldset>
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>手机</label >
+<<<<<<< HEAD
 							<div class="col-sm-10">
 								<input type="text" class="form-control" value="" id="moblie" >
+=======
+							<div class="col-sm-10"> 
+								<input type="text" class="form-control" value="" id="moblie"   style="width:250px;" >
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -176,7 +248,11 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label">邮箱</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<input type="text" class="form-control" id="email" >
+=======
+								<input type="text" class="form-control" id="email"   style="width:250px;" >
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -184,7 +260,11 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label">邮编</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<input type="text" class="form-control" id="zipcode" />
+=======
+								<input type="text" class="form-control" id="zipcode"   style="width:250px;" />
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -192,7 +272,11 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label">地址</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<input type="text" class="form-control" id="address" />
+=======
+								<input type="text" class="form-control" id="address"   style="width:250px;" />
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -200,7 +284,11 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>地区/省</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<select id="country" class="form-control"></select>
+=======
+								<select id="country" class="form-control"   style="width:250px;"></select>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -208,7 +296,11 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>地区/市</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<select id="province" class="form-control"></select>
+=======
+								<select id="province" class="form-control"   style="width:250px;"></select>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>
@@ -216,7 +308,11 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>地区/县</label>
 							<div class="col-sm-10">
+<<<<<<< HEAD
 								<select id="county" class="form-control"></select>
+=======
+								<select id="county" class="form-control"   style="width:250px;"></select>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 							</div>
 						</div>
 					</fieldset>

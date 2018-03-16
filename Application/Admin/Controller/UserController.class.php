@@ -59,7 +59,6 @@ class UserController extends ActionController
         $area = $_GET['area'];
         session('register_area_default', $area); //创建默认 会员市场
 
-
         $users = M('users');
         $code = $users->field("max(user_name) as newno")->find();
         
@@ -67,6 +66,7 @@ class UserController extends ActionController
         
         //M后6位数改为8位
         $Newcode = 'M'.str_pad(substr($code['newno'],1,8)+1,8,"0",STR_PAD_LEFT);
+
 
         $info= $users->where(" user_name = '$ruser_name'")->find();
         $recmid= $info['pid'];

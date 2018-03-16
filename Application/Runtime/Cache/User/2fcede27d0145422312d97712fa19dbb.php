@@ -13,7 +13,11 @@
 	<title>会员管理系统</title>
 	<link href="/Public/css/jquery.mobile.custom.structure.min.css"  rel="stylesheet" />
 	<link href="/Public/bootstrap/css/bootstrap.min.css"  rel="stylesheet" />
+<<<<<<< HEAD
 	<link href="/Public/css/engine.css"  rel="stylesheet" />
+=======
+	<link href="/Public/css/engine.css" rel="stylesheet" />
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 
 	<script type="text/javascript" src="/Public/js/mtopt-3.0-min.js" ></script>
 	<script type="text/javascript" src="/Public/js/jquery-2.1.3.min.js" ></script>
@@ -32,10 +36,18 @@
 	</script>
 	<style type="text/css">
 		body{background:url(/Public/images/login.jpg) no-repeat;background-size:100%;}
+<<<<<<< HEAD
 		.container{padding-top:8em;}
 		.form-title{font-size:2.7em;text-align:center;height:110px;margin-top:20px;}
 		.form-title img{width:200px;}
 		.form-control{margin-bottom:1.8em;height:2.8em;}
+=======
+		.container{padding-top:8em; width:350px;  margin:0 auto;}
+		.form-title{font-size:2.7em;text-align:center;height:110px;margin-top:20px;}
+		.form-title img{width:200px;}
+		.form-control{margin-bottom:1.8em;height:2.8em; }
+
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 	</style>
 	<script type="text/javascript" src="/Public/js/jquery.mobile.custom.js" ></script>
 	<script type="text/javascript" src="/Public/js/bootstrap.min.js" ></script>
@@ -47,7 +59,11 @@
 </div>
 <div class="container">
 	<div class="col-xs-12">
+<<<<<<< HEAD
 		<input id="moblie" type="text" class="form-control" placeholder="请输入手机号"  required="required" />
+=======
+		<input id="moblie" type="text" class="form-control" placeholder="请输入手机号/用户名"  required="required" />
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 	</div>
 	<div class="col-xs-12">
 		<input id="password" type="password" class="form-control" placeholder="请输入密码"  required="required" />
@@ -70,7 +86,11 @@
 	<div class="col-xs-12">
 		<button id="btn_enter" class="btn btn-danger btn-block" type="button">立即登录</button>
 	</div>
+<<<<<<< HEAD
 </div>
+=======
+</div>ing
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 <script language="JavaScript">
     function fleshVerify() {
         //重载验证码

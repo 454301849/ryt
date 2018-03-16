@@ -32,7 +32,11 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label">清空数据</label>
                     <div class="col-sm-8">
+<<<<<<< HEAD
 		<input id="checkcode" name="checkcode" type="text" class="form-control" placeholder="验证码" required="required" />
+=======
+		<input id="checkcode" name="checkcode" type="text" class="form-control" placeholder="验证码" required="required" style="width:250px;" />
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
                     </div>
 					<div class="col-xs-2">
 		<div class="img-thumbnail" style="width:100%;height: 2.6em;overflow:hidden;">
@@ -48,7 +52,11 @@
 	<br /><br />
 	<label class="col-sm-2 control-label">自动生成8层数据</label>
                     <div class="col-sm-6">
+<<<<<<< HEAD
 		<input id="zidong" name="zidong" type="text" class="form-control" placeholder="默认为1 不自动生成 2为自动生成" required="required" value="1"/>
+=======
+		<input id="zidong" name="zidong" type="text" class="form-control" placeholder="默认为1 不自动生成 2为自动生成" required="required" value="1" style="width:250px;"/>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
                     </div>
 					 <label class="col-sm-4 control-label">默认为1 不自动生成 2为自动生成</label>
                 </div>

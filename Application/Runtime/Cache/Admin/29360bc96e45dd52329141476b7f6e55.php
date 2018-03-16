@@ -45,7 +45,11 @@ body {
 			  </ul>
 			  
 		 <!-- Tab panes -->
+<<<<<<< HEAD
 	  <form class="form-horizontal" action="/Admin/Shop/goodedit.html?good_id=7" method="post" onsubmit="" enctype="multipart/form-data" >
+=======
+	  <form class="form-horizontal" action="/Admin/Shop/goodadd.html" method="post" onsubmit="" enctype="multipart/form-data" >
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 	  <div class="tab-content well" style="margin-top:30px;border:1px solid #dddddd;padding:10px 2%;">
 	  
 		<div role="tabpanel" class="tab-pane active" id="home">
@@ -67,7 +71,11 @@ body {
 				</div>
 			</div>					
 			<div class="form-group">
+<<<<<<< HEAD
 				<label for="inputEmail3" class="col-sm-2 control-label">商品积分</label>
+=======
+				<label for="inputEmail3" class="col-sm-2 control-label">奖金币</label>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 				<div class="input-group col-sm-6">
 				  <span class="input-group-addon" id="basic-addon1">￥</span>
 					<input type="text" class="form-control" id="good_price" name="good_price" value="<?php echo ($good_info['good_price']); ?>" placeholder="">

@@ -10,6 +10,10 @@
 		background-repeat:no-repeat;background-attachment:fixed;
 		background-size:cover;
 		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Public/images/max.jpg',sizingMethod='scale');}
+<<<<<<< HEAD
+=======
+		
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 </style>
 
 
@@ -32,15 +36,25 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label">收款人编号</label>
                     <div class="col-sm-10">
+<<<<<<< HEAD
                         <input type="text" class="form-control input-sm" id="memberid">
+=======
+                        <input type="text" class="form-control input-sm" id="memberid"style="width:250px;" >
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
                     </div>
                 </div>
             </fieldset>
             <fieldset>
                 <div class="form-group">
+<<<<<<< HEAD
                     <label class="col-sm-2 control-label">转账类型</label>
                     <div class="col-sm-10">
                         <select id="type" class="form-control input-sm">
+=======
+                    <label class="col-sm-2 control-label" >转账类型</label>
+                    <div class="col-sm-10">
+                        <select id="type" class="form-control input-sm" style="width:250px;">
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
                             <option value="1">奖金币</option>
                             <!-- <option value="2">购物币</option> -->
                         </select>
@@ -51,7 +65,11 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label">转账金额</label>
                     <div class="col-sm-10">
+<<<<<<< HEAD
                         <input type="text" class="form-control input-sm" id="money" placeholder="扣率：0%">
+=======
+                        <input type="text" class="form-control input-sm" id="money" placeholder="扣率：0%" style="width:250px;">
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
                     </div>
                 </div>
             </fieldset>
@@ -59,7 +77,11 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label">备注</label>
                     <div class="col-sm-10">
+<<<<<<< HEAD
                         <input type="text" class="form-control input-sm" id="remarks">
+=======
+                        <input type="text" class="form-control input-sm" id="remarks" style="width:250px;">
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
                     </div>
                 </div>
             </fieldset>
@@ -67,14 +89,22 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label">安全密码</label>
                     <div class="col-sm-10">
+<<<<<<< HEAD
                         <input type="password" class="form-control input-sm" id="safeword">
+=======
+                        <input type="password" class="form-control input-sm" id="safeword"style="width:250px;">
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
                     </div>
                 </div>
             </fieldset>
             <fieldset>
                 <div class="form-group">
                     <div class="col-sm-4 col-sm-offset-2">
+<<<<<<< HEAD
                         <button id="btn_enter" type="button" class="btn btn-primary">确认转账</button>
+=======
+                        <button id="btn_enter" type="button" class="btn btn-primary" >确认转账</button>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
                     </div>
                 </div>
             </fieldset>

@@ -33,7 +33,11 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label">充值奖金币</label>
                     <div class="col-sm-10">
+<<<<<<< HEAD
                         <input type="text" class="form-control input-sm" id="money" placeholder="请输入充值金额">
+=======
+                        <input type="text" class="form-control input-sm" id="money" placeholder="请输入充值金额" style="width:250px;">
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
                     </div>
                 </div>
             </fieldset>

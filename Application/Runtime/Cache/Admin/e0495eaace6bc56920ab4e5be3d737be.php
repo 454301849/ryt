@@ -32,7 +32,11 @@ body {
 		</h3>
 		 <!-- Nav tabs -->
 		  <ul class="nav nav-tabs" role="tablist" >
+<<<<<<< HEAD
      	    <li role="presentation" class="active"><a href="#shengji" aria-controls="shengji" role="tab" data-toggle="tab" style="background-color:transparent;">奖金设置</a></li>
+=======
+     	    <li role="presentation" class="active"><a href="#shengji" aria-controls="shengji" role="tab" data-toggle="tab" style="background-color:transparent; ">奖金设置</a></li>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 		    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab" style="background-color:transparent;">其它设置</a></li>
 		  </ul>
 			  
@@ -42,7 +46,11 @@ body {
 				<div class="">
 					<form class="form-horizontal" action="/Admin/Daili/system.html" method="post" enctype="multipart/form-data"  >
 
+<<<<<<< HEAD
 						<h5 class="alert alert-success" style="padding:5px 10px;line-height:30px;border-bottom:1px solid #fff;">管理奖 设置</h5>
+=======
+						<h5 class="alert alert-success" style="padding:5px 10px;line-height:30px;border-bottom:1px solid #fff; width:250px;">管理奖 设置</h5>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 						<!--<div class="form-group">
 							<label for="inputPassword3" class="col-sm-2 control-label">领导奖上拿一代</label>
 							<div class="input-group col-sm-2 ">
@@ -67,7 +75,11 @@ body {
 								<span class="input-group-addon">%</span>
 							</div>
 						</div>
+<<<<<<< HEAD
 						<h5 class="alert alert-success" style="padding:5px 10px;line-height:30px;border-bottom:1px solid #fff;">分享奖 设置</h5>
+=======
+						<h5 class="alert alert-success" style="padding:5px 10px;line-height:30px;border-bottom:1px solid #fff; width:250px;">分享奖 设置</h5>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 						<div class="form-group">
 							<label for="inputPassword3" class="col-sm-2 control-label">分享奖</label>
 							<div class="input-group col-sm-2 ">
@@ -75,7 +87,11 @@ body {
 								<span class="input-group-addon">%</span>
 							</div>
 						</div>
+<<<<<<< HEAD
 						<h5 class="alert alert-success" style="padding:5px 10px;line-height:30px;border-bottom:1px solid #fff;">见点奖 设置</h5>
+=======
+						<h5 class="alert alert-success" style="padding:5px 10px;line-height:30px;border-bottom:1px solid #fff; width:250px;">见点奖 设置</h5>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 						<div class="form-group">
 							<label for="inputPassword3" class="col-sm-2 control-label">见点奖</label>
 							<div class="input-group col-sm-2 ">

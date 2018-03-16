@@ -32,10 +32,17 @@
         <div class="form-horizontal">
             <fieldset>
                 <legend>可改信息</legend>
+<<<<<<< HEAD
                 <div class="form-group">
                     <label class="col-sm-2 control-label">原密码</label>
                     <div class="col-sm-10">
                         <input type="password" class="form-control input-sm" id="safeword" />
+=======
+                <div class="form-group"    >
+                    <label class="col-sm-2 control-label"     >原密码</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control input-sm" id="safeword"style="width:250px;" />
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
                     </div>
                 </div>
             </fieldset>
@@ -43,7 +50,11 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label">新登录密码</label>
                     <div class="col-sm-10">
+<<<<<<< HEAD
                         <input type="password" class="form-control input-sm" id="npassword" />
+=======
+                        <input type="password" class="form-control input-sm" id="npassword" style="width:250px;"/>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
                     </div>
                 </div>
             </fieldset>
@@ -51,7 +62,11 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label">确认新登录密码</label>
                     <div class="col-sm-10">
+<<<<<<< HEAD
                         <input type="password" class="form-control input-sm" id="cnpassword" />
+=======
+                        <input type="password" class="form-control input-sm" id="cnpassword" style="width:250px;" />
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
                     </div>
                 </div>
             </fieldset>
@@ -60,15 +75,25 @@
                 <div class="form-group">
                     <label class="col-sm-2 control-label">新安全密码</label>
                     <div class="col-sm-10">
+<<<<<<< HEAD
                         <input type="password" class="form-control input-sm" id="nsafeword" />
+=======
+                        <input type="password" class="form-control input-sm" id="nsafeword" style="width:250px;" />
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
                     </div>
                 </div>
             </fieldset>
             <fieldset>
                 <div class="form-group">
+<<<<<<< HEAD
                     <label class="col-sm-2 control-label">确认新安全密码</label>
                     <div class="col-sm-10">
                         <input type="password" class="form-control input-sm" id="cnsafeword" />
+=======
+                    <label class="col-sm-2 control-label ">确认新安全密码</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control input-sm" id="cnsafeword"style="width:250px;" />
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
                     </div>
                 </div>
             </fieldset>

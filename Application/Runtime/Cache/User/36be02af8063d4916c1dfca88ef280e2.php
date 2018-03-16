@@ -150,11 +150,19 @@
 		<ul class="pg-head-menu">
 			<li>
 				<span><?php echo ($userinfo["jjb"]); ?></span>
+<<<<<<< HEAD
 				<div>奖金积分</div>
 			</li>
 			<li>
 				<span><?php echo ($userinfo["gwb"]); ?></span>
 				<div>购物积分</div>
+=======
+				<div>奖金币</div>
+			</li>
+			<li>
+				<span><?php echo ($userinfo["gwb"]); ?></span>
+				<div>购物币</div>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 			</li>
 			<!--
 			<li>

@@ -94,9 +94,15 @@
 		</h3>
 		<div class="panel panel-default" style="margin-bottom:12px;">
 			<div class="input-group">
+<<<<<<< HEAD
 				<input type="text" class="form-control" id="search_id" style="height:35px;" value="<?php echo ($info["user_name"]); ?>" placeholder="请输入会员编号">
 				<span class="input-group-btn">
             <button class="btn btn-default" onclick="pck.search()" style="margin-left: 2px;z-index: 2;border-radius:4px;height: 35px;" type="button">查询数据</button>
+=======
+				<input type="text" class="form-control" id="search_id" style="height:35px; width:250px; value="<?php echo ($info["user_name"]); ?>" placeholder="请输入会员编号" >
+				<span class="input-group-btn">
+            <button class="btn btn-default" onclick="pck.search()" style="z-index:2;border-radius:4px;height: 35px;  margin-right:70em; "  type="button">查询数据</button>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
         </span>
 			</div>
 		</div>

@@ -94,6 +94,7 @@ class UserController extends Controller{
 		$add_data['truename'] = urldecode($_POST['username']);
 
 
+
         //验证身份证号码
         $idcard = urldecode($_POST['idcard']);
         $user_idcard= $users->where(" idcard = '$idcard'")->find();
@@ -115,7 +116,6 @@ class UserController extends Controller{
             echo json_encode($msg);
             exit;
         }
-
 
 		$add_data['bankno'] = urldecode($_POST['bankno']);
 		$add_data['bankuser'] = urldecode($_POST['bankuser']);

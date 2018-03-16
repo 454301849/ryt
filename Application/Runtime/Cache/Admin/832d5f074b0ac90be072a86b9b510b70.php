@@ -44,7 +44,11 @@ body {
 				<div class="" >
 					<form class="form-horizontal" action="/Admin/Daili/memberlevel.html" method="post" enctype="multipart/form-data"  >
 
+<<<<<<< HEAD
 						<h5 class="alert alert-success" style="padding:5px 10px;line-height:30px;border-bottom:1px solid #fff;">用户级别 设置</h5>
+=======
+						<h5 class="alert alert-success" style="padding:5px 10px;line-height:30px;border-bottom:1px solid #fff;width:250px;l">用户级别 设置</h5>
+>>>>>>> 90ab59d2dd998b13d77950c4b00abf31d7c60712
 						<?php if(is_array($memberlevel_info)): $kk = 0; $__LIST__ = $memberlevel_info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($kk % 2 );++$kk;?><div class="form-group" >
 							<label for="inputPassword3" class=" control-label"  style="float:left;margin-left:28px;">名称</label>
 							<div class="input-group col-sm-2 " >
