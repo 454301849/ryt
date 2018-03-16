@@ -81,6 +81,7 @@
             <tr>
                 <td>{$vv.order_sn}</td>
 
+
                 <td>
 				<!--<if condition="($vv.state eq 2) ">已发货<else/>等待发货</if>-->
 				<if condition="($vv.state eq 1) OR ($name gt 100) "> 已发货
@@ -88,6 +89,7 @@
 				 <else /> 等待发货
 				 </if>
 				</td>
+
 
                 <td>{$vv.total_fee}</td>
                 <td>

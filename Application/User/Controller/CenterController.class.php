@@ -89,8 +89,7 @@ class CenterController extends Controller{
             session('nickname', $info[0]['nickname']);
             $admin_id = $info[0]['user_id'];
             $info = M('users')->where(" user_id = '{$admin_id}' ")->setField('last_time', time());
-
-            $jjb = M('users')->where(" user_id = '{$admin_id}' ")->getField('jjb');
+			$jjb = M('users')->where(" user_id = '{$admin_id}' ")->getField('jjb');
             if($jjb <= 0){
             	$msg['Success'] = false;
 	            $msg['Error'] = '-10002';
@@ -98,6 +97,7 @@ class CenterController extends Controller{
 	            session(null);
 	            exit;
             }
+
 
             $msg['Success'] = true;
             echo json_encode($msg);

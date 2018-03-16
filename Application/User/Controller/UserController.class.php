@@ -24,7 +24,10 @@ class UserController extends Controller{
         $ruser_name = $_GET['rootid']?$_GET['rootid']:$_SESSION['user_name']; // 查询顶级用户的user_name 或 需要查询的user_name
 
         $code = $users->field("max(user_name) as newno")->find();
-        $Newcode = 'M'.str_pad(substr($code['newno'],1,6)+1,6,"0",STR_PAD_LEFT);
+
+        //M后6位数改为8位
+        $Newcode = 'M'.str_pad(substr($code['newno'],1,8)+1,8,"0",STR_PAD_LEFT);
+
         $info= $users->where(" user_name = '$ruser_name'")->find();
         $recmid= $info['pid'];
         $centerid= $info['daili'];
@@ -90,6 +93,7 @@ class UserController extends Controller{
 		$add_data['second_password'] = md5(urldecode($_POST['safeword']));
 		$add_data['truename'] = urldecode($_POST['username']);
 
+
         //验证身份证号码
         $idcard = urldecode($_POST['idcard']);
         $user_idcard= $users->where(" idcard = '$idcard'")->find();
@@ -111,6 +115,7 @@ class UserController extends Controller{
             echo json_encode($msg);
             exit;
         }
+
 
 		$add_data['bankno'] = urldecode($_POST['bankno']);
 		$add_data['bankuser'] = urldecode($_POST['bankuser']);
