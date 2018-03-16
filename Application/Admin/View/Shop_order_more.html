@@ -69,7 +69,7 @@
 						<div class="col-sm-6" style="float: right;">
 							<input type="text" name="serve_id" id="serve_id" value="{$order['serve_id']}" style="height:35px"   placeholder="输入订单号">
 							<if condition="$order.state neq 2 and $order.pay_time neq 0">
-							<button type="submit" class="btn btn-primary btn-sm" id="serve_sure" style="height:35px;margin-left: 10%;margin-top: -10px;" data-loading-text="请稍候...">确认物流信息</button>
+							<a href="order.html"><button type="submit" class="btn btn-primary btn-sm" id="serve_sure" style="height:35px;margin-left: 10%;margin-top: -10px;" data-loading-text="请稍候...">确认物流信息</button></a>
 							</if>
 						</div>
 						
@@ -158,7 +158,7 @@ $('#serve_sure').click(function(){
 			},
 			success: function(json){
                 layer.closeAll();
-				layer.msg('添加成功');
+				layer.msg('发货成功');
 				return;
 			},
 			error:function(){
