@@ -74,17 +74,17 @@
 		<input id="safeword_" type="password" class="form-control" placeholder="请输入安全密码" />
 		<label class="control-label">确认安全密码</label>
 		<input id="csafeword_" type="password" class="form-control" placeholder="请输入确认安全密码" />
-		<label class="control-label">身份证</label>
+		<label class="control-label">身份证</label>											<!--加一个禁止输入特殊符号的限制-->
 		<input id="idcard_" type="text" class="form-control" placeholder="请输入会员身份证" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"   />
 		<label class="control-label">开户银行</label>
 		<select id="bankid_" class="form-control" ></select>
-		<label class="control-label">开户卡号</label>
+		<label class="control-label">开户卡号</label>			<!--加一个禁止输入特殊符号的限制-->
 		<input id="bankno_" type="text" class="form-control"  onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"  placeholder="请输入开户卡号" />
 		<label class="control-label">开户地址</label>
 		<input id="bankname_" type="text" class="form-control" placeholder="请输入开户地址"  />
 		<label class="control-label">开户姓名</label>
 		<input id="bankuser_" type="text" class="form-control" placeholder="请输入开户姓名" />
-		<label class="control-label">手机</label>
+		<label class="control-label">手机</label>				<!--加一个禁止输入特殊符号的限制-->
 		<input id="moblie_" type="text" class="form-control"  onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"  placeholder="请输入手机号" />
 		<label class="control-label">邮箱</label>
 		<input id="email_" type="text" class="form-control" placeholder="请输入邮箱" />

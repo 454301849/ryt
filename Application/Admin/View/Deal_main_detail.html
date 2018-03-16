@@ -22,6 +22,7 @@
 <h3>
    资金来源详情
 </h3>
+<a href="#" onclick="history.back(-1)"><button class="btn btn-success btn-sm savecode">返回</button></a>
 <div class="panel panel-default">
     <div class="panel-body">
         <div class="table-responsive">

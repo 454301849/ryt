@@ -41,11 +41,11 @@ body {
 				<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" style="background-color:transparent;">商品参数</a></li>
 				<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" style="background-color:transparent;">商品缩略图</a></li>
 				<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab" style="background-color:transparent;">商品详情</a></li>
-				<li role="presentation"><a href="javascript:void(0);" onclick="history.go(-1);"style="background-color:transparent;">返回上一页</a></li>
+				<li role="presentation"><a href="good.html"style="background-color:transparent;">返回上一页</a></li>
 			  </ul>
 			  
 		 <!-- Tab panes -->
-	  <form class="form-horizontal" action="/Admin/Shop/goodadd.html" method="post" onsubmit="" enctype="multipart/form-data" >
+	  <form class="form-horizontal" action="/Admin/Shop/goodedit.html?good_id=12" method="post" onsubmit="" enctype="multipart/form-data" >
 	  <div class="tab-content well" style="margin-top:30px;border:1px solid #dddddd;padding:10px 2%;">
 	  
 		<div role="tabpanel" class="tab-pane active" id="home">

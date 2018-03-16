@@ -24,6 +24,7 @@
 		<h3>
 			<?php echo ($withdraw_info['user_name']); ?> 提现审核
 		</h3>
+		<a href="#" onclick="history.back(-1)"><button class="btn btn-success btn-sm savecode">返回</button></a>
 		<div class="panel panel-default">
 			<div class="panel-body">
 				<div class="table-responsive">

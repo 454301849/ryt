@@ -47,54 +47,59 @@ body {
 			
 			<table class="table" style="font-size:14px;color:#fff;">
 			<th>编号</th>
-			<th>缩略图</th>
-			<th>排序</th>
+			<th style="width:50%;">缩略图</th>
+			<th>排序 <input type="text" class="form-control" style="width:70px;text-align:center;margin-top:10px;"id="code" value="50">[改变排序值*点击对应保存]</th>
+			<th>操作</th>
 			<div style="clear:both"></div>
 			<?php if(is_array($bannar)): $kk = 0; $__LIST__ = $bannar;if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($kk % 2 );++$kk;?><tr>
 				<td><?php echo ($kk); ?></td>
 				<td ><img src="/<?php echo ($vv["pic_url"]); ?>" onclick="yulan(this)"></td>
-				<td>
-					<div class="code" data-toggle="tooltip" data-placement="bottom" title="点击修改排序" onclick="changeCode(this)"><?php echo ($vv["code"]); ?></div>
-					<div class="form-inline" style="display:none;">
-					<input type="text" class="form-control" style="width:50px;" id="code" name="code" value="<?php echo ($vv["code"]); ?>">
-					<button class="btn btn-success btn-sm savecode" onclick="update(this,'<?php echo ($vv["id"]); ?>','bannar')" data="<?php echo ($vv["id"]); ?>" alt="bannar">保存</button>
+				<td><!--修改排序-->
+					<div class="code" data-toggle="tooltip" data-placement="bottom"><?php echo ($vv["code"]); ?></div>
+					<div class="form-inline" style="display:block;">
+						<button class="btn btn-success btn-sm savecode" onclick="update(this,'<?php echo ($vv["id"]); ?>','bannar')" data="<?php echo ($vv["id"]); ?>" alt="bannar" title="点击修改排序">保存</button>
 					</div>
-					</td>
-				<td class="text-right"><button class="btn btn-danger btn-sm" onclick="del(this,'<?php echo ($vv["id"]); ?>','bannar')">删除</button></td>
+				</td>
+				<td class="text-right">
+				<button class="btn btn-danger btn-sm" onclick="del(this,'<?php echo ($vv["id"]); ?>','bannar')">删除</button>
+				</td>
 			  </tr><?php endforeach; endif; else: echo "$empty" ;endif; ?>
 			</table>
 			<form action="/Admin/Shop/setting.html" method="post"  enctype="multipart/form-data">
 			
 			  <div class="form-group" style="margin-top:30px;">	
-				 <label for="inputPassword3" class="col-sm-2 control-label" >添加新幻灯片</label>
+				<label for="inputPassword3" class="col-sm-2 control-label" >添加新幻灯片</label>
 				<div class="col-sm-10">					     
-					 <input id="file-3" type="file" name="image[]" accept="image/*"  multiple=true>
-					 <span style="color:#fff">上传封面图片为宽640px * 高320px</span>
-					 <span class="help-block" style="color:red">上传多张时，选择时按键盘键 <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd> 完成多选</span>
+					<input id="file-3" type="file" name="image[]" accept="image/*"  multiple=true>
+					<span style="color:#fff">上传封面图片为宽640px * 高320px</span>
+					<span class="help-block" style="color:red">上传多张时，选择时按键盘键 <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd> 完成多选</span>
 				</div>
 				<input type="hidden" name="uplode" value="1" >
 			  </div>
-			   <button type="submit" class="btn btn-default">保存</button>
-			  </form>
+			  <button type="submit" class="btn btn-default">保存</button>
+			</form>
 			  <div style="clear:both"></div>
 		</div>
 		<div role="tabpanel" class="tab-pane" id="profile">
 		
-		<table class="table table-striped" style="font-size:14px;table-layout:fixed">
-			<th>编号</th>
+		<table class="table table-striped" style="color:#fff;font-size:14px;table-layout:fixed">
+			<th style="width:5%;">编号</th>
 			<th>缩略图</th>
-			<th style="width:40%;">广告地址</th>
-			<th>排序</th>
+			<th style="width:20%;">广告地址</th>
+			<th>排序 <input type="text" class="form-control" style="width:70px;text-align:center;margin-top:10px;"id="ad" value="50">[改变排序值*点击对应保存]</th>
+			<th>操作</th>
 			<div style="clear:both"></div>
 			<?php if(is_array($ad)): $kk = 0; $__LIST__ = $ad;if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($kk % 2 );++$kk;?><tr>
 				<td><?php echo ($vv["id"]); ?></td>
 				<td ><img src="/<?php echo ($vv["pic_url"]); ?>" onclick="yulan(this)"></td>
 				<td style="white-space: normal;text-overflow:ellipsis;overflow:hidden;font-size:12px;text-decoration:underline;width:40%;"><?php echo ($vv["link"]); ?></td>
-				<td>
-					<div class="code" data-toggle="tooltip" data-placement="bottom" title="点击修改排序" onclick="changeCode(this)"><?php echo ($vv["code"]); ?></div>
-					<div class="form-inline" style="display:none;">
-					<input type="text" class="form-control" style="width:50px;" name="code" value="<?php echo ($vv["code"]); ?>">
-					<button class="btn btn-success btn-sm savecode" data="<?php echo ($vv["id"]); ?>" alt="ad">保存</button>
+				<td><!--修改排序-->
+					<!--<div class="code" data-toggle="tooltip" data-placement="bottom" title="点击修改排序" onclick="changeCode(this)"><?php echo ($vv["code"]); ?></div>-->
+					<div class="code" data-toggle="tooltip" data-placement="bottom" style="color:#fff;"><?php echo ($vv["code"]); ?></div>
+					<div class="form-inline" style="display:block;">
+						<!--<input type="text" class="form-control" style="width:50px;" name="code" value="<?php echo ($vv["code"]); ?>">
+						<button class="btn btn-success btn-sm savecode" data="<?php echo ($vv["id"]); ?>" alt="ad">保存</button>-->
+						<button class="btn btn-success btn-sm savecode" onclick="updatead(this,'<?php echo ($vv["id"]); ?>','ad')" data="<?php echo ($vv["id"]); ?>" alt="ad" title="点击修改排序">保存</button>
 					</div>
 					</td>
 				<td class="text-right">
@@ -185,6 +190,7 @@ body {
 			  $('[data-toggle="tooltip"]').tooltip()
 			})
 			function changeCode(obj){
+			
 				$(obj).css("display","none");
 				$(obj).next().next().css("display","block");
 			}
@@ -217,10 +223,10 @@ body {
 				}, function(){
 				});
 				
-			}
-			function update(obj,id,type,code){
-			
-			$a=document.getElementById("code").value;
+			}//排序方法
+			function update(obj,id,type){
+			var a=document.getElementById("code").value;
+			alert('你确定要把排序值改为'+a);
 				layer.confirm('确定要修改这条数据吗？', {
 				  btn: ['确定','取消'] //按钮
 				}, function(){
@@ -228,10 +234,36 @@ body {
 						type:'post',
 						url:"<?php echo U('change_shop_bannar');?>",
 						dataType:'json',
-						data:{'id':id,'type':type,'code':$a},
+						data:{'id':id,'type':type,'code':a},
 						success:function(){
 							layer.msg('修改成功', {icon: 1});
-							$(obj).parent().parent().remove();
+							window.location.href="setting.html";
+						//	$(obj).parent().parent().remove();
+						},
+						error:function(){
+							layer.msg('通信通道发生错误！刷新页面重试！');
+						}
+					});
+				}, function(){
+				  
+				});
+				
+			}
+			function updatead(obj,id,type){
+			var a=document.getElementById("ad").value;
+			alert('你确定要把排序值改为'+a);
+				layer.confirm('确定要修改这条数据吗？', {
+				  btn: ['确定','取消'] //按钮
+				}, function(){
+				  $.ajax({
+						type:'post',
+						url:"<?php echo U('change_shop_bannar');?>",
+						dataType:'json',
+						data:{'id':id,'type':type,'code':a},
+						success:function(){
+							layer.msg('修改成功', {icon: 1});
+							window.location.href="setting.html";
+						//	$(obj).parent().parent().remove();
 						},
 						error:function(){
 							layer.msg('通信通道发生错误！刷新页面重试！');
