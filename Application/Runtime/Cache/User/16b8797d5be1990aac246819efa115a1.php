@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,12 +11,12 @@
 	<meta name="description" content="会员结算系统">
 
 	<title>移动结算平台</title>
-	<link href="__PUBLIC__/css/jquery.mobile.custom.structure.min.css"  rel="stylesheet" />
-	<link href="__PUBLIC__/bootstrap/css/bootstrap.min.css"  rel="stylesheet" />
-	<link href="__PUBLIC__/css/engine.css"  rel="stylesheet" />
+	<link href="/Public/css/jquery.mobile.custom.structure.min.css"  rel="stylesheet" />
+	<link href="/Public/bootstrap/css/bootstrap.min.css"  rel="stylesheet" />
+	<link href="/Public/css/engine.css"  rel="stylesheet" />
 
-	<script type="text/javascript" src="__PUBLIC__/js/mtopt-3.0-min.js" ></script>
-	<script type="text/javascript" src="__PUBLIC__/js/jquery-2.1.3.min.js" ></script>
+	<script type="text/javascript" src="/Public/js/mtopt-3.0-min.js" ></script>
+	<script type="text/javascript" src="/Public/js/jquery-2.1.3.min.js" ></script>
 	<script type="text/javascript">
         $.browser = $.browser || {};
         $.browser.msie = false;
@@ -37,9 +37,9 @@
 		.form-title img{width:200px;}
 		.form-control{margin-bottom:1.8em;height:2.8em;}
 	</style>
-	<script type="text/javascript" src="__PUBLIC__/js/jquery.mobile.custom.js" ></script>
-	<script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js" ></script>
-	<script type="text/javascript" src="__PUBLIC__/js/engine.js" ></script>
+	<script type="text/javascript" src="/Public/js/jquery.mobile.custom.js" ></script>
+	<script type="text/javascript" src="/Public/js/bootstrap.min.js" ></script>
+	<script type="text/javascript" src="/Public/js/engine.js" ></script>
 </head>
 <body>
 <!--标题样式-->
@@ -53,11 +53,11 @@
     </style>
 
 <div class="list-group" style="margin-top:6px;"  style="width:300px;">
-    <a class="list-group-item"  style="width:300px;">会员编号：{$user_info.user_name}</a>
-    <a class="list-group-item"  style="width:300px;">奖金积分：{$user_info.jjb}</a>
-    <a class="list-group-item"  style="width:300px;">购物积分：{$user_info.gwb}</a>
+    <a class="list-group-item"  style="width:300px;">会员编号：<?php echo ($user_info["user_name"]); ?></a>
+    <a class="list-group-item"  style="width:300px;">奖金积分：<?php echo ($user_info["jjb"]); ?></a>
+    <a class="list-group-item"  style="width:300px;">购物积分：<?php echo ($user_info["gwb"]); ?></a>
     <a class="list-group-item"  style="width:300px;">转换比例：100%</a>
-    <a class="list-group-item"  style="width:300px;">可转数量：{$user_info.jjb}</a>
+    <a class="list-group-item"  style="width:300px;">可转数量：<?php echo ($user_info["jjb"]); ?></a>
 </div>
 <div class="pg-form">
     <label class="control-label">转换金额</label>

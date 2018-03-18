@@ -57,11 +57,11 @@
 
 <div class="list-group" style="margin-top:0.8em;">
     <!-- <a href="/Deal/deposit" class="list-group-item"><span class="badge">费率：0%</span><span class="glyphicon glyphicon-log-in" style="color:#008fe0;"></span>充值</a> -->
-    <a href="/User/Deal/withdraw" class="list-group-item"><span class="badge" style="background:red;">费率：<?php echo ($bonus_info["tx_sxf"]); ?>%</span><span class="glyphicon glyphicon-log-out" style="color:#008fe0"></span>提现</a>
-	<a href="/User/Deal/withdrawlists" class="list-group-item"><span class="glyphicon glyphicon-calendar" style="color:#fdaf5a;"></span>提现明细</a>
-	<!--<a href="/User/Deal/transfer" class="list-group-item"><span class="badge">费率：0%</span><span class="glyphicon glyphicon-transfer" style="color:#008fe0;"></span>转账</a>-->
-    <a href="/User/Deal/lists" class="list-group-item"><span class="glyphicon glyphicon-list-alt" style="color:#fdaf5a;"></span>资金明细</a>
-    <a href="/User/Deal/recordlists" class="list-group-item"><span class="glyphicon glyphicon-calendar" style="color:#fdaf5a;"></span>奖金明细</a>
+    <a href="/User/Deal/withdraw" class="list-group-item" style="width:250px;"><span class="badge" style="background:red;">费率：<?php echo ($bonus_info["tx_sxf"]); ?>%</span><span class="glyphicon glyphicon-log-out" style="color:#008fe0"></span>提现</a>
+	<a href="/User/Deal/withdrawlists" class="list-group-item" style="width:250px;"><span class="glyphicon glyphicon-calendar" style="color:#fdaf5a;"></span>提现明细</a>
+	<!--<a href="/User/Deal/transfer" class="list-group-item" style="width:250px;"><span class="badge">费率：0%</span><span class="glyphicon glyphicon-transfer" style="color:#008fe0;"></span>转账</a>-->
+    <a href="/User/Deal/lists" class="list-group-item" style="width:250px;"><span class="glyphicon glyphicon-list-alt" style="color:#fdaf5a;"></span>资金明细</a>
+    <a href="/User/Deal/recordlists" class="list-group-item" style="width:250px;"><span class="glyphicon glyphicon-calendar" style="color:#fdaf5a;"></span>奖金明细</a>
 </div>
 <!-- 
 <div class="list-group">
@@ -71,10 +71,10 @@
 </div>
  -->
 <div class="list-group">
-    <a class="list-group-item" href="/User/User/basicedit"><span class="glyphicon glyphicon-edit" style="color:#f15a4a;"></span>编辑资料</a>
-    <a class="list-group-item" href="/User/User/safeinfo"><span class="glyphicon glyphicon-cog" style="color:#f15a4a;"></span>密码修改</a>
+    <a class="list-group-item" href="/User/User/basicedit" style="width:250px;"><span class="glyphicon glyphicon-edit" style="color:#f15a4a;"></span>编辑资料</a>
+    <a class="list-group-item" href="/User/User/safeinfo" style="width:250px;"><span class="glyphicon glyphicon-cog" style="color:#f15a4a;"></span>密码修改</a>
     <!--<a class="list-group-item" href="/Member/relationlists"><span class="glyphicon glyphicon-retweet" style="color:#29ab91;"></span>关联帐号</a> -->
-    <a class="list-group-item" href="/User/Product/place"><span class="glyphicon glyphicon-map-marker" style="color:#29ab91;"></span>收货地址</a>
+    <a class="list-group-item" href="/User/Product/place" style="width:250px;"><span class="glyphicon glyphicon-map-marker" style="color:#29ab91;"></span>收货地址</a>
 </div>
 <script type="text/javascript">
     var pck = {

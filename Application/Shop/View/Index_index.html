@@ -101,7 +101,7 @@
         <volist name="ad" id="v">
           <a href="{$v.link}">
             <div style="padding:5px;background:#fff;">
-              <img src="/{$v.pic_url}" width="100%">
+              <img src="/{$v.pic_url}" >
             </div>
           </a>
         </volist>
@@ -127,8 +127,8 @@
                 <volist name="v['info']" id="k">
                   <dl style="margin-bottom:10px;">
                     <dt>
-                      <a href="{:U(good)}?good_id={$k.good_id}" data-url="">
-                        <img class="fadeInImg" _src="" src="/{$k.pic_url}">
+                      <a style="width:300px; height:250px;" href="{:U(good)}?good_id={$k.good_id}" data-url="">
+                        <img class="fadeInImg" _src="" src="/{$k.pic_url}"  style="width:250px; margin:30px;">
                         <if condition="$k['best'] eq 1 ">
                           <span class="special">
                             精品

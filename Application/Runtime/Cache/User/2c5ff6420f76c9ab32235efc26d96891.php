@@ -43,18 +43,33 @@
 </head>
 <body>
 <!--标题样式-->
-<div class="mn-content ui-page ui-page-theme-a ui-page-active" data-role="page" data-url="/User/Deal/convert" data-external-page="true" tabindex="0" style="min-height: 257.2px;">
-    <style type="text/css">
-        .list-group-item .glyphicon {color: #666;margin-right: 8px;}
-    </style>
-
-<div class="list-group" style="width:250px;">
-    <a class="list-group-item" href="/User/Deal/convertinside"><span class="glyphicon glyphicon-retweet" ></span>奖金币转换购物币</a>
-    <!-- <a class="list-group-item" href="/User/Deal/convertcredit"><span class="glyphicon glyphicon-retweet"></span>奖金币转换购物币</a> -->
+<div class="mn-content ui-page ui-page-theme-a ui-page-active" data-role="page" data-url="/User/Deal/lists" data-external-page="true" tabindex="0" style="min-height: 635.2px;">
+<div class="btn-group btn-group-justified" role="group" aria-label="...">
+    <div class="btn-group" role="group">
+        <a href="/User/Deal/lists" class="btn btn-danger">列表</a>
+    </div>
+    <div class="btn-group" role="group">
+        <a href="/User/Deal/classify" class="btn btn-default">筛选</a>
+    </div>
 </div>
+<div class="list-group" style="margin-top:12px;">
+	<?php if(is_array($info)): $kk = 0; $__LIST__ = $info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($kk % 2 );++$kk;?><a class="list-group-item" href="/User/deal/detail?dealid=<?php echo ($vv["id"]); ?>">
+                    <span class="badge badge-success">
+                        +<?php echo ($vv["fee"]); ?>
+                    </span>
+          			<?php echo ($vv["bdate"]); ?></td>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+          			<?php echo ($vv["desc"]); ?>
+                 </a><?php endforeach; endif; else: echo "" ;endif; ?>
+</div>
+	<ul class="pager"><?php echo ($page); ?></ul>
+
+<!--隐藏域开始-->
+
+<!--隐藏域结束-->
 <script type="text/javascript">
     var pck = {
-        title: "币种转换"
+        title: "资金明细"
     }
 </script>
 </div>

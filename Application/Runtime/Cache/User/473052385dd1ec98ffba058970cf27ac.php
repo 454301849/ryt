@@ -52,7 +52,7 @@
 </nav>
 <div class="mn-content" data-role="page">
 	<div class="list-group">
-		<a href="#" class="list-group-item" style="font-weight:bold;">
+		<a href="#" class="list-group-item" style="font-weight:bold;width:300px;">
 			暂无
 		</a>
 		<!--<a href="/Notice/list?classify=101" class="list-group-item">购物流程</a>-->

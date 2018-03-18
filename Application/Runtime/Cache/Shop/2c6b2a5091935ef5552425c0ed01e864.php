@@ -151,7 +151,7 @@ wx.ready(function(){
         <!--广告-->
         <?php if(is_array($ad)): $i = 0; $__LIST__ = $ad;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><a href="<?php echo ($v["link"]); ?>">
             <div style="padding:5px;background:#fff;">
-              <img src="/<?php echo ($v["pic_url"]); ?>" width="100%">
+              <img src="/<?php echo ($v["pic_url"]); ?>" >
             </div>
           </a><?php endforeach; endif; else: echo "" ;endif; ?>
         </volist>
@@ -173,8 +173,8 @@ wx.ready(function(){
               <div class="item_con clearfix" page_click_button="单品">
                 <?php if(is_array($v['info'])): $i = 0; $__LIST__ = $v['info'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$k): $mod = ($i % 2 );++$i;?><dl style="margin-bottom:10px;">
                     <dt>
-                      <a href="<?php echo U(good);?>?good_id=<?php echo ($k["good_id"]); ?>" data-url="">
-                        <img class="fadeInImg" _src="" src="/<?php echo ($k["pic_url"]); ?>">
+                      <a style="width:300px; height:250px;" href="<?php echo U(good);?>?good_id=<?php echo ($k["good_id"]); ?>" data-url="">
+                        <img class="fadeInImg" _src="" src="/<?php echo ($k["pic_url"]); ?>"  style="width:250px; margin:30px;">
                         <?php if($k['best'] == 1 ): ?><span class="special">
                             精品
                           </span>

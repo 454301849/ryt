@@ -45,34 +45,35 @@
 <!--标题样式-->
 <div class="mn-content ui-page ui-page-theme-a ui-page-active" data-role="page" data-url="/User/User/basicinfo" data-external-page="true" tabindex="0" style="">
 <div class="list-group">
-    <a class="list-group-item">编号：<?php echo ($user_info["user_name"]); ?></a>
-    <a class="list-group-item">等级：<?php echo ($level_info["name"]); ?></a>
-    <a class="list-group-item">安置位置：<?php echo ($user_info['chl'] > 1 ?'A区':'B区'); ?></a>
-    <a class="list-group-item">单类型：<?php if(($user_info['single'] == 1)): ?>实单<?php elseif($user_info['single'] == 2): ?>空单<?php else: ?>回填单<?php endif; ?></a>
-    <a class="list-group-item">姓名：<?php echo ($user_info["truename"]); ?></a>
-    <a class="list-group-item">身份证：<?php echo ($user_info["idcard"]); ?></a>
-    <a class="list-group-item">推荐人：<?php echo ($user_info['rusername']?$user_info['rusername']:'-'); ?></a>
-    <a class="list-group-item">安置人：<?php echo ($user_info['pusername']?$user_info['pusername']:'-'); ?></a>
-    <a class="list-group-item">代理中心：<?php echo ($user_info["centername"]); ?></a>
-    <a class="list-group-item">创建时间：<?php echo (date('Y-m-d',$user_info["reg_time"])); ?></a>
+    <a class="list-group-item" style="width:300px;">编号：<?php echo ($user_info["user_name"]); ?></a>
+    <a class="list-group-item"  style="width:300px;">等级：<?php echo ($level_info["name"]); ?></a>
+    <a class="list-group-item"  style="width:300px;">安置位置：<?php echo ($user_info['chl'] > 1 ?'A区':'B区'); ?></a>
+    <a class="list-group-item"  style="width:300px;">单类型：<?php if(($user_info['single'] == 1)): ?>实单<?php elseif($user_info['single'] == 2): ?>空单<?php else: ?>回填单<?php endif; ?></a>
+    <a class="list-group-item"  style="width:300px;">姓名：<?php echo ($user_info["truename"]); ?></a>
+    <a class="list-group-item"  style="width:300px;">身份证：<?php echo ($user_info["idcard"]); ?></a>
+    <a class="list-group-item"  style="width:300px;">推荐人：<?php echo ($user_info['rusername']?$user_info['rusername']:'-'); ?></a>
+    <a class="list-group-item"  style="width:300px;">安置人：<?php echo ($user_info['pusername']?$user_info['pusername']:'-'); ?></a>
+     <a class="list-group-item" style="width:300px;">代理中心：<?php echo ($user_info["centername"]); ?></a>
+     <a class="list-group-item" style="width:300px;">创建时间：<?php echo (date('Y-m-d',$user_info["reg_time"])); ?></a>
 </div>
 <div class="list-group" style="margin-top:6px;">
-    <a class="list-group-item">开户银行：<?php echo ($bank_info["name"]); ?></a>
-    <a class="list-group-item">开户卡号：<?php echo ($user_info["bankno"]); ?></a>
-    <a class="list-group-item">开户地址：<?php echo ($user_info["bankname"]); ?></a>
-    <a class="list-group-item">开户姓名：<?php echo ($user_info["bankuser"]); ?></a>
-    <a class="list-group-item">手机：<?php echo ($user_info["moblie"]); ?></a>
-    <a class="list-group-item">邮箱：<?php echo ($user_info["email"]); ?></a>
-    <a class="list-group-item">邮编：<?php echo ($user_info["zipcode"]); ?></a>
-    <a class="list-group-item">地址：<?php echo ($user_info["address"]); ?></a>
-    <a class="list-group-item">编号：<?php echo ($user_info["user_name"]); ?></a>
+     <a class="list-group-item" style="width:300px;">开户银行：<?php echo ($bank_info["name"]); ?></a>
+     <a class="list-group-item" style="width:300px;">开户卡号：<?php echo ($user_info["bankno"]); ?></a>
+     <a class="list-group-item" style="width:300px;">开户地址：<?php echo ($user_info["bankname"]); ?></a>
+     <a class="list-group-item" style="width:300px;">开户姓名：<?php echo ($user_info["bankuser"]); ?></a>
+     <a class="list-group-item" style="width:300px;">手机：<?php echo ($user_info["moblie"]); ?></a>
+     <a class="list-group-item" style="width:300px;">邮箱：<?php echo ($user_info["email"]); ?></a>
+     <a class="list-group-item" style="width:300px;">邮编：<?php echo ($user_info["zipcode"]); ?></a>
+     <a class="list-group-item" style="width:300px;">地址：<?php echo ($user_info["address"]); ?></a>
+     <a class="list-group-item" style="width:300px;">编号：<?php echo ($user_info["user_name"]); ?></a>
 </div>
 <div class="btn-group btn-group-justified" role="group" aria-label="...">
-    <div class="btn-group" role="group">
-        <a href="/User/User/basicedit" data-transition="pop" class="btn btn-default btn-danger">编辑资料</a>
+    <div class="btn-group" role="group" >
+        <a href="/User/User/basicedit" data-transition="pop" class="btn btn-default btn-danger" style="width:200px;">编辑资料</a>
+		 <a href="/User/Center/index" class="btn btn-default" style="width:200px;">返回</a>
     </div>
     <div class="btn-group" role="group">
-        <a href="/User/Center/index" class="btn btn-default">返回</a>
+       
     </div>
 </div>
 <script type="text/javascript">

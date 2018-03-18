@@ -88,8 +88,8 @@ wx.ready(function(){
 	to {top:100%;width:10%;left:10%;}
 	}
 </style>
-<div id="catemove" class="addcategrey">
-	<img src="/<?php echo ($pic_url[0]['pic_url']); ?>" width="80%">
+<div id="catemove" class="addcategrey" style="width:600px;">
+	<img src="/<?php echo ($pic_url[0]['pic_url']); ?>" width="50%">
 </div>
 <header id="header" class="u-header clearfix">
 	<div class="u-hd-left f-left">
@@ -109,7 +109,7 @@ wx.ready(function(){
 			<ul style="list-style: none outside none; transition-duration: 500ms;">
 				<?php if(is_array($pic_url)): $k = 0; $__LIST__ = $pic_url;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($k % 2 );++$k;?><li>
 					<a onClick="return false;">
-						<img src="/<?php echo ($v["pic_url"]); ?>" alt="2" style="width:100%;">
+						<img src="/<?php echo ($v["pic_url"]); ?>" alt="2" style="width:30% ">
 					</a>
 				</li><?php endforeach; endif; else: echo "" ;endif; ?>   
 			</ul>

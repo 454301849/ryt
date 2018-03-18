@@ -54,7 +54,7 @@
 			<?php if(is_array($pid_info)): $kk = 0; $__LIST__ = $pid_info;if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($kk % 2 );++$kk;?><tr>
 				<td><?php echo ($vv["cate_name"]); ?></td>
 				<td style="font-size:14px;color:#fff;"><?php if($vv["pid"] == 0): ?>顶级分类<?php else: ?>二级分类<?php endif; ?></td>
-				<td ><img src="/<?php echo ($vv["pic_url"]); ?>" onclick="yulan(this)"></td>
+				<td ><img src="/<?php echo ($vv["pic_url"]); ?>" onclick="yulan(this)" style="width:145px;"></td>
 				<td><?php echo ($vv["code"]); ?></td>
 				<td>
 				<?php if($vv['is_show'] == 1): ?><i class="icon-check icon-large" data_id="<?php echo ($vv["is_show"]); ?>" data="is_show" alt="<?php echo ($vv["cate_id"]); ?>"></i>
