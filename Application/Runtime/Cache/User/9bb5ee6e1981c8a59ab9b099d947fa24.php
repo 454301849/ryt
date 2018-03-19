@@ -47,17 +47,18 @@
 	<style type="text/css">
 		.pg-form input,
 		.pg-form select{margin-bottom:1em;margin-top:1em;}
+		input{width:100px;}
 	</style>
 
 	<div class="pg-form">
 		<label class="control-label">会员编号</label>
-		<input id="id_" type="text" class="form-control" value="<?php echo ($user_code); ?>" placeholder="请输入会员编号"  disabled/>
+		<input  id="id_" type="text" class="form-control" value="<?php echo ($user_code); ?>" placeholder="请输入会员编号"  disabled   />
 		<label class="control-label">推荐人</label>
-		<input id="recmid_" type="text" class="form-control" placeholder="请输入推荐人编号" value="<?php echo ($recmid); ?>" />
+		<input id="recmid_" type="text" class="form-control input-sm" placeholder="请输入推荐人编号" value="<?php echo ($recmid); ?>" style="width:400px;" />
 		<label class="control-label">安置人</label>
-		<input id="parentid_" type="text" class="form-control" placeholder="请输入安置人编号" value="<?php echo ($parentid); ?>"/>
+		<input id="parentid_" type="text" class="form-control" placeholder="请输入安置人编号" value="<?php echo ($parentid); ?>" style="width:400px;"/>
 		<label class="control-label">代理中心</label>
-		<input id="centerid_" type="text" class="form-control" placeholder="请输入代理中心编号" value="<?php echo ($centerid); ?>" />
+		<input id="centerid_" type="text" class="form-control" placeholder="请输入代理中心编号" value="<?php echo ($centerid); ?>" style="width:400px;" />
 		<label class="control-label">安置位置</label>
 		<select id="area_" class="form-control" ></select>
 		<label class="control-label">单类型</label>
