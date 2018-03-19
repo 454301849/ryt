@@ -21,8 +21,7 @@ class ActionController extends Controller
     }
 
     function _initialize(){
-
-        if(session('admin_id') !=1 ){
+        if(session('admin_id') !=1){
             $rule=strtolower(MODULE_NAME.'/'.CONTROLLER_NAME.'/'.ACTION_NAME);
             $get_role_action = M("RoleUser")->alias('u')->join('LEFT JOIN wx_auth_access a on u.role_id=a.role_id')
                 ->where(array("user_id" => session('admin_id')))->field('a.rule_name')->select();
@@ -30,12 +29,12 @@ class ActionController extends Controller
             foreach ($get_role_action as $value) {
                 array_push($actions,$value['rule_name']);
             }
-
-            if(!in_array($rule,$actions)){
-                session(null);
-                $this->error('没有该访问权限，请重新登录', U('User/index'));
-            }
-
+			if(in_array($rule,$actions)){
+				if(!in_array($rule,$actions)){
+					session(null);
+					$this->error('没有该访问权限，请重新登录', U('User/index'));
+				}
+			}
         }
     }
 
