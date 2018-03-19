@@ -1795,3 +1795,1617 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
 
+[ 2018-03-19T10:01:19+08:00 ] ::1 /User/Center/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035189s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+
+[ 2018-03-19T10:01:19+08:00 ] ::1 /User/Center/builder_verify_img/KWPSYMIAWHNBHQUR
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+
+[ 2018-03-19T10:01:34+08:00 ] ::1 /User/Center/api_login_submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `wx_users` WHERE ( moblie= 'M001027' or user_name = 'M001027'  )  [ RunTime:0.0037s ]
+SQL: UPDATE `wx_users` SET `last_time`='1521424894' WHERE (  user_id = '1027'  ) [ RunTime:0.1605s ]
+SQL: SELECT `jjb` FROM `wx_users` WHERE (  user_id = '1027'  ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-03-19T10:01:34+08:00 ] ::1 /User/Center/builder_verify_img/SLPDEDTXPXYGTIEW
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+
+[ 2018-03-19T10:02:35+08:00 ] ::1 /User/Center/api_login_submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0362s ]
+
+[ 2018-03-19T10:02:35+08:00 ] ::1 /User/Center/builder_verify_img/RBYEBNXIXDQUHPIK
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+
+[ 2018-03-19T10:02:42+08:00 ] ::1 /User/Center/api_login_submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `wx_users` WHERE ( moblie= 'M001027' or user_name = 'M001027'  )  [ RunTime:0.0036s ]
+SQL: UPDATE `wx_users` SET `last_time`='1521424962' WHERE (  user_id = '1027'  ) [ RunTime:0.0482s ]
+SQL: SELECT `jjb` FROM `wx_users` WHERE (  user_id = '1027'  ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-03-19T10:02:43+08:00 ] ::1 /User/Center/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0197s ]
+SQL: SHOW COLUMNS FROM `wx_hbrecord` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `wx_ztrecord` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `wx_users` WHERE `user_id` = 1027 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `nickname` FROM `wx_users` WHERE `user_id` = 1026 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_daili_info` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `wx_daili_info`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2018-03-19T10:02:43+08:00 ] ::1 /User/Center/builder_verify_img/MAXGWKKLJVDDFJKI
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+
+[ 2018-03-19T10:44:30+08:00 ] ::1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0166s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M001027' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1027'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1027'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000875s ]
+
+[ 2018-03-19T10:45:00+08:00 ] ::1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0205s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M001027' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0094s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1027'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1027'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2018-03-19T10:52:59+08:00 ] ::1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0141s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M001027' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1027'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1027'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2018-03-19T10:53:21+08:00 ] ::1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0147s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M001027' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1027'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1027'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2018-03-19T10:53:49+08:00 ] ::1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001438s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0338s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M001027' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.1020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1027'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1027'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2018-03-19T10:53:58+08:00 ] ::1 /User/User/express
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2018-03-19T10:54:09+08:00 ] ::1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0980s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M001027' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1027'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1027'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2018-03-19T10:54:11+08:00 ] ::1 /User/Product/orderdetail?id=86
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0508s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( order_id = '86'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_detail` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `wx_shop_order_detail` WHERE ( order_sn='201811531521428020' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2018-03-19T10:54:15+08:00 ] ::1 /User/Product/api_confirm_recipient
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( order_sn = '201811531521428020'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_shop_order` SET `state`='2' WHERE (  order_sn = '201811531521428020'  ) [ RunTime:0.0442s ]
+SQL: UPDATE `wx_users` SET `buynum`=buynum+1 WHERE (  user_id = '1027'  ) [ RunTime:0.0337s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1027' and  state=2 and is_true=1  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1027'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_users` SET `buymoney`='500.00' WHERE ( user_id = '1027' ) [ RunTime:0.0318s ]
+SQL: SHOW COLUMNS FROM `wx_bonus_info` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1026'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_broke_record` [ RunTime:0.0117s ]
+SQL: INSERT INTO `wx_broke_record` (`user_id`,`user_name`,`yuser_id`,`yuser_name`,`type`,`fee`,`tx`,`jf`,`ax`,`sh`,`bdate`,`desc`) VALUES ('1026','M001026','1027','M001027','8','25','22.5','2.5','0','0','2018-03-19 10:54:15','购物推荐奖') [ RunTime:0.0494s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_users` WHERE ( b1>0 or b2>0 or b3>0 or b4>0 or b5>0 or b6>0 or b7>0 or b8>0 )  [ RunTime:0.0038s ]
+NOTIC: [8] Undefined variable: member_update D:\phpStudy\WWW\slh\Application\User\Controller\PrizeController.class.php 第 383 行.
+SQL: SHOW COLUMNS FROM `wx_systemyeji` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `wx_systemyeji` WHERE year(ydate) = '2018' AND month(ydate) = '03' AND day(ydate) = '19' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_systemyeji` SET `xzhy`='0',`zhy`='12',`xzdan`='0',`zdan`='12',`xzyj`='0',`zyj`='83760',`ff`='0',`zff`='29595',`txjj`='0',`ztxjj`='69088.32',`tx`='0',`cz`='0',`dd`='600' WHERE (  id = '7' ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1027'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0075s ]
+SQL: SELECT MAX(jd_layer) AS tp_max FROM `wx_memberlevel` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE ( user_id in (1,3,7,15,31,63,127,255,511,1023,1025,1026) ) ORDER BY user_id desc LIMIT 0,20   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1027'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '2'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '3'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '2'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '3'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE ( b1>0 or b2>0 or b3>0 or b4>0 or b5>0 or b6>0 or b7>0 or b8>0 )  [ RunTime:0.0036s ]
+NOTIC: [8] Undefined variable: member_update D:\phpStudy\WWW\slh\Application\User\Controller\PrizeController.class.php 第 383 行.
+SQL: SELECT * FROM `wx_systemyeji` WHERE year(ydate) = '2018' AND month(ydate) = '03' AND day(ydate) = '19' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `wx_systemyeji` SET `xzhy`='0',`zhy`='12',`xzdan`='0',`zdan`='12',`xzyj`='0',`zyj`='83760',`ff`='0',`zff`='29595',`txjj`='0',`ztxjj`='69088.32',`tx`='0',`cz`='0',`dd`='600' WHERE (  id = '7' ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_systemyeji` WHERE year(ydate) = '2018' AND month(ydate) = '03' AND day(ydate) = '19' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `wx_systemyeji` SET `xzhy`='0',`zhy`='12',`xzdan`='0',`zdan`='12',`xzyj`='0',`zyj`='83760',`ff`='0',`zff`='29595',`txjj`='0',`ztxjj`='69088.32',`tx`='0',`cz`='0',`dd`='1100' WHERE (  id = '7' ) [ RunTime:0.0002s ]
+
+[ 2018-03-19T10:54:16+08:00 ] ::1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0304s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M001027' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0076s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1027'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1027'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2018-03-19T10:54:18+08:00 ] ::1 /User/Product/orderdetail?id=86
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001347s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( order_id = '86'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_detail` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `wx_shop_order_detail` WHERE ( order_sn='201811531521428020' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2018-03-19T10:54:51+08:00 ] ::1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0411s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M001027' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1027'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1027'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000833s ]
+
+[ 2018-03-19T10:54:57+08:00 ] ::1 /User/User/express
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2018-03-19T10:55:12+08:00 ] ::1 /User/User/express
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000654s ]
+
+[ 2018-03-19T10:55:23+08:00 ] ::1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0181s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M001027' ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0105s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1027'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1027'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2018-03-19T10:55:27+08:00 ] ::1 /User/Product/orderdetail?id=87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0498s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( order_id = '87'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_detail` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `wx_shop_order_detail` WHERE ( order_sn='201811541521428076' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2018-03-19T10:55:30+08:00 ] ::1 /User/Product/api_confirm_recipient
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( order_sn = '201811541521428076'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_shop_order` SET `state`='2' WHERE (  order_sn = '201811541521428076'  ) [ RunTime:0.0728s ]
+SQL: UPDATE `wx_users` SET `buynum`=buynum+1 WHERE (  user_id = '1027'  ) [ RunTime:0.0282s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1027' and  state=2 and is_true=1  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1027'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_users` SET `buymoney`='200.00' WHERE ( user_id = '1027' ) [ RunTime:0.0328s ]
+SQL: SHOW COLUMNS FROM `wx_bonus_info` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1026'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_broke_record` [ RunTime:0.0079s ]
+SQL: INSERT INTO `wx_broke_record` (`user_id`,`user_name`,`yuser_id`,`yuser_name`,`type`,`fee`,`tx`,`jf`,`ax`,`sh`,`bdate`,`desc`) VALUES ('1026','M001026','1027','M001027','8','10','9','1','0','0','2018-03-19 10:55:30','购物推荐奖') [ RunTime:0.0375s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_users` WHERE ( b1>0 or b2>0 or b3>0 or b4>0 or b5>0 or b6>0 or b7>0 or b8>0 )  [ RunTime:0.0036s ]
+NOTIC: [8] Undefined variable: member_update D:\phpStudy\WWW\slh\Application\User\Controller\PrizeController.class.php 第 383 行.
+SQL: SHOW COLUMNS FROM `wx_systemyeji` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `wx_systemyeji` WHERE year(ydate) = '2018' AND month(ydate) = '03' AND day(ydate) = '19' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_systemyeji` SET `xzhy`='0',`zhy`='12',`xzdan`='0',`zdan`='12',`xzyj`='0',`zyj`='83760',`ff`='0',`zff`='29595',`txjj`='0',`ztxjj`='69088.32',`tx`='0',`cz`='0',`dd`='1100' WHERE (  id = '7' ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1027'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0076s ]
+SQL: SELECT MAX(jd_layer) AS tp_max FROM `wx_memberlevel` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE ( user_id in (1,3,7,15,31,63,127,255,511,1023,1025,1026) ) ORDER BY user_id desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1027'  ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '2'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '3'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '2'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '3'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE ( b1>0 or b2>0 or b3>0 or b4>0 or b5>0 or b6>0 or b7>0 or b8>0 )  [ RunTime:0.0037s ]
+NOTIC: [8] Undefined variable: member_update D:\phpStudy\WWW\slh\Application\User\Controller\PrizeController.class.php 第 383 行.
+SQL: SELECT * FROM `wx_systemyeji` WHERE year(ydate) = '2018' AND month(ydate) = '03' AND day(ydate) = '19' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `wx_systemyeji` SET `xzhy`='0',`zhy`='12',`xzdan`='0',`zdan`='12',`xzyj`='0',`zyj`='83760',`ff`='0',`zff`='29595',`txjj`='0',`ztxjj`='69088.32',`tx`='0',`cz`='0',`dd`='1100' WHERE (  id = '7' ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_systemyeji` WHERE year(ydate) = '2018' AND month(ydate) = '03' AND day(ydate) = '19' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `wx_systemyeji` SET `xzhy`='0',`zhy`='12',`xzdan`='0',`zdan`='12',`xzyj`='0',`zyj`='83760',`ff`='0',`zff`='29595',`txjj`='0',`ztxjj`='69088.32',`tx`='0',`cz`='0',`dd`='1300' WHERE (  id = '7' ) [ RunTime:0.0003s ]
+
+[ 2018-03-19T10:55:31+08:00 ] ::1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0147s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M001027' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1027'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1027'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038216s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2018-03-19T10:55:32+08:00 ] ::1 /User/Product/orderdetail?id=87
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( order_id = '87'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_detail` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `wx_shop_order_detail` WHERE ( order_sn='201811541521428076' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2018-03-19T10:55:37+08:00 ] ::1 /User/Product/orderdetail?id=85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0736s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( order_id = '85'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_detail` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `wx_shop_order_detail` WHERE ( order_sn='201811521521427991' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2018-03-19T10:55:39+08:00 ] ::1 /User/Product/api_confirm_recipient
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0316s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( order_sn = '201811521521427991'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_shop_order` SET `state`='2' WHERE (  order_sn = '201811521521427991'  ) [ RunTime:0.0708s ]
+SQL: UPDATE `wx_users` SET `buynum`=buynum+1 WHERE (  user_id = '1027'  ) [ RunTime:0.0282s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1027' and  state=2 and is_true=1  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1027'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_users` SET `buymoney`='100.00' WHERE ( user_id = '1027' ) [ RunTime:0.0328s ]
+SQL: SHOW COLUMNS FROM `wx_bonus_info` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1026'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_broke_record` [ RunTime:0.0081s ]
+SQL: INSERT INTO `wx_broke_record` (`user_id`,`user_name`,`yuser_id`,`yuser_name`,`type`,`fee`,`tx`,`jf`,`ax`,`sh`,`bdate`,`desc`) VALUES ('1026','M001026','1027','M001027','8','5','4.5','0.5','0','0','2018-03-19 10:55:39','购物推荐奖') [ RunTime:0.0527s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_users` WHERE ( b1>0 or b2>0 or b3>0 or b4>0 or b5>0 or b6>0 or b7>0 or b8>0 )  [ RunTime:0.0036s ]
+NOTIC: [8] Undefined variable: member_update D:\phpStudy\WWW\slh\Application\User\Controller\PrizeController.class.php 第 383 行.
+SQL: SHOW COLUMNS FROM `wx_systemyeji` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `wx_systemyeji` WHERE year(ydate) = '2018' AND month(ydate) = '03' AND day(ydate) = '19' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_systemyeji` SET `xzhy`='0',`zhy`='12',`xzdan`='0',`zdan`='12',`xzyj`='0',`zyj`='83760',`ff`='0',`zff`='29595',`txjj`='0',`ztxjj`='69088.32',`tx`='0',`cz`='0',`dd`='1300' WHERE (  id = '7' ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1027'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0074s ]
+SQL: SELECT MAX(jd_layer) AS tp_max FROM `wx_memberlevel` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE ( user_id in (1,3,7,15,31,63,127,255,511,1023,1025,1026) ) ORDER BY user_id desc LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1027'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '2'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '3'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '2'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '3'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE ( b1>0 or b2>0 or b3>0 or b4>0 or b5>0 or b6>0 or b7>0 or b8>0 )  [ RunTime:0.0038s ]
+NOTIC: [8] Undefined variable: member_update D:\phpStudy\WWW\slh\Application\User\Controller\PrizeController.class.php 第 383 行.
+SQL: SELECT * FROM `wx_systemyeji` WHERE year(ydate) = '2018' AND month(ydate) = '03' AND day(ydate) = '19' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `wx_systemyeji` SET `xzhy`='0',`zhy`='12',`xzdan`='0',`zdan`='12',`xzyj`='0',`zyj`='83760',`ff`='0',`zff`='29595',`txjj`='0',`ztxjj`='69088.32',`tx`='0',`cz`='0',`dd`='1300' WHERE (  id = '7' ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_systemyeji` WHERE year(ydate) = '2018' AND month(ydate) = '03' AND day(ydate) = '19' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `wx_systemyeji` SET `xzhy`='0',`zhy`='12',`xzdan`='0',`zdan`='12',`xzyj`='0',`zyj`='83760',`ff`='0',`zff`='29595',`txjj`='0',`ztxjj`='69088.32',`tx`='0',`cz`='0',`dd`='1400' WHERE (  id = '7' ) [ RunTime:0.0002s ]
+
+[ 2018-03-19T10:55:40+08:00 ] ::1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0457s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M001027' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1027'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1027'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037381s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2018-03-19T10:55:41+08:00 ] ::1 /User/Product/orderdetail?id=85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0284s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( order_id = '85'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_detail` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `wx_shop_order_detail` WHERE ( order_sn='201811521521427991' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2018-03-19T10:56:10+08:00 ] ::1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0135s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M001027' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0077s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1027'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1027'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2018-03-19T11:12:13+08:00 ] ::1 /User/User/memberlevel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0350s ]
+SQL: SELECT * FROM `wx_memberlevel`  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000626s ]
+
+[ 2018-03-19T11:12:14+08:00 ] ::1 /User/User/memberarea
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+NOTIC: [8] Undefined index: register_area_default D:\phpStudy\WWW\slh\Application\User\Controller\UserController.class.php 第 311 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2018-03-19T11:12:15+08:00 ] ::1 /User/User/bank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `wx_bank` [ RunTime:0.0259s ]
+SQL: SELECT * FROM `wx_bank`  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2018-03-19T11:12:16+08:00 ] ::1 /User/User/place
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `wx_region` [ RunTime:0.0343s ]
+SQL: SELECT * FROM `wx_region` WHERE (  PARENT_ID = '1' )  [ RunTime:0.0023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000743s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2018-03-19T11:12:47+08:00 ] ::1 /User/User/place
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `wx_region` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `wx_region` WHERE (  PARENT_ID = '19' )  [ RunTime:0.0022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000654s ]
+
+[ 2018-03-19T11:12:50+08:00 ] ::1 /User/User/place
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `wx_region` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `wx_region` WHERE (  PARENT_ID = '229' )  [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2018-03-19T11:13:03+08:00 ] ::1 /User/User/api_register_submit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_name = 'M00001033' ) LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_name = 'M000001' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: single D:\phpStudy\WWW\slh\Application\User\Controller\UserController.class.php 第 87 行.
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE (  idcard = '370123199303032222' ) LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `wx_users` WHERE (  bankno = '1238980480222' ) LIMIT 1   [ RunTime:0.0043s ]
+SQL: SELECT * FROM `wx_users` WHERE (  moblie = '22222222222' ) LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_name = 'M001030' ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_name = 'M001030' ) LIMIT 1   [ RunTime:0.0031s ]
+
+[ 2018-03-19T11:13:10+08:00 ] ::1 /User/User/api_register_submit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0179s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_name = 'M00001033' ) LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_name = 'M000001' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: single D:\phpStudy\WWW\slh\Application\User\Controller\UserController.class.php 第 87 行.
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE (  idcard = '370123199303032222' ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wx_users` WHERE (  bankno = '1238980480222' ) LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT * FROM `wx_users` WHERE (  moblie = '22222222222' ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_name = 'M001030' ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_name = 'M001030' ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: INSERT INTO `wx_users` (`user_name`,`centerid`,`centername`,`level`,`single`,`lsk`,`password`,`second_password`,`truename`,`idcard`,`bankid`,`bankno`,`bankuser`,`bankname`,`moblie`,`email`,`zipcode`,`address`,`place`,`reg_time`,`after_time`,`pid`,`rusername`,`repath`,`rlevel`,`area`,`parentid`,`pusername`,`ppath`,`plevel`) VALUES ('M00001033','1','M000001','1','1','1980','21232f297a57a5a743894a0e4a801fc3','21232f297a57a5a743894a0e4a801fc3','子轩','370123199303032222','1','1238980480222','你还','北京朝阳区','22222222222','','','','2288','1521429190','1521429190','1030','M001030','1,2,4,8,1025,1026,1027,1030,','8','2','1030','M001030','1,3,7,15,31,63,127,255,511,1023,1025,1026,1027,1030,','14') [ RunTime:0.0717s ]
+SQL: UPDATE `wx_users` SET `chr`='1033' WHERE (  user_name = 'M001030'  ) [ RunTime:0.0287s ]
+
+[ 2018-03-19T11:13:59+08:00 ] ::1 /User/center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0191s ]
+SQL: SHOW COLUMNS FROM `wx_hbrecord` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `wx_ztrecord` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `wx_users` WHERE `user_id` = 1027 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `nickname` FROM `wx_users` WHERE `user_id` = 1026 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_daili_info` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `wx_daili_info`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035622s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035679s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2018-03-19T11:14:00+08:00 ] ::1 /User/Center/api_cancel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+
+[ 2018-03-19T11:14:00+08:00 ] ::1 /User/Center/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+
+[ 2018-03-19T11:14:00+08:00 ] ::1 /User/Center/builder_verify_img/DQPYONILSUFYNOPY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+
+[ 2018-03-19T11:14:11+08:00 ] ::1 /User/Center/api_login_submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `wx_users` WHERE ( moblie= 'M00001033' or user_name = 'M00001033'  )  [ RunTime:0.0037s ]
+
+[ 2018-03-19T11:14:11+08:00 ] ::1 /User/Center/builder_verify_img/TRMXQVGIMIWOVAUO
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+
+[ 2018-03-19T11:14:38+08:00 ] ::1 /User/Center/api_login_submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `wx_users` WHERE ( moblie= 'M00001033' or user_name = 'M00001033'  )  [ RunTime:0.0035s ]
+SQL: UPDATE `wx_users` SET `last_time`='1521429278' WHERE (  user_id = '1033'  ) [ RunTime:0.0493s ]
+SQL: SELECT `jjb` FROM `wx_users` WHERE (  user_id = '1033'  ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-03-19T11:14:38+08:00 ] ::1 /User/Center/builder_verify_img/JFYUTWVADHXNQRWA
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+
+[ 2018-03-19T11:14:40+08:00 ] ::1 /User/Center/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0149s ]
+SQL: SHOW COLUMNS FROM `wx_hbrecord` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `wx_ztrecord` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `wx_users` WHERE `user_id` = 1033 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `nickname` FROM `wx_users` WHERE `user_id` = 1030 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_daili_info` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `wx_daili_info`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000877s ]
+
+[ 2018-03-19T11:14:42+08:00 ] ::1 /User/Deal/convert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2018-03-19T11:14:44+08:00 ] ::1 /User/Deal/convertinside
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0564s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_name = 'M00001033' ) LIMIT 1   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2018-03-19T11:14:57+08:00 ] ::1 /User/Deal/api_convertinside_submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0442s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_name = 'M00001033' ) LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `wx_transform` [ RunTime:0.0103s ]
+SQL: INSERT INTO `wx_transform` (`user_id`,`user_name`,`truename`,`jine`,`shouxu`,`zdate`,`lx`) VALUES ('1033','M00001033','子轩','5000','0','1521429297','0') [ RunTime:0.0003s ]
+SQL: UPDATE `wx_users` SET `jjb`='1000',`gwb`='5000' WHERE (  user_id = '1033'  ) [ RunTime:0.0386s ]
+
+[ 2018-03-19T11:14:59+08:00 ] ::1 /User/Center/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0154s ]
+SQL: SHOW COLUMNS FROM `wx_hbrecord` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `wx_ztrecord` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `wx_users` WHERE `user_id` = 1033 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `nickname` FROM `wx_users` WHERE `user_id` = 1030 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_daili_info` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `wx_daili_info`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2018-03-19T11:15:00+08:00 ] ::1 /User/Deal/convertinside
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0217s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_name = 'M00001033' ) LIMIT 1   [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006360s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2018-03-19T11:19:43+08:00 ] ::1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0706s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M00001033' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1033'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1033'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000836s ]
+
+[ 2018-03-19T11:19:57+08:00 ] ::1 /User/User/express
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000991s ]
+
+[ 2018-03-19T11:20:07+08:00 ] ::1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0140s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M00001033' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1033'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1033'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000796s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2018-03-19T11:20:09+08:00 ] ::1 /User/Product/orderdetail?id=95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( order_id = '95'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_detail` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `wx_shop_order_detail` WHERE ( order_sn='201811601521429339' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2018-03-19T11:20:11+08:00 ] ::1 /User/Product/api_confirm_recipient
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( order_sn = '201811601521429339'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_shop_order` SET `state`='2' WHERE (  order_sn = '201811601521429339'  ) [ RunTime:0.0715s ]
+SQL: UPDATE `wx_users` SET `buynum`=buynum+1 WHERE (  user_id = '1033'  ) [ RunTime:0.0289s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1033' and  state=2 and is_true=1  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1033'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wx_bonus_info` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1030'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_broke_record` [ RunTime:0.0105s ]
+SQL: INSERT INTO `wx_broke_record` (`user_id`,`user_name`,`yuser_id`,`yuser_name`,`type`,`fee`,`tx`,`jf`,`ax`,`sh`,`bdate`,`desc`) VALUES ('1030','M001030','1033','M00001033','8','10','9','1','0','0','2018-03-19 11:20:11','购物推荐奖') [ RunTime:0.0711s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_users` WHERE ( b1>0 or b2>0 or b3>0 or b4>0 or b5>0 or b6>0 or b7>0 or b8>0 )  [ RunTime:0.0037s ]
+NOTIC: [8] Undefined variable: member_update D:\phpStudy\WWW\slh\Application\User\Controller\PrizeController.class.php 第 383 行.
+SQL: SHOW COLUMNS FROM `wx_systemyeji` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `wx_systemyeji` WHERE year(ydate) = '2018' AND month(ydate) = '03' AND day(ydate) = '19' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_systemyeji` SET `xzhy`='0',`zhy`='12',`xzdan`='0',`zdan`='12',`xzyj`='0',`zyj`='83760',`ff`='0',`zff`='29595',`txjj`='0',`ztxjj`='69088.32',`tx`='0',`cz`='0',`dd`='1400' WHERE (  id = '7' ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1033'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0792s ]
+SQL: SELECT MAX(jd_layer) AS tp_max FROM `wx_memberlevel` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_users` WHERE ( user_id in (1,3,7,15,31,63,127,255,511,1023,1025,1026,1027,1030) ) ORDER BY user_id desc LIMIT 0,20   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1033'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '2'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '3'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '2'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '3'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE ( b1>0 or b2>0 or b3>0 or b4>0 or b5>0 or b6>0 or b7>0 or b8>0 )  [ RunTime:0.0037s ]
+NOTIC: [8] Undefined variable: member_update D:\phpStudy\WWW\slh\Application\User\Controller\PrizeController.class.php 第 383 行.
+SQL: SELECT * FROM `wx_systemyeji` WHERE year(ydate) = '2018' AND month(ydate) = '03' AND day(ydate) = '19' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `wx_systemyeji` SET `xzhy`='0',`zhy`='12',`xzdan`='0',`zdan`='12',`xzyj`='0',`zyj`='83760',`ff`='0',`zff`='29595',`txjj`='0',`ztxjj`='69088.32',`tx`='0',`cz`='0',`dd`='1400' WHERE (  id = '7' ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_systemyeji` WHERE year(ydate) = '2018' AND month(ydate) = '03' AND day(ydate) = '19' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `wx_systemyeji` SET `xzhy`='0',`zhy`='12',`xzdan`='0',`zdan`='12',`xzyj`='0',`zyj`='83760',`ff`='0',`zff`='29595',`txjj`='0',`ztxjj`='69088.32',`tx`='0',`cz`='0',`dd`='1600' WHERE (  id = '7' ) [ RunTime:0.0002s ]
+
+[ 2018-03-19T11:20:12+08:00 ] ::1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0164s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M00001033' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1033'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1033'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2018-03-19T11:20:13+08:00 ] ::1 /User/Product/orderdetail?id=95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( order_id = '95'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_detail` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `wx_shop_order_detail` WHERE ( order_sn='201811601521429339' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2018-03-19T11:25:33+08:00 ] ::1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0148s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M00001033' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1033'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1033'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038360s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000931s ]
+
+[ 2018-03-19T13:04:18+08:00 ] ::1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0159s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M00001033' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0221s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1033'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1033'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000993s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001061s ]
+
+[ 2018-03-19T13:04:27+08:00 ] ::1 /User/User/express
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001029s ]
+
+[ 2018-03-19T13:04:40+08:00 ] ::1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0170s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M00001033' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0259s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1033'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1033'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2018-03-19T13:04:43+08:00 ] ::1 /User/Product/orderdetail?id=101
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( order_id = '101'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_detail` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `wx_shop_order_detail` WHERE ( order_sn='201811661521435748' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2018-03-19T13:04:46+08:00 ] ::1 /User/Product/api_confirm_recipient
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( order_sn = '201811661521435748'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_shop_order` SET `state`='2' WHERE (  order_sn = '201811661521435748'  ) [ RunTime:0.0709s ]
+SQL: UPDATE `wx_users` SET `buynum`=buynum+1 WHERE (  user_id = '1033'  ) [ RunTime:0.0364s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1033' and  state=2 and is_true=1  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1033'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wx_users` SET `buymoney`='270.00' WHERE ( user_id = '1033' ) [ RunTime:0.0318s ]
+SQL: SHOW COLUMNS FROM `wx_bonus_info` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1030'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_broke_record` [ RunTime:0.0083s ]
+SQL: INSERT INTO `wx_broke_record` (`user_id`,`user_name`,`yuser_id`,`yuser_name`,`type`,`fee`,`tx`,`jf`,`ax`,`sh`,`bdate`,`desc`) VALUES ('1030','M001030','1033','M00001033','8','13.5','12.15','1.35','0','0','2018-03-19 13:04:45','购物推荐奖') [ RunTime:0.0891s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_users` WHERE ( b1>0 or b2>0 or b3>0 or b4>0 or b5>0 or b6>0 or b7>0 or b8>0 )  [ RunTime:0.0041s ]
+NOTIC: [8] Undefined variable: member_update D:\phpStudy\WWW\slh\Application\User\Controller\PrizeController.class.php 第 383 行.
+SQL: SHOW COLUMNS FROM `wx_systemyeji` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `wx_systemyeji` WHERE year(ydate) = '2018' AND month(ydate) = '03' AND day(ydate) = '19' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_systemyeji` SET `xzhy`='0',`zhy`='12',`xzdan`='0',`zdan`='12',`xzyj`='0',`zyj`='83760',`ff`='0',`zff`='29595',`txjj`='0',`ztxjj`='69088.32',`tx`='0',`cz`='0',`dd`='1600' WHERE (  id = '7' ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1033'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0110s ]
+SQL: SELECT MAX(jd_layer) AS tp_max FROM `wx_memberlevel` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE ( user_id in (1,3,7,15,31,63,127,255,511,1023,1025,1026,1027,1030) ) ORDER BY user_id desc LIMIT 0,20   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_id = '1033'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '2'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '3'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '2'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '3'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_bonus_info` WHERE (  id = 1  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_users` WHERE ( b1>0 or b2>0 or b3>0 or b4>0 or b5>0 or b6>0 or b7>0 or b8>0 )  [ RunTime:0.0041s ]
+NOTIC: [8] Undefined variable: member_update D:\phpStudy\WWW\slh\Application\User\Controller\PrizeController.class.php 第 383 行.
+SQL: SELECT * FROM `wx_systemyeji` WHERE year(ydate) = '2018' AND month(ydate) = '03' AND day(ydate) = '19' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_systemyeji` SET `xzhy`='0',`zhy`='12',`xzdan`='0',`zdan`='12',`xzyj`='0',`zyj`='83760',`ff`='0',`zff`='29595',`txjj`='0',`ztxjj`='69088.32',`tx`='0',`cz`='0',`dd`='1600' WHERE (  id = '7' ) [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_systemyeji` WHERE year(ydate) = '2018' AND month(ydate) = '03' AND day(ydate) = '19' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `wx_systemyeji` SET `xzhy`='0',`zhy`='12',`xzdan`='0',`zdan`='12',`xzyj`='0',`zyj`='83760',`ff`='0',`zff`='29595',`txjj`='0',`ztxjj`='69088.32',`tx`='0',`cz`='0',`dd`='1870' WHERE (  id = '7' ) [ RunTime:0.0002s ]
+
+[ 2018-03-19T13:04:47+08:00 ] ::1 /User/Product/order
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0151s ]
+SQL: SELECT `user_id` FROM `wx_users` WHERE ( user_name='M00001033' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_shop_order` WHERE ( user_id = '1033'  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( user_id = '1033'  ) ORDER BY order_id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+NOTIC: [8] Undefined variable: name D:\phpStudy\WWW\slh\Application\Runtime\Cache\User\d55692b33409c5d5b584e4f381290674.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2018-03-19T13:04:48+08:00 ] ::1 /User/Product/orderdetail?id=101
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001950s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0295s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE ( order_id = '101'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_detail` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `wx_shop_order_detail` WHERE ( order_sn='201811661521435748' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2018-03-19T13:04:51+08:00 ] ::1 /User/Notice/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
+[ 2018-03-19T13:04:55+08:00 ] ::1 /User/Center/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0167s ]
+SQL: SHOW COLUMNS FROM `wx_hbrecord` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `wx_ztrecord` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `wx_users` WHERE `user_id` = 1033 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `nickname` FROM `wx_users` WHERE `user_id` = 1030 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_daili_info` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `wx_daili_info`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `wx_memberlevel` WHERE (  id = '1'  ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+

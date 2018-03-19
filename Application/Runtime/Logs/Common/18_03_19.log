@@ -46,3 +46,123 @@ ERR: 无法加载模块:Favicon
 NOTIC: [2] include(./Application//Public/exception.tpl): failed to open stream: No such file or directory D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
 NOTIC: [2] include(): Failed opening './Application//Public/exception.tpl' for inclusion (include_path='.;C:\php\pear') D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
 
+[ 2018-03-19T11:12:21+08:00 ] ::1 /Public/admin/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+ERR: 无法加载模块:Public
+NOTIC: [2] include(./Application//Public/exception.tpl): failed to open stream: No such file or directory D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening './Application//Public/exception.tpl' for inclusion (include_path='.;C:\php\pear') D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+
+[ 2018-03-19T11:16:29+08:00 ] ::1 /Public/admin/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+ERR: 无法加载模块:Public
+NOTIC: [2] include(./Application//Public/exception.tpl): failed to open stream: No such file or directory D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening './Application//Public/exception.tpl' for inclusion (include_path='.;C:\php\pear') D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+
+[ 2018-03-19T11:17:10+08:00 ] ::1 /Public/admin/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+ERR: 无法加载模块:Public
+NOTIC: [2] include(./Application//Public/exception.tpl): failed to open stream: No such file or directory D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening './Application//Public/exception.tpl' for inclusion (include_path='.;C:\php\pear') D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+
+[ 2018-03-19T11:17:34+08:00 ] ::1 /Public/admin/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+ERR: 无法加载模块:Public
+NOTIC: [2] include(./Application//Public/exception.tpl): failed to open stream: No such file or directory D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening './Application//Public/exception.tpl' for inclusion (include_path='.;C:\php\pear') D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+
+[ 2018-03-19T11:17:43+08:00 ] ::1 /Public/admin/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+ERR: 无法加载模块:Public
+NOTIC: [2] include(./Application//Public/exception.tpl): failed to open stream: No such file or directory D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening './Application//Public/exception.tpl' for inclusion (include_path='.;C:\php\pear') D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+
+[ 2018-03-19T11:17:52+08:00 ] ::1 /Public/admin/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+ERR: 无法加载模块:Public
+NOTIC: [2] include(./Application//Public/exception.tpl): failed to open stream: No such file or directory D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening './Application//Public/exception.tpl' for inclusion (include_path='.;C:\php\pear') D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+
+[ 2018-03-19T11:19:48+08:00 ] ::1 /Public/admin/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+ERR: 无法加载模块:Public
+NOTIC: [2] include(./Application//Public/exception.tpl): failed to open stream: No such file or directory D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening './Application//Public/exception.tpl' for inclusion (include_path='.;C:\php\pear') D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+
+[ 2018-03-19T11:20:04+08:00 ] ::1 /Public/admin/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+ERR: 无法加载模块:Public
+NOTIC: [2] include(./Application//Public/exception.tpl): failed to open stream: No such file or directory D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening './Application//Public/exception.tpl' for inclusion (include_path='.;C:\php\pear') D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+
+[ 2018-03-19T11:20:48+08:00 ] ::1 /Public/admin/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+ERR: 无法加载模块:Public
+NOTIC: [2] include(./Application//Public/exception.tpl): failed to open stream: No such file or directory D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening './Application//Public/exception.tpl' for inclusion (include_path='.;C:\php\pear') D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+
+[ 2018-03-19T11:22:22+08:00 ] ::1 /Public/admin/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+ERR: 无法加载模块:Public
+NOTIC: [2] include(./Application//Public/exception.tpl): failed to open stream: No such file or directory D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening './Application//Public/exception.tpl' for inclusion (include_path='.;C:\php\pear') D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+
+[ 2018-03-19T11:25:00+08:00 ] ::1 /Public/admin/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+ERR: 无法加载模块:Public
+NOTIC: [2] include(./Application//Public/exception.tpl): failed to open stream: No such file or directory D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening './Application//Public/exception.tpl' for inclusion (include_path='.;C:\php\pear') D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+
+[ 2018-03-19T11:25:18+08:00 ] ::1 /Public/admin/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+ERR: 无法加载模块:Public
+NOTIC: [2] include(./Application//Public/exception.tpl): failed to open stream: No such file or directory D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening './Application//Public/exception.tpl' for inclusion (include_path='.;C:\php\pear') D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+
+[ 2018-03-19T11:25:35+08:00 ] ::1 /Public/admin/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+ERR: 无法加载模块:Public
+NOTIC: [2] include(./Application//Public/exception.tpl): failed to open stream: No such file or directory D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening './Application//Public/exception.tpl' for inclusion (include_path='.;C:\php\pear') D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+
+[ 2018-03-19T13:04:23+08:00 ] ::1 /Public/admin/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+ERR: 无法加载模块:Public
+NOTIC: [2] include(./Application//Public/exception.tpl): failed to open stream: No such file or directory D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening './Application//Public/exception.tpl' for inclusion (include_path='.;C:\php\pear') D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+
+[ 2018-03-19T13:04:34+08:00 ] ::1 /Public/admin/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+ERR: 无法加载模块:Public
+NOTIC: [2] include(./Application//Public/exception.tpl): failed to open stream: No such file or directory D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening './Application//Public/exception.tpl' for inclusion (include_path='.;C:\php\pear') D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Think.class.php 第 314 行.
+

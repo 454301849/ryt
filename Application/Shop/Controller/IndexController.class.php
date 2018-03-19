@@ -287,7 +287,6 @@ class IndexController extends Controller
 		}else{
 			$discount =1;
 		}
-
 		if ($order == null) {
 			$order_info = $shop_order_detail->where(" pay_id = '{$pay_id}' ")->select();
 			if ($order_info == null) {
@@ -304,12 +303,16 @@ class IndexController extends Controller
 				$good_name .= $v['good_name'] . ".";
 				$good_num = $good_num + $v['good_num'];
 			}
+			
 			$out_trade_no = $order_info[0]['order_sn'];
 			$notify_url = "http://" . $_SERVER['SERVER_NAME'] . U('/Wxapi/Notify/shop');
 			$openid = M('users')->getFieldByUser_id($this->user_id, 'openid');
 			$order_id = $order_info[0]['order_id'];
             $prepay_id = '';
-			$total_fee = $total_fee * $discount;
+			//$total_fee = $total_fee * $discount;
+			$total_fee = $total_fee * 0.9;
+			
+			
 			$data = array('pay_id' => $pay_id, 'order_sn' => $out_trade_no, 'total_fee' => $total_fee, 'time' => $order_info[0]['time'],
                 'user_id' => $order_info[0]['user_id'],
                 'address_id' => $order_info[0]['address_id'],
