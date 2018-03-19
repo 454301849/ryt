@@ -5,17 +5,22 @@ class UserController extends Controller{
 	
 	//会员注册
 	public function register(){
+        
         $users = M('users');
         $user_name= $_SESSION['user_name'];
+        
+
 	    if(!$user_name){
             $this->error('请重新登录','../../User/Center/index',3);
             exit;
         }
-
 	    if(!$_SESSION['two_Verify']){
             $this->display('Verify');
             exit;
         }
+        
+
+        
 
 
         $area = $_GET['area'];
@@ -697,6 +702,7 @@ class UserController extends Controller{
 		$info['levelid'] = $levelinfo['id'];
 		return $info;
 	}
+    
     
 }
 ?>

@@ -4523,3 +4523,127 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001350s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001414s ]
 
+[ 2018-03-16T16:33:25+08:00 ] 127.0.0.1 /User/User/memberlevel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002992s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `wx_memberlevel`  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001106s ]
+
+[ 2018-03-16T16:33:25+08:00 ] 127.0.0.1 /User/User/memberarea
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+NOTIC: [8] Undefined index: register_area_default D:\phpStudy\WWW\slh\Application\User\Controller\UserController.class.php 第 311 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2018-03-16T16:33:26+08:00 ] 127.0.0.1 /User/User/bank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `wx_bank` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `wx_bank`  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2018-03-16T16:33:27+08:00 ] 127.0.0.1 /User/User/place
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+SQL: SHOW COLUMNS FROM `wx_region` [ RunTime:0.0204s ]
+SQL: SELECT * FROM `wx_region` WHERE (  PARENT_ID = '1' )  [ RunTime:0.0035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2018-03-16T16:36:10+08:00 ] 127.0.0.1 /User/User/memberlevel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `wx_memberlevel`  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001065s ]
+
+[ 2018-03-16T16:36:10+08:00 ] 127.0.0.1 /User/User/memberarea
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+NOTIC: [8] Undefined index: register_area_default D:\phpStudy\WWW\slh\Application\User\Controller\UserController.class.php 第 311 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2018-03-16T16:36:11+08:00 ] 127.0.0.1 /User/User/bank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+SQL: SHOW COLUMNS FROM `wx_bank` [ RunTime:0.0173s ]
+SQL: SELECT * FROM `wx_bank`  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001217s ]
+
+[ 2018-03-16T16:36:12+08:00 ] 127.0.0.1 /User/User/place
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: SHOW COLUMNS FROM `wx_region` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `wx_region` WHERE (  PARENT_ID = '1' )  [ RunTime:0.0024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000951s ]
+
+[ 2018-03-16T16:36:55+08:00 ] 127.0.0.1 /User/User/membergrant
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000736s ]
+
+[ 2018-03-16T16:37:08+08:00 ] 127.0.0.1 /User/User/membergrant
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000882s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000937s ]
+

@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,12 +11,12 @@
 	<meta name="description" content="会员结算系统">
 
 	<title>会员管理系统</title>
-	<link href="__PUBLIC__/css/jquery.mobile.custom.structure.min.css"  rel="stylesheet" />
-	<link href="__PUBLIC__/bootstrap/css/bootstrap.min.css"  rel="stylesheet" />
-	<link href="__PUBLIC__/css/engine.css" rel="stylesheet" />
+	<link href="/Public/css/jquery.mobile.custom.structure.min.css"  rel="stylesheet" />
+	<link href="/Public/bootstrap/css/bootstrap.min.css"  rel="stylesheet" />
+	<link href="/Public/css/engine.css" rel="stylesheet" />
 
-	<script type="text/javascript" src="__PUBLIC__/js/mtopt-3.0-min.js" ></script>
-	<script type="text/javascript" src="__PUBLIC__/js/jquery-2.1.3.min.js" ></script>
+	<script type="text/javascript" src="/Public/js/mtopt-3.0-min.js" ></script>
+	<script type="text/javascript" src="/Public/js/jquery-2.1.3.min.js" ></script>
 	<script type="text/javascript">
         $.browser = $.browser || {};
         $.browser.msie = false;
@@ -31,16 +31,16 @@
         });
 	</script>
 	<style type="text/css">
-		body{background:url(__PUBLIC__/images/login.jpg) no-repeat;background-size:100%;}
+		body{background:url(/Public/images/login.jpg) no-repeat;background-size:100%;}
 		.container{padding-top:8em; width:350px;  margin:0 auto;}
 		.form-title{font-size:2.7em;text-align:center;height:110px;margin-top:20px;}
 		.form-title img{width:200px;}
 		.form-control{margin-bottom:1.8em;height:2.8em; }
 
 	</style>
-	<script type="text/javascript" src="__PUBLIC__/js/jquery.mobile.custom.js" ></script>
-	<script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js" ></script>
-	<script type="text/javascript" src="__PUBLIC__/js/engine.js" ></script>
+	<script type="text/javascript" src="/Public/js/jquery.mobile.custom.js" ></script>
+	<script type="text/javascript" src="/Public/js/bootstrap.min.js" ></script>
+	<script type="text/javascript" src="/Public/js/engine.js" ></script>
 </head>
 <body>
 <div class="form-title">
@@ -61,7 +61,7 @@
 			<img id="checkimg" alt="验证码" class="img-responsive" style="width:10em;height:2.4em;" />
 			<!--<a class="reloadverify" title="换一张" href="javascript:void(0)" onclick="fleshVerify();">-->
 				<!--<img id="verifyImg" class="verifyimg reloadverify" alt="点击切换" style="width:10em;height:2.4em;"-->
-					 <!--src="{:U('/User/Center/builder_verify_img')}" >-->
+					 <!--src="<?php echo U('/User/Center/builder_verify_img');?>" >-->
 			<!--</a>-->
 		</div>
 
@@ -140,7 +140,3 @@
 </script>
 </body>
 </html>
-
-
-
-

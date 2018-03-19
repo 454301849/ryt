@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">    <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
@@ -11,13 +11,13 @@
 
 	<title>会员管理系统</title>
 
-	<link href="__PUBLIC__/css/jquery.mobile.custom.structure.min.css"  rel="stylesheet" />
-	<link href="__PUBLIC__/bootstrap/css/bootstrap-3.3.4.min.css"  rel="stylesheet" />
-	<link href="__PUBLIC__/bootstrap/css/bootstrap-switch.min.css"  rel="stylesheet" />
-	<link href="__PUBLIC__/css/engine.css"  rel="stylesheet" />
+	<link href="/Public/css/jquery.mobile.custom.structure.min.css"  rel="stylesheet" />
+	<link href="/Public/bootstrap/css/bootstrap-3.3.4.min.css"  rel="stylesheet" />
+	<link href="/Public/bootstrap/css/bootstrap-switch.min.css"  rel="stylesheet" />
+	<link href="/Public/css/engine.css"  rel="stylesheet" />
 
-	<script type="text/javascript" src="__PUBLIC__/js/mtopt-3.0-min.js" ></script>
-	<script type="text/javascript" src="__PUBLIC__/js/jquery-2.1.3.min.js" ></script>
+	<script type="text/javascript" src="/Public/js/mtopt-3.0-min.js" ></script>
+	<script type="text/javascript" src="/Public/js/jquery-2.1.3.min.js" ></script>
 	<script type="text/javascript">
         $.browser = $.browser || {};
         $.browser.msie = false;
@@ -33,11 +33,11 @@
             $.mobile.defaultDialogTransition = "fade";
         });
 	</script>
-	<script type="text/javascript" src="__PUBLIC__/js/jquery.mobile.custom.js" ></script>
+	<script type="text/javascript" src="/Public/js/jquery.mobile.custom.js" ></script>
 
-	<script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js" ></script>
-	<script type="text/javascript" src="__PUBLIC__/bootstrap/js/bootstrap-switch.min.js" ></script>
-	<script type="text/javascript" src="__PUBLIC__/js/engine.js" ></script>
+	<script type="text/javascript" src="/Public/js/bootstrap.min.js" ></script>
+	<script type="text/javascript" src="/Public/bootstrap/js/bootstrap-switch.min.js" ></script>
+	<script type="text/javascript" src="/Public/js/engine.js" ></script>
 
 </head>
 <body>    <!--标题样式--> 
@@ -51,7 +51,7 @@
 </nav>
 <div class="mn-content" data-role="page" data-url="/User/Center/index" data-external-page="true" tabindex="0">
 	<style type="text/css">
-		.pg-head{height:12em;background:url(__PUBLIC__/images/head.jpg);background-size:cover;color:#fff;position:relative;overflow:hidden;margin:0px -1em;margin-top:-0.6em;}
+		.pg-head{height:12em;background:url(/Public/images/head.jpg);background-size:cover;color:#fff;position:relative;overflow:hidden;margin:0px -1em;margin-top:-0.6em;}
 		.pg-head-icon{width:6em;height:6em;position:absolute;left:1.8em;top:1em;border-radius:6em !important;border:3px solid #fff;}
 		.pg-head-info{position:absolute;left:9em;top:1em;text-shadow: 0 0 3px #333;}
 		.pg-head-info h5{margin:0px;padding:0px;}
@@ -138,33 +138,31 @@
 
 	<!--页头-->
 	<div class="pg-head">
-		<if condition="$userinfo['headimgurl'] neq ''">
-			<img class="pg-head-icon" src="{$userinfo['headimgurl']}" alt="">
-			<else />
-			<img class="pg-head-icon" src="__PUBLIC__/images/userhead.jpg" alt="">
-		</if>
+		<?php if($userinfo['headimgurl'] != ''): ?><img class="pg-head-icon" src="<?php echo ($userinfo['headimgurl']); ?>" alt="">
+			<?php else: ?>
+			<img class="pg-head-icon" src="/Public/images/userhead.jpg" alt=""><?php endif; ?>
 		<div class="pg-head-info">
-			<h5>{$userinfo.nickname}</h5>
-			<div>编号：{$userinfo.user_name}</div>
-			<div>等级：{$levelinfo.name}</div>
-			<div>推荐人：{$userinfo['rusername']?$userinfo['rusername']:'-'}</div>
+			<h5><?php echo ($userinfo["nickname"]); ?></h5>
+			<div>编号：<?php echo ($userinfo["user_name"]); ?></div>
+			<div>等级：<?php echo ($levelinfo["name"]); ?></div>
+			<div>推荐人：<?php echo ($userinfo['rusername']?$userinfo['rusername']:'-'); ?></div>
 		</div>
 		<ul class="pg-head-menu">
 			<li>
-				<span>{$userinfo.jjb}</span>
+				<span><?php echo ($userinfo["jjb"]); ?></span>
 				<div>奖金币</div>
 			</li>
 			<li>
-				<span>{$userinfo.gwb}</span>
+				<span><?php echo ($userinfo["gwb"]); ?></span>
 				<div>购物币</div>
 			</li>
 			<!--
 			<li>
-				<span>{$userinfo.axjj}</span>
+				<span><?php echo ($userinfo["axjj"]); ?></span>
 				<div>爱心基金</div>
 			</li>
 			<li>
-				<span>{$userinfo.sh}</span>
+				<span><?php echo ($userinfo["sh"]); ?></span>
 				<div>税收</div>
 			</li>-->
 		</ul>
@@ -172,87 +170,71 @@
 
 	<ul class="pg-menu">
 		<li>
-			<a href="/User/User/basicinfo" style="background:#ee4b47;"><img src="__PUBLIC__/images/icon/info.png" /></a>
+			<a href="/User/User/basicinfo" style="background:#ee4b47;"><img src="/Public/images/icon/info.png" /></a>
 			<p>基本信息</p>
 		</li>
 		
 		<li>
-			<if condition="$_SESSION['user_info']['jjb'] elt '0'">
-				<a href="javascript:pdjjb();" style="background:#fcae14;"><img src="__PUBLIC__/images/icon/reg.png" /></a>
+			<?php if($_SESSION['user_info']['jjb'] <= '0'): ?><a href="javascript:pdjjb();" style="background:#fcae14;"><img src="/Public/images/icon/reg.png" /></a>
 			<p>注册会员</p>
-			<else />
-				<a href="/User/User/register" style="background:#fcae14;"><img src="__PUBLIC__/images/icon/reg.png" /></a>
-			<p>注册会员</p>
-			</if>
+			<?php else: ?>
+				<a href="/User/User/register" style="background:#fcae14;"><img src="/Public/images/icon/reg.png" /></a>
+			<p>注册会员</p><?php endif; ?>
 		</li>
 		
-		<if condition="$userinfo['shoptype'] gt '0'">
-		<li>
-			<a href="/User/Center/centerlists" style="background:#83cc2b;"><img src="__PUBLIC__/images/icon/cenlist.png" /></a>
+		<?php if($userinfo['shoptype'] > '0'): ?><li>
+			<a href="/User/Center/centerlists" style="background:#83cc2b;"><img src="/Public/images/icon/cenlist.png" /></a>
 			<p>代理中心</p>
-		</li>
-		</if>
+		</li><?php endif; ?>
 
 		<li>
-			<if condition="$_SESSION['user_info']['jjb'] elt '0'">
-			<a href="javascript:pdjjb();" style="background:#ee4b47;"><img src="__PUBLIC__/images/icon/net.png" /></a>
+			<?php if($_SESSION['user_info']['jjb'] <= '0'): ?><a href="javascript:pdjjb();" style="background:#ee4b47;"><img src="/Public/images/icon/net.png" /></a>
 			<p>会员网络</p>
-			<else />
-			<a href="/User/User/netchart" style="background:#ee4b47;"><img src="__PUBLIC__/images/icon/net.png" /></a>
-			<p>会员网络</p>
-			</if>
+			<?php else: ?>
+			<a href="/User/User/netchart" style="background:#ee4b47;"><img src="/Public/images/icon/net.png" /></a>
+			<p>会员网络</p><?php endif; ?>
 		</li>
 		<li>
-			<if condition="$_SESSION['user_info']['jjb'] elt '0'">
-			<a href="javascript:pdjjb();" style="background:#4a8dfc;"><img src="__PUBLIC__/images/icon/recmlists.png" /></a>
+			<?php if($_SESSION['user_info']['jjb'] <= '0'): ?><a href="javascript:pdjjb();" style="background:#4a8dfc;"><img src="/Public/images/icon/recmlists.png" /></a>
 			<p>我的推荐</p>
-			<else />
-			<a href="/User/User/recmlists" style="background:#4a8dfc;"><img src="__PUBLIC__/images/icon/recmlists.png" /></a>
-			<p>我的推荐</p>
-			</if>
+			<?php else: ?>
+			<a href="/User/User/recmlists" style="background:#4a8dfc;"><img src="/Public/images/icon/recmlists.png" /></a>
+			<p>我的推荐</p><?php endif; ?>
 		</li>
 		<li>
-			<if condition="$_SESSION['user_info']['jjb'] elt '0'">
-			<a href="javascript:pdjjb();" style="background:#4a8dfc;"><img src="__PUBLIC__/images/icon/conv.png" /></a>
+			<?php if($_SESSION['user_info']['jjb'] <= '0'): ?><a href="javascript:pdjjb();" style="background:#4a8dfc;"><img src="/Public/images/icon/conv.png" /></a>
 			<p>币种转换</p>
-			<else />
-			<a href="/User/Deal/convert" style="background:#4a8dfc;"><img src="__PUBLIC__/images/icon/conv.png" /></a>
-			<p>币种转换</p>
-			</if>
+			<?php else: ?>
+			<a href="/User/Deal/convert" style="background:#4a8dfc;"><img src="/Public/images/icon/conv.png" /></a>
+			<p>币种转换</p><?php endif; ?>
 		</li>
 		<li>
-			<if condition="$_SESSION['user_info']['jjb'] elt '0'">
-			<a href="javascript:pdjjb();" style="background:#f38043;"><img src="__PUBLIC__/images/icon/transfer.png" /></a>
+			<?php if($_SESSION['user_info']['jjb'] <= '0'): ?><a href="javascript:pdjjb();" style="background:#f38043;"><img src="/Public/images/icon/transfer.png" /></a>
 			<p>内部转账</p>
-			<else />
-			<a href="/User/Deal/transfer" style="background:#f38043;"><img src="__PUBLIC__/images/icon/transfer.png" /></a>
-			<p>内部转账</p>
-			</if>
+			<?php else: ?>
+			<a href="/User/Deal/transfer" style="background:#f38043;"><img src="/Public/images/icon/transfer.png" /></a>
+			<p>内部转账</p><?php endif; ?>
 		</li>
 		<!-- <li>
-			<a href="/Product/report" style="background:#ee4b47;"><img src="__PUBLIC__/images/icon/box.png" /></a>
+			<a href="/Product/report" style="background:#ee4b47;"><img src="/Public/images/icon/box.png" /></a>
 			<p>我的购物车</p>
 		</li> -->
 		<li>
-			<if condition="$_SESSION['user_info']['jjb'] elt '0'">
-			<a href="javascript:pdjjb();" style="background:#f54e91;"><img src="__PUBLIC__/images/icon/order.png" /></a>
+			<?php if($_SESSION['user_info']['jjb'] <= '0'): ?><a href="javascript:pdjjb();" style="background:#f54e91;"><img src="/Public/images/icon/order.png" /></a>
 			<p>我的订单</p>
-			<else />
-			<a href="/User/Product/order" style="background:#f54e91;"><img src="__PUBLIC__/images/icon/order.png" /></a>
-			<p>我的订单</p>
-			</if>
+			<?php else: ?>
+			<a href="/User/Product/order" style="background:#f54e91;"><img src="/Public/images/icon/order.png" /></a>
+			<p>我的订单</p><?php endif; ?>
 		</li>
 		<li>
-			<if condition="$_SESSION['user_info']['jjb'] elt '0'">
-			<a href="javascript:pdjjb();" style="background:#f54e91;"><img src="__PUBLIC__/images/icon/penlists.png" /></a>
+			<?php if($_SESSION['user_info']['jjb'] <= '0'): ?><a href="javascript:pdjjb();" style="background:#f54e91;"><img src="/Public/images/icon/penlists.png" /></a>
 			<p>保单中心申请</p>
-			<else />
-			<a href="/User/User/applylists" style="background:#f54e91;"><img src="__PUBLIC__/images/icon/penlists.png" /></a>
-			<p>保单中心申请</p>
-			</if>
+			<?php else: ?>
+			<a href="/User/User/applylists" style="background:#f54e91;"><img src="/Public/images/icon/penlists.png" /></a>
+			<p>保单中心申请</p><?php endif; ?>
 		</li>
 		<!--<li>-->
-		<!--<a href="#" onclick="engine.language(4)" style="background:#fcae14;"><img src="__PUBLIC__/images/icon/lag.png" /></a>-->
+		<!--<a href="#" onclick="engine.language(4)" style="background:#fcae14;"><img src="/Public/images/icon/lag.png" /></a>-->
 		<!--<p>切换语言</p>-->
 		<!--</li>-->
 	</ul>
@@ -296,11 +278,11 @@
 		</div>
 	</div>
 </div>
-<!--<script type="text/javascript" src="__PUBLIC__/js/jquery-3.2.0.min.js" ></script>-->
+<!--<script type="text/javascript" src="/Public/js/jquery-3.2.0.min.js" ></script>-->
 <script type="text/javascript">
 
     $("#shop").click(function(){
-        $.getScript( "__PUBLIC__/js/jquery-3.2.0.min.js" );
+        $.getScript( "/Public/js/jquery-3.2.0.min.js" );
 
         window.location.href ="/Shop/index/index";
 //        $.mobile.changePage("/Shop/index/index","pop", false, false);
