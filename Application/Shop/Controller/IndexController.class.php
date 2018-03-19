@@ -147,16 +147,17 @@ class IndexController extends Controller
 						->where("u.user_id = '{$user_id}'")
                         ->field('u.*,m.discount')
                         ->find();
+		//购买次数
 		if($members['buynum'] > 0){
+		//新增测试
+			$discount = 9;
 			if($members['shoptype']== '1' || $members['shoptype']== '2'){
 				$discount = 5;
 			}
 			$discount = $members['discount']>$discount?$discount:$members['discount'];
-
 		}else{
 			$discount =0;
 		}
-
 		$this->assign("address_info", $address_info);
 		$this->assign("temp", $temp);
 		$this->assign("discount", $discount);
@@ -315,14 +316,11 @@ class IndexController extends Controller
                 'user_name' => $_SESSION['user_name'],
                 'prepay_id' => $prepay_id);
 			$shop_order->add($data);
-
 		} else {
 			$prepay_id = $order['prepay_id'];
 			$order_info = $shop_order_detail->where(" pay_id = '{$pay_id}' ")->select();
 			$total_fee = $order['total_fee'];
 		}
-
-	
 
 		$this->keyong = $user_info['gwb']*0.9;
 		$this->bukeyong = $user_info['gwb']*0.1;

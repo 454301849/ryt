@@ -334,7 +334,7 @@ class IndexController extends ActionController{
         }
 
     }
-
+    //退出执行跳转方法
     function out(){
         session(null);
         redirect(U('User/index'));

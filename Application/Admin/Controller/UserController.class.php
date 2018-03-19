@@ -11,7 +11,7 @@ class UserController extends ActionController
         $this->role_model = D("Common/Role");
     }
 
-
+    //登录前执行的方法
     public function index()
 	{
 		if ($_POST) {
@@ -20,14 +20,13 @@ class UserController extends ActionController
 			$password = $_POST['password'];
 
 			$info = M('admin')->where(" username = '{$username}' ")->select();
-
-
 			if ($info[0]['password'] == md5($password)) {
 				session(null);
 				session('admin_id', $info[0]['id']);
 				session('admin',$info[0]['username']);
 				$admin_id = $info[0]['id'];
-                $result['ip']=get_client_ip(0,true);
+//                $result['ip']=get_client_ip(0,true);
+                $result['ip']=$_SERVER['REMOTE_ADDR'];
                 $result['last_time']=date("Y-m-d H:i:s");
 
 				$info = M('admin')->where(" id = '{$admin_id}' ")->save($result);
@@ -664,6 +663,7 @@ class UserController extends ActionController
 
             $data['username'] = urldecode($_POST['username']);
             $data['password'] = md5(urldecode($_POST['password']));
+			$data['register_time'] = date("Y-m-d H:i:s");
             $data['email'] = urldecode($_POST['email']);
             $role_id = $_POST['role_id'];
             $role_ids = explode(",", $role_id);

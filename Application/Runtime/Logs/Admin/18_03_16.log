@@ -17467,3 +17467,382 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
 
+[ 2018-03-16T16:01:45+08:00 ] ::1 /Admin/User/sortlists.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `wx_admin` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wx_role` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0119s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_users` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wx_users` INNER JOIN wx_memberlevel ON wx_memberlevel.id = wx_users.level  LIMIT 0,10   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant » - assumed '»' D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Page.class.php 第 179 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2018-03-16T16:01:46+08:00 ] ::1 /Admin/User/sortlists_ajax.html?user_name=&p=1&truename=&start=0&end=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `wx_admin` [ RunTime:0.0116s ]
+SQL: SHOW COLUMNS FROM `wx_role` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0113s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_users` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wx_users` INNER JOIN wx_memberlevel ON wx_memberlevel.id = wx_users.level  LIMIT 0,10   [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant » - assumed '»' D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Pageajax.class.php 第 209 行.
+NOTIC: [8] Undefined variable: down_page D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Pageajax.class.php 第 215 行.
+NOTIC: [8] Undefined variable: the_first D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Pageajax.class.php 第 215 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2018-03-16T16:01:48+08:00 ] ::1 /Admin/User/sortlist_detail/user_name/M000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `wx_admin` [ RunTime:0.0157s ]
+SQL: SHOW COLUMNS FROM `wx_role` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_name = 'M000001'  ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wx_memberlevel` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `wx_memberlevel`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2018-03-16T16:01:59+08:00 ] ::1 /Admin/Deal/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `wx_broke_record` [ RunTime:0.0196s ]
+NOTIC: [8] Undefined index: user_name D:\phpStudy\WWW\slh\Application\Admin\Controller\DealController.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_broke_record` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_broke_record` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
+
+[ 2018-03-16T16:02:00+08:00 ] ::1 /Admin/Deal/main_ajax.html?user_name=&p=1&type=&truename=&start=0&end=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `wx_broke_record` [ RunTime:0.0401s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wx_broke_record` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_broke_record` ORDER BY bdate desc LIMIT 0,13   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: down_page D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Pageajax.class.php 第 215 行.
+NOTIC: [8] Undefined variable: the_first D:\phpStudy\WWW\slh\ThinkPHP\Library\Think\Pageajax.class.php 第 215 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000862s ]
+
+[ 2018-03-16T16:02:02+08:00 ] ::1 /Admin/Deal/main_detail/record/23.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `wx_broke_record` [ RunTime:0.0557s ]
+SQL: SELECT * FROM `wx_broke_record` WHERE (  id = '23' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2018-03-16T16:02:10+08:00 ] ::1 /Admin/Deal/main_detail/record/23.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `wx_broke_record` [ RunTime:0.0373s ]
+SQL: SELECT * FROM `wx_broke_record` WHERE (  id = '23' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2018-03-16T16:22:45+08:00 ] ::1 /Admin/Index/newmain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `wx_users` WHERE ( user_id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wx_bonus` [ RunTime:0.0109s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '16' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '15' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '14' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '13' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '12' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '11' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '10' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '09' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '08' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '07' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '06' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '05' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '04' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '03' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '02' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '01' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_systemyeji` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `wx_systemyeji` WHERE year(ydate) = '2018' AND month(ydate) = '03' AND day(ydate) = '16' ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Division by zero D:\phpStudy\WWW\slh\Application\Admin\Controller\IndexController.class.php 第 109 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000877s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2018-03-16T16:36:20+08:00 ] ::1 /Admin/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+SQL: SHOW COLUMNS FROM `wx_admin` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wx_role` [ RunTime:0.0102s ]
+NOTIC: [8] Undefined index: user_name D:\phpStudy\WWW\slh\Application\Admin\Controller\UserController.class.php 第 58 行.
+NOTIC: [8] Undefined index: area D:\phpStudy\WWW\slh\Application\Admin\Controller\UserController.class.php 第 59 行.
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0114s ]
+SQL: SELECT max(user_name) as newno FROM `wx_users` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_name = 'M000001' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022683s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000929s ]
+
+[ 2018-03-16T16:36:26+08:00 ] ::1 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2018-03-16T16:36:27+08:00 ] ::1 /Admin/Index/newtop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002539s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2018-03-16T16:36:28+08:00 ] ::1 /Admin/Index/newleft.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002275s ]
+SQL: SHOW COLUMNS FROM `wx_menu` [ RunTime:0.0186s ]
+SQL: SELECT * FROM `wx_menu` WHERE ( parentid = 0 ) ORDER BY `listorder` ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wx_menu` WHERE ( parentid = 187 ) ORDER BY `listorder` ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_menu` WHERE ( parentid = 191 ) ORDER BY `listorder` ASC  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_menu` WHERE ( parentid = 198 ) ORDER BY `listorder` ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_menu` WHERE ( parentid = 203 ) ORDER BY `listorder` ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_menu` WHERE ( parentid = 109 ) ORDER BY `listorder` ASC  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_menu` WHERE ( parentid = 139 ) ORDER BY `listorder` ASC  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2018-03-16T16:36:29+08:00 ] ::1 /Admin/Index/newmain.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002033s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0223s ]
+SQL: SELECT * FROM `wx_users` WHERE ( user_id = 1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wx_bonus` [ RunTime:0.0115s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '16' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '15' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '14' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '13' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '12' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '11' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '10' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '09' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '08' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '07' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '06' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '05' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '04' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '03' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '02' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT sum(b0) as sumb FROM `wx_bonus` WHERE year(bdate) = '2018' AND month(bdate) = '03' AND day(bdate) = '01' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_systemyeji` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `wx_systemyeji` WHERE year(ydate) = '2018' AND month(ydate) = '03' AND day(ydate) = '16' ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Division by zero D:\phpStudy\WWW\slh\Application\Admin\Controller\IndexController.class.php 第 109 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2018-03-16T16:36:32+08:00 ] ::1 /Admin/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `wx_admin` [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `wx_role` [ RunTime:0.0076s ]
+NOTIC: [8] Undefined index: user_name D:\phpStudy\WWW\slh\Application\Admin\Controller\UserController.class.php 第 58 行.
+NOTIC: [8] Undefined index: area D:\phpStudy\WWW\slh\Application\Admin\Controller\UserController.class.php 第 59 行.
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0116s ]
+SQL: SELECT max(user_name) as newno FROM `wx_users` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wx_users` WHERE (  user_name = 'M000001' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
