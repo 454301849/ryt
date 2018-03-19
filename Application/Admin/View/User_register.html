@@ -31,8 +31,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>会员编号</label>
 							<div class="col-sm-10">
-
-								<input type="text" class="form-control" id="id" value="{$user_code}" placeholder="请输入会员编号"    style="width:250px;" disabled>
+								<input type="text" class="form-control" id="id" value="{$user_code}" placeholder="请输入会员编号"  disabled>
 							</div>
 						</div>
 					</fieldset>
@@ -40,8 +39,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>推荐人</label>
 							<div class="col-sm-10">
-
-								<input type="text" class="form-control" id="recmid" value="{$recmid}" placeholder="请输入推荐人编号"    style="width:250px;">
+								<input type="text" class="form-control" id="recmid" value="{$recmid}" placeholder="请输入推荐人编号">
 							</div>
 						</div>
 					</fieldset>
@@ -49,7 +47,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>安置人</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" value="{$parentid}" id="parentid" placeholder="请输入安置人编号"   style="width:250px;">
+								<input type="text" class="form-control" value="{$parentid}" id="parentid" placeholder="请输入安置人编号">
 							</div>
 						</div>
 					</fieldset>
@@ -57,7 +55,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>代理中心</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="centerid"  value="{$centerid}"  placeholder="请输入代理中心编号"   style="width:250px;">
+								<input type="text" class="form-control" id="centerid"  value="{$centerid}"  placeholder="请输入代理中心编号">
 							</div>
 						</div>
 					</fieldset>
@@ -65,7 +63,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>安置位置</label>
 							<div class="col-sm-10">
-								<select id="area" class="form-control"   style="width:250px;"></select>
+								<select id="area" class="form-control"></select>
 							</div>
 						</div>
 					</fieldset>
@@ -80,8 +78,8 @@
 					<fieldset>
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>会员等级</label>
-							<div class="col-sm-10" >
-								<select id="level" class="form-control"   style="width:250px;"></select>
+							<div class="col-sm-10">
+								<select id="level" class="form-control"></select>
 							</div>
 						</div>
 					</fieldset>
@@ -89,7 +87,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>登录密码</label>
 							<div class="col-sm-10">
-								<input type="password" class="form-control" id="password"    style="width:250px;">
+								<input type="password" class="form-control" value="admin" id="password" >
 							</div>
 						</div>
 					</fieldset>
@@ -97,7 +95,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>确认登录密码</label>
 							<div class="col-sm-10">
-								<input type="password" class="form-control" id="cpassword"    style="width:250px;">
+								<input type="password" class="form-control"  value="admin" id="cpassword" >
 							</div>
 						</div>
 					</fieldset>
@@ -105,7 +103,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>安全密码</label>
 							<div class="col-sm-10">
-								<input type="password" class="form-control"  id="safeword"    style="width:250px;">
+								<input type="password" class="form-control"  value="admin" id="safeword" >
 							</div>
 						</div>
 					</fieldset>
@@ -113,7 +111,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>确认安全密码</label>
 							<div class="col-sm-10">
-								<input type="password" class="form-control" id="csafeword"  style="width:250px;"  >
+								<input type="password" class="form-control"  value="admin" id="csafeword" >
 							</div>
 						</div>
 					</fieldset>
@@ -121,8 +119,8 @@
 						<legend>详细信息</legend>
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>身份证</label>
-							<div class="col-sm-10"><!--加一个禁止输入特殊符号的限制-->
-								<input type="text" class="form-control"  onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" id="idcard"  value="" placeholder="请输入会员身份证号码"  style="width:250px;" >
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="idcard"  value="370123199303031012" placeholder="请输入会员身份证" >
 							</div>
 						</div>
 					</fieldset>
@@ -130,7 +128,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>真实姓名</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" value="" id="username" placeholder="请输入真实姓名"    style="width:250px;">
+								<input type="text" class="form-control" value="子轩" id="username" placeholder="请输入真实姓名" >
 							</div>
 						</div>
 					</fieldset>
@@ -138,24 +136,23 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>开户银行</label>
 							<div class="col-sm-10">
-								<select id="bankid" class="form-control"   style="width:250px;"></select>
+								<select id="bankid" class="form-control"></select>
 							</div>
 						</div>
 					</fieldset>
 					<fieldset>
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>开户卡号</label>
-
-							<div class="col-sm-10">	<!--加一个禁止输入特殊符号的限制-->				
-								<input type="text" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" class="form-control" value="" id="bankno" placeholder="请输入开户卡号"  style="width:250px;">
+							<div class="col-sm-10">
+								<input type="text" class="form-control" value="1238980480480" id="bankno" placeholder="请输入开户卡号" >
 							</div>
 						</div>
 					</fieldset>
 					<fieldset>
 						<div class="form-group">
-							<label class="col-sm-2 control-label"><label style="color:orangered" >*</label>开户地址</label>
+							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>开户地址</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" value=""  id="bankname" placeholder="请输入开户地址"    style="width:250px;">
+								<input type="text" class="form-control" value="北京朝阳区"  id="bankname" placeholder="请输入开户地址" >
 							</div>
 						</div>
 					</fieldset>
@@ -163,18 +160,15 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>开户姓名</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" value="" id="bankuser" placeholder="请输入开户姓名 "    style="width:250px;">
+								<input type="text" class="form-control" value="你还" id="bankuser" placeholder="请输入开户姓名" >
 							</div>
 						</div>
 					</fieldset>
 					<fieldset>
 						<div class="form-group">
-
-
-							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>手机号</label >
-							<div class="col-sm-10"><!--加一个禁止输入特殊符号的限制-->
-								<input type="text" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" class="form-control" value="" id="moblie" style="width:250px;" placeholder="请输入11位有效电话号码 ">
-
+							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>手机</label >
+							<div class="col-sm-10">
+								<input type="text" class="form-control" value="" id="moblie" >
 							</div>
 						</div>
 					</fieldset>
@@ -182,7 +176,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label">邮箱</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="email"   style="width:250px;" >
+								<input type="text" class="form-control" id="email" >
 							</div>
 						</div>
 					</fieldset>
@@ -190,7 +184,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label">邮编</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="zipcode"   style="width:250px;" />
+								<input type="text" class="form-control" id="zipcode" />
 							</div>
 						</div>
 					</fieldset>
@@ -198,7 +192,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label">地址</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="address"   style="width:250px;" />
+								<input type="text" class="form-control" id="address" />
 							</div>
 						</div>
 					</fieldset>
@@ -206,7 +200,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>地区/省</label>
 							<div class="col-sm-10">
-								<select id="country" class="form-control"   style="width:250px;"></select>
+								<select id="country" class="form-control"></select>
 							</div>
 						</div>
 					</fieldset>
@@ -214,7 +208,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>地区/市</label>
 							<div class="col-sm-10">
-								<select id="province" class="form-control"   style="width:250px;"></select>
+								<select id="province" class="form-control"></select>
 							</div>
 						</div>
 					</fieldset>
@@ -222,7 +216,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>地区/县</label>
 							<div class="col-sm-10">
-								<select id="county" class="form-control"   style="width:250px;"></select>
+								<select id="county" class="form-control"></select>
 							</div>
 						</div>
 					</fieldset>
@@ -331,11 +325,9 @@
                     if (username.length <= 0) {
                         engine.news("请输入真实姓名", 3000);
                         return;
-
-                    }//修改-身份证只能输入18位
-                    if (idcard.length <= 17||idcard.length >= 19) {
-                        engine.news("请输入18位的身份证", 3000);
-
+                    }
+                    if (idcard.length <= 0) {
+                        engine.news("请输入身份证", 3000);
                         return;
                     }
                     if (bankid == null || bankid.length <= 0) {
@@ -353,12 +345,10 @@
                     if (bankname.length <= 0) {
                         engine.news("请输入开户地址", 3000);
                         return;
-
-                    }//修改-手机号只能输入11位
-                    if (moblie.length <= 10 || moblie.length >= 12) {
-                        engine.news("请输入11位的手机号", 3000);
-                        return;
-
+                    }
+                    if (moblie.length <= 0) {
+                     //   engine.news("请输入手机号", 3000);
+                     //   return;
                     }
                     if (place == null || place.length <= 0) {
                    //     engine.news("请选择地区", 3000);

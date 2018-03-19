@@ -18,7 +18,7 @@ class UserController extends ActionController
 			$arr = array();
 			$username = $_POST['username'];
 			$password = $_POST['password'];
-
+			
 			$info = M('admin')->where(" username = '{$username}' ")->select();
 
 
@@ -58,16 +58,11 @@ class UserController extends ActionController
         $ruser_name = $_GET['user_name']?$_GET['user_name']:'M000001';
         $area = $_GET['area'];
         session('register_area_default', $area); //创建默认 会员市场
-
         $users = M('users');
         $code = $users->field("max(user_name) as newno")->find();
         
-        
-        
         //M后6位数改为8位
         $Newcode = 'M'.str_pad(substr($code['newno'],1,8)+1,8,"0",STR_PAD_LEFT);
-
-
         $info= $users->where(" user_name = '$ruser_name'")->find();
         $recmid= $info['pid'];
         $centerid= $info['daili'];
@@ -75,13 +70,13 @@ class UserController extends ActionController
             $recm_name = $info['user_name'];
             $parent_name = $info['user_name'];
         }else{
-            $recm_name = 'M000001';
-            $parent_name = 'M000001';
+            $recm_name = 'M00000001';
+            $parent_name = 'M00000001';
         }
         if($centerid){
             $center_name = $ruser_name;
         }else{
-            $center_name = 'M000001';
+            $center_name = 'M00000001';
         }
         $this->assign('user_code',$Newcode);
         $this->assign('recmid',$recm_name);

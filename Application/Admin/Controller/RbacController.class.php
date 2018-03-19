@@ -161,7 +161,6 @@ class RbacController extends ActionController {
     			</tr>";
         $menu->init($result);
         $categorys = $menu->get_tree(0, $str);
-        
         $this->assign("categorys", $categorys);
         $this->assign("roleid", $roleid);
         $this->display();
@@ -176,10 +175,10 @@ class RbacController extends ActionController {
     			$this->ajaxReturn("需要授权的角色不存在！",'json');
     		}
     		if (is_array($_POST['menuid']) && count($_POST['menuid'])>0) {
-    			
     			$menu_model=M("Menu");
     			$auth_rule_model=M("AuthRule");
     			$this->auth_access_model->where(array("role_id"=>$roleid,'type'=>'admin_url'))->delete();
+    			
     			foreach ($_POST['menuid'] as $menuid) {
     				$menu=$menu_model->where(array("id"=>$menuid))->field("app,model,action")->find();
     				if($menu){

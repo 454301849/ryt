@@ -10,7 +10,6 @@ class IndexController extends ActionController{
         }
     }
     function index(){
-
         $this->display('newindex1');
     }
     function index1(){

@@ -11,7 +11,6 @@ class ShopController extends ActionController
 			$this->error('请登录', U('Admin/User/index'), 5);
 		}
 	}
-
 	function setting()
 	{
 		$shop_bannar = M('shop_bannar');

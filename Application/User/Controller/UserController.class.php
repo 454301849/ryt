@@ -24,10 +24,8 @@ class UserController extends Controller{
         $ruser_name = $_GET['rootid']?$_GET['rootid']:$_SESSION['user_name']; // 查询顶级用户的user_name 或 需要查询的user_name
 
         $code = $users->field("max(user_name) as newno")->find();
-
         //M后6位数改为8位
         $Newcode = 'M'.str_pad(substr($code['newno'],1,8)+1,8,"0",STR_PAD_LEFT);
-
         $info= $users->where(" user_name = '$ruser_name'")->find();
         $recmid= $info['pid'];
         $centerid= $info['daili'];
@@ -92,31 +90,8 @@ class UserController extends Controller{
 		$add_data['password'] = md5(urldecode($_POST['password']));
 		$add_data['second_password'] = md5(urldecode($_POST['safeword']));
 		$add_data['truename'] = urldecode($_POST['username']);
-
-
-
-        //验证身份证号码
-        $idcard = urldecode($_POST['idcard']);
-        $user_idcard= $users->where(" idcard = '$idcard'")->find();
-        if($user_idcard){
-            $msg['Error'] = '-1088';
-            $msg['Data'] = '该身份证号码已被注册';
-            echo json_encode($msg);
-            exit;
-        }
 		$add_data['idcard'] = urldecode($_POST['idcard']);
-
 		$add_data['bankid'] = urldecode($_POST['bankid']);
-        //验证银行卡号
-        $bankno = urldecode($_POST['bankno']);
-        $user_bankno= $users->where(" bankno = '$bankno'")->find();
-        if($user_bankno){
-            $msg['Error'] = '-1089';
-            $msg['Data'] = '该银行卡号已被使用，请更换卡片';
-            echo json_encode($msg);
-            exit;
-        }
-
 		$add_data['bankno'] = urldecode($_POST['bankno']);
 		$add_data['bankuser'] = urldecode($_POST['bankuser']);
 		$add_data['bankname'] = urldecode($_POST['bankname']);

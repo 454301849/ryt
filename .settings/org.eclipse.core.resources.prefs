@@ -1,8 +1,18 @@
-#Thu Mar 15 06:15:39 GMT 2018
+#Sun Mar 18 08:18:17 GMT 2018
 eclipse.preferences.version=1
+encoding//Application/Admin/View/Daili_eliminate.html=UTF-8
 encoding//Application/Admin/View/Index_index.html=UTF-8
+encoding//Application/Admin/View/Index_index1.html=UTF-8
+encoding//Application/Admin/View/Index_left.html=UTF-8
 encoding//Application/Admin/View/Index_main.html=UTF-8
+encoding//Application/Admin/View/Index_newleft.html=UTF-8
+encoding//Application/Admin/View/Index_newmain.html=UTF-8
+encoding//Application/Admin/View/Index_newtop.html=UTF-8
 encoding//Application/Admin/View/Index_top.html=UTF-8
+encoding//Application/Admin/View/Rbac_authorize.html=UTF-8
+encoding//Application/Admin/View/Rbac_roleadd.html=UTF-8
+encoding//Application/Admin/View/Rbac_roleedit.html=UTF-8
+encoding//Application/Admin/View/Shop_setting.html=UTF-8
 encoding//Application/Admin/View/User_edit.html=UTF-8
 encoding//Application/Admin/View/User_index.html=UTF-8
 encoding//Application/Admin/View/User_recharge.html=UTF-8

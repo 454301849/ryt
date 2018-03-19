@@ -105,11 +105,9 @@
 	                switch (jso.Error) {
 	                    case '0':
 	                        engine.news("新增地址成功.", 1800);
-	                        //设置跳转到地址列表
 	                        setTimeout(function(){
 		                        m.redirect('/Shop/Address/index');
 		                    });
-
 	                      history.go(-1); location.reload(); 
 	                        break;
 	                    case -10000:

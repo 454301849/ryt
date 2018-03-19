@@ -22,7 +22,6 @@ header("content-type:text/html;charset=utf8");
 define('APP_PATH','./Application/');
 define('DATA_ROOT','./data/');
 
-
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
 

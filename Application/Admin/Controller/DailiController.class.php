@@ -891,8 +891,8 @@ class DailiController extends ActionController
 			  truncate table wx_upgrade;
 			  truncate table wx_users;
 			  truncate table wx_broke_record;
-			  INSERT INTO `wx_centerlists` VALUES ('1', '1', 'M000001', '公司1', '2', '2', '3', '申请保单中心', '申请保单中心', '1490162800', '1490178050');
-			  INSERT INTO `wx_users` (`user_id`, `user_name`, `openid`, `wxid`, `nickname`, `truename`, `password`, `second_password`, `headimgurl`, `sex`, `province`, `city`, `country`, `subscribe`, `subscribe_time`, `register`, `pid`, `repath`, `rusername`, `rlevel`, `recount`, `parentid`, `ppath`, `pusername`, `plevel`, `centerid`, `centername`, `area`, `area1`, `area2`, `yarea1`, `jjb`, `gwb`, `dzb`, `axjj`, `sh`, `yarea2`, `chl`, `chr`, `level`, `lsk`, `zb1`, `agent`, `shop_income`, `shop_outcome`, `mey`, `huzhu`, `single`, `maxmey`, `b0`, `b1`, `b2`, `b3`, `b4`, `b5`, `b6`, `b7`, `b8`, `daijin`, `daili`, `rank`, `idcard`, `bankid`, `bankno`, `bankuser`, `bankname`, `moblie`, `email`, `zipcode`, `address`, `place`, `last_time`, `reg_time`, `activate_time`, `after_time`) VALUES ('1', 'M000001', 'odUDzsqRHu3bnIUAGS1njwePHcz0', '', 'admin', '公司1', '21232f297a57a5a743894a0e4a801fc3', '21232f297a57a5a743894a0e4a801fc3', 'http://wx.qlogo.cn/mmopen/kiaXicXJs2M4dxtxRkYUC7vKbxL80vUr1zvkKRrySkUFzdjFGPGhWXLncCV2cPB6J1iajg7z8DakreFyqFqD2x4kMcIHDSh63Vy/0', '1', '16', '170', '中国', '1', '1488950385', '1', '0', '', '', '0', '0', '0', '', '', '0', '0', '0', '', '0', '0', '0', '0.00', '0.00', '5000000.00', '0.00', '0.00', '0', '0', '0', '3', '9980.00', '0.00', '0', '0.00', '0.00', '0.00', '0.00', '1', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0', '2', '0', '111', '1', '1', '11', '111', '15098890705', '123', '12', '1', '1726', '1490937826', '0', '0', '0');
+			  INSERT INTO `wx_centerlists` VALUES ('1', '1', 'M00000001', '公司1', '2', '2', '3', '申请保单中心', '申请保单中心', '1490162800', '1490178050');
+			  INSERT INTO `wx_users` (`user_id`, `user_name`, `openid`, `wxid`, `nickname`, `truename`, `password`, `second_password`, `headimgurl`, `sex`, `province`, `city`, `country`, `subscribe`, `subscribe_time`, `register`, `pid`, `repath`, `rusername`, `rlevel`, `recount`, `parentid`, `ppath`, `pusername`, `plevel`, `centerid`, `centername`, `area`, `area1`, `area2`, `yarea1`, `jjb`, `gwb`, `dzb`, `axjj`, `sh`, `yarea2`, `chl`, `chr`, `level`, `lsk`, `zb1`, `agent`, `shop_income`, `shop_outcome`, `mey`, `huzhu`, `single`, `maxmey`, `b0`, `b1`, `b2`, `b3`, `b4`, `b5`, `b6`, `b7`, `b8`, `daijin`, `daili`, `rank`, `idcard`, `bankid`, `bankno`, `bankuser`, `bankname`, `moblie`, `email`, `zipcode`, `address`, `place`, `last_time`, `reg_time`, `activate_time`, `after_time`) VALUES ('1', 'M00000001', 'odUDzsqRHu3bnIUAGS1njwePHcz0', '', 'admin', '公司1', '21232f297a57a5a743894a0e4a801fc3', '21232f297a57a5a743894a0e4a801fc3', 'http://wx.qlogo.cn/mmopen/kiaXicXJs2M4dxtxRkYUC7vKbxL80vUr1zvkKRrySkUFzdjFGPGhWXLncCV2cPB6J1iajg7z8DakreFyqFqD2x4kMcIHDSh63Vy/0', '1', '16', '170', '中国', '1', '1488950385', '1', '0', '', '', '0', '0', '0', '', '', '0', '0', '0', '', '0', '0', '0', '0.00', '0.00', '5000000.00', '0.00', '0.00', '0', '0', '0', '3', '9980.00', '0.00', '0', '0.00', '0.00', '0.00', '0.00', '1', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0', '2', '0', '111', '1', '1', '11', '111', '15098890705', '123', '12', '1', '1726', '1490937826', '0', '0', '0');
 ";
 			$Model = M();
 			$result = $Model->execute($datasql);
@@ -909,7 +909,6 @@ class DailiController extends ActionController
 	  $users = M('users');
       $memberlevel = M('memberlevel')->field('id,money')->select();
 	  
-		
       
 	 for($i=0;$i<9;$i++){
 		$users_ceng = $users->where("rlevel = '{$i}'")->select();
@@ -919,12 +918,12 @@ class DailiController extends ActionController
 		    $rand_level = $memberlevel[$random_memberlevel]['id'];
 	 	    $rand_level_money = $memberlevel[$random_memberlevel]['money'];
 			$code = $users->field("max(user_name) as newno")->find();
-			$Newcode = 'M'.str_pad(substr($code['newno'],1,6)+1,6,"0",STR_PAD_LEFT);
-			$Newcode2 = 'M'.str_pad(substr($code['newno'],1,6)+2,6,"0",STR_PAD_LEFT);
+			$Newcode = 'M'.str_pad(substr($code['newno'],1,8)+1,8,"0",STR_PAD_LEFT);
+			$Newcode2 = 'M'.str_pad(substr($code['newno'],1,8)+2,8,"0",STR_PAD_LEFT);
 			
 			$add_data['user_name'] = $Newcode;
 		    $add_data['centerid'] = '1';
-		    $add_data['centername'] ='M000001';
+		    $add_data['centername'] ='M00000001';
 			$add_data['level'] = $rand_level;
 			$add_data['single'] = 1;
 			$add_data['lsk'] = $rand_level_money;
