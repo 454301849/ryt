@@ -67,7 +67,7 @@
 			    </select>
     <div class="btn-group btn-group-justified" role="group" aria-label="...">
         <div class="btn-group" role="group">
-            <a id="btn_enter_" data-transition="pop" class="btn btn-default btn-primary">添加</a>
+            <a id="btn_enter_" data-transition="pop" class="btn btn-default btn-primary" style="background:red;">添加</a>
         </div>
         <div class="btn-group" role="group">
             <a href="/User/Product/place" class="btn btn-default">返回</a>

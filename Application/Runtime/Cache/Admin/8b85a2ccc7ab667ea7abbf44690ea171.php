@@ -33,7 +33,7 @@
 		background-image:url('/Public/images/max.jpg');
 		background-repeat:no-repeat;background-attachment:fixed;
 		background-size:cover;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Public/images//max.jpg',sizingMethod='scale');}
-
+	.col-sm-6{color:#fff;}
 </style>
 <section>
 	<div class="content-wrapper">
@@ -61,7 +61,7 @@
 					<div class="bg-success" style="padding:10px;margin:5px 0;"><span style="color:#3c763d">发货单号</span></div>
 					<div class="col-sm-12" style="margin: 8px 0;">
 						<div class="col-sm-6" style="float: left;">
-							<select id="serve_name" class="col-sm-6 form-control " style=""></select>
+							<select id="serve_name" class="col-sm-6 form-control " style="color:#666;"></select>
 							<input type="hidden" name="serve_m" id="serve_m" value="<?php echo ($order['serve_name']); ?>">
 						</div>
 										
@@ -82,7 +82,7 @@
 				<div style="clear:both;"></div>
 				<div class="bg-success" style="padding:10px;margin:5px 0"><span style="color:#3c763d">商品信息</span></div>
 				<table class="table table-striped" style="font-size:14px;">
-					<thead>
+					<thead style="color:#fff;">
 					<td>商品ID</td>
 					<td>商品名称</td>
 					<td>缩略图</td>

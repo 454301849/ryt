@@ -128,7 +128,6 @@ class DealController extends Controller{
 		$yue = $user_infonickname['jjb'] - $user_infonickname['lsk'];
 		
 		if ($user_infonickname['single'] == 3) {
-			
 			$edit_data = array();
 			$edit_data['jjb'] = $yue;
 			$edit_data['single'] = 1;

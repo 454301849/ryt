@@ -330,7 +330,7 @@
         var market = 0;
 		var discount = parseInt($('#discount').val());
 		if(discount !=0 ){
-			discount = discount *0.1;
+			discount = discount *0.01;
 		}else{
 			discount=1;
 		}

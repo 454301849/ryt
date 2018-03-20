@@ -174,7 +174,7 @@ wx.ready(function(){
                 <?php if(is_array($v['info'])): $i = 0; $__LIST__ = $v['info'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$k): $mod = ($i % 2 );++$i;?><dl style="margin-bottom:10px;">
                     <dt>
                       <a href="<?php echo U(good);?>?good_id=<?php echo ($k["good_id"]); ?>" data-url="">
-                        <img class="fadeInImg" _src="" src="/<?php echo ($k["pic_url"]); ?>">
+                        <img class="fadeInImg" _src="" src="/<?php echo ($k["pic_url"]); ?>" style="width:100%;margin:0 auto;">
                         <?php if($k['best'] == 1 ): ?><span class="special">
                             精品
                           </span>

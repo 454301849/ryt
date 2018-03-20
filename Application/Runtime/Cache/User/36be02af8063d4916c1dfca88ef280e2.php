@@ -173,42 +173,65 @@
 			<a href="/User/User/basicinfo" style="background:#ee4b47;"><img src="/Public/images/icon/info.png" /></a>
 			<p>基本信息</p>
 		</li>
+		
 		<li>
-			<a href="/User/User/register" style="background:#fcae14;"><img src="/Public/images/icon/reg.png" /></a>
+			<?php if($_SESSION['user_info']['jjb'] <= '0'): ?><a href="javascript:pdjjb();" style="background:#fcae14;"><img src="/Public/images/icon/reg.png" /></a>
 			<p>注册会员</p>
+			<?php else: ?>
+				<a href="/User/User/register" style="background:#fcae14;"><img src="/Public/images/icon/reg.png" /></a>
+			<p>注册会员</p><?php endif; ?>
 		</li>
+		
 		<?php if($userinfo['shoptype'] > '0'): ?><li>
 			<a href="/User/Center/centerlists" style="background:#83cc2b;"><img src="/Public/images/icon/cenlist.png" /></a>
 			<p>代理中心</p>
 		</li><?php endif; ?>
+
 		<li>
-			<a href="/User/User/netchart" style="background:#ee4b47;"><img src="/Public/images/icon/net.png" /></a>
+			<?php if($_SESSION['user_info']['jjb'] <= '0'): ?><a href="javascript:pdjjb();" style="background:#ee4b47;"><img src="/Public/images/icon/net.png" /></a>
 			<p>会员网络</p>
+			<?php else: ?>
+			<a href="/User/User/netchart" style="background:#ee4b47;"><img src="/Public/images/icon/net.png" /></a>
+			<p>会员网络</p><?php endif; ?>
 		</li>
 		<li>
-			<a href="/User/User/recmlists" style="background:#4a8dfc;"><img src="/Public/images/icon/recmlists.png" /></a>
+			<?php if($_SESSION['user_info']['jjb'] <= '0'): ?><a href="javascript:pdjjb();" style="background:#4a8dfc;"><img src="/Public/images/icon/recmlists.png" /></a>
 			<p>我的推荐</p>
+			<?php else: ?>
+			<a href="/User/User/recmlists" style="background:#4a8dfc;"><img src="/Public/images/icon/recmlists.png" /></a>
+			<p>我的推荐</p><?php endif; ?>
 		</li>
 		<li>
-			<a href="/User/Deal/convert" style="background:#4a8dfc;"><img src="/Public/images/icon/conv.png" /></a>
+			<?php if($_SESSION['user_info']['jjb'] <= '0'): ?><a href="javascript:pdjjb();" style="background:#4a8dfc;"><img src="/Public/images/icon/conv.png" /></a>
 			<p>币种转换</p>
+			<?php else: ?>
+			<a href="/User/Deal/convert" style="background:#4a8dfc;"><img src="/Public/images/icon/conv.png" /></a>
+			<p>币种转换</p><?php endif; ?>
 		</li>
 		<li>
-			<a href="/User/Deal/transfer" style="background:#f38043;"><img src="/Public/images/icon/transfer.png" /></a>
+			<?php if($_SESSION['user_info']['jjb'] <= '0'): ?><a href="javascript:pdjjb();" style="background:#f38043;"><img src="/Public/images/icon/transfer.png" /></a>
 			<p>内部转账</p>
+			<?php else: ?>
+			<a href="/User/Deal/transfer" style="background:#f38043;"><img src="/Public/images/icon/transfer.png" /></a>
+			<p>内部转账</p><?php endif; ?>
 		</li>
 		<!-- <li>
 			<a href="/Product/report" style="background:#ee4b47;"><img src="/Public/images/icon/box.png" /></a>
 			<p>我的购物车</p>
 		</li> -->
 		<li>
-
-			<a href="/User/Product/order" style="background:#f54e91;"><img src="/Public/images/icon/order.png" /></a>
+			<?php if($_SESSION['user_info']['jjb'] <= '0'): ?><a href="javascript:pdjjb();" style="background:#f54e91;"><img src="/Public/images/icon/order.png" /></a>
 			<p>我的订单</p>
+			<?php else: ?>
+			<a href="/User/Product/order" style="background:#f54e91;"><img src="/Public/images/icon/order.png" /></a>
+			<p>我的订单</p><?php endif; ?>
 		</li>
 		<li>
-			<a href="/User/User/applylists" style="background:#f54e91;"><img src="/Public/images/icon/penlists.png" /></a>
+			<?php if($_SESSION['user_info']['jjb'] <= '0'): ?><a href="javascript:pdjjb();" style="background:#f54e91;"><img src="/Public/images/icon/penlists.png" /></a>
 			<p>保单中心申请</p>
+			<?php else: ?>
+			<a href="/User/User/applylists" style="background:#f54e91;"><img src="/Public/images/icon/penlists.png" /></a>
+			<p>保单中心申请</p><?php endif; ?>
 		</li>
 		<!--<li>-->
 		<!--<a href="#" onclick="engine.language(4)" style="background:#fcae14;"><img src="/Public/images/icon/lag.png" /></a>-->
@@ -265,5 +288,11 @@
 //        $.mobile.changePage("/Shop/index/index","pop", false, false);
     });
 </script>
+<script type="text/javascript">
+	function pdjjb(){
+		alert('您的账户余额不足，无法进行此操作');
+	}
+</script>
+
 <input type="hidden" class="HF_IPADDRESS" value="39.82.44.192" />
 </body></html>

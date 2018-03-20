@@ -46,7 +46,7 @@
 			    <br/>
 			    <div class="btn-group btn-group-justified" role="group" aria-label="...">
 			        <div class="btn-group" role="group">
-			            <a id="btn_enter_" data-transition="pop" class="btn btn-danger">添加</a>
+			            <a href="" id="btn_enter_" data-transition="pop" class="btn btn-danger">添加</a>
 			        </div>
 			    </div>
 			</div>
@@ -106,11 +106,10 @@
 	                    case '0':
 	                        engine.news("新增地址成功.", 1800);
 	                        //设置跳转到地址列表
-	                        setTimeout(function(){
-		                        m.redirect('/Shop/Address/index');
-		                    });
-
-	                      history.go(-1); location.reload(); 
+							setTimeout(function () {
+								$.mobile.changePage("/Shop/Address/index");
+							});
+	                      //history.go(-1); location.reload(); 
 	                        break;
 	                    case -10000:
 	                        engine.news("新增地址失败", 1800);

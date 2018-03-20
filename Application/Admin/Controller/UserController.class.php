@@ -74,13 +74,13 @@ class UserController extends ActionController
             $recm_name = $info['user_name'];
             $parent_name = $info['user_name'];
         }else{
-            $recm_name = 'M000001';
-            $parent_name = 'M000001';
+            $recm_name = 'M00000001';
+            $parent_name = 'M00000001';
         }
         if($centerid){
             $center_name = $ruser_name;
         }else{
-            $center_name = 'M000001';
+            $center_name = 'M00000001';
         }
         $this->assign('user_code',$Newcode);
         $this->assign('recmid',$recm_name);
@@ -96,7 +96,7 @@ class UserController extends ActionController
      */
     public function memberlists(){
 
-        $duser_name = $_GET['user_name']?$_GET['user_name']:'M000001'; // 查询顶级用户的user_name 或 需要查询的user_name
+        $duser_name = $_GET['user_name']?$_GET['user_name']:'M00000001'; // 查询顶级用户的user_name 或 需要查询的user_name
         $info = $this->getinfo($duser_name);
 
         $ainfo = $this->getreginfo($info['chl']);
@@ -441,11 +441,11 @@ class UserController extends ActionController
 
     public function netchart(){
 
-        $duser_name = $_GET['rootid']?$_GET['rootid']:'M000001'; // 查询顶级用户的user_name 或 需要查询的user_name
+        $duser_name = $_GET['rootid']?$_GET['rootid']:'M00000001'; // 查询顶级用户的user_name 或 需要查询的user_name
         $info_user = $this->getinfo($duser_name);
 
         if($info_user['name'] == NULL){
-            $duser_name = 'M000001';
+            $duser_name = 'M00000001';
             $info_user = $this->getinfo($duser_name);
         }
         $info_lname = $this->getparentinfo($info_user['chl']); // A区

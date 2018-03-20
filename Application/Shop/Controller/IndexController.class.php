@@ -150,11 +150,13 @@ class IndexController extends Controller
 		//购买次数
 		if($members['buynum'] > 0){
 		//新增测试
-			$discount = 9;
+			//$discount = 9;
 			if($members['shoptype']== '1' || $members['shoptype']== '2'){
-				$discount = 5;
+				$discount = 50;
+			}else{
+				//$discount = $members['discount']>$discount?$discount:$members['discount'];
+				$discount = $members['discount'];
 			}
-			$discount = $members['discount']>$discount?$discount:$members['discount'];
 		}else{
 			$discount =0;
 		}
@@ -280,10 +282,13 @@ class IndexController extends Controller
                         ->find();
 		if($members['buynum'] > 0){
 			if($members['shoptype']== '1' || $members['shoptype']== '2'){
-				$discount = 5;
+				$discount = 0.5;
+			}else{
+				//$discount = $members['discount']>$discount?$discount:$members['discount'];
+				//$discount =$discount*0.1;
+				$discount = $members['discount'];
+				$discount =$discount*0.01;
 			}
-			$discount = $members['discount']>$discount?$discount:$members['discount'];
-			$discount =$discount*0.1;
 		}else{
 			$discount =1;
 		}
@@ -309,8 +314,8 @@ class IndexController extends Controller
 			$openid = M('users')->getFieldByUser_id($this->user_id, 'openid');
 			$order_id = $order_info[0]['order_id'];
             $prepay_id = '';
-			//$total_fee = $total_fee * $discount;
-			$total_fee = $total_fee * 0.9;
+			$total_fee = $total_fee * $discount;
+			//$total_fee = $total_fee * 0.9;
 			
 			
 			$data = array('pay_id' => $pay_id, 'order_sn' => $out_trade_no, 'total_fee' => $total_fee, 'time' => $order_info[0]['time'],

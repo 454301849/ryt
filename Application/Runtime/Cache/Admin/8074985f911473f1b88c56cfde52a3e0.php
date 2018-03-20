@@ -89,7 +89,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>登录密码</label>
 							<div class="col-sm-10">
-								<input type="password" class="form-control" value="admin" id="password"    style="width:250px;">
+								<input type="password" class="form-control" id="password"    style="width:250px;">
 							</div>
 						</div>
 					</fieldset>
@@ -97,7 +97,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>确认登录密码</label>
 							<div class="col-sm-10">
-								<input type="password" class="form-control"  value="admin" id="cpassword"    style="width:250px;">
+								<input type="password" class="form-control" id="cpassword"    style="width:250px;">
 							</div>
 						</div>
 					</fieldset>
@@ -105,7 +105,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>安全密码</label>
 							<div class="col-sm-10">
-								<input type="password" class="form-control"  value="admin" id="safeword"    style="width:250px;">
+								<input type="password" class="form-control"  id="safeword"    style="width:250px;">
 							</div>
 						</div>
 					</fieldset>
@@ -113,7 +113,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>确认安全密码</label>
 							<div class="col-sm-10">
-								<input type="password" class="form-control"  value="admin" id="csafeword"  style="width:250px;"  >
+								<input type="password" class="form-control" id="csafeword"  style="width:250px;"  >
 							</div>
 						</div>
 					</fieldset>
@@ -122,7 +122,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>身份证</label>
 							<div class="col-sm-10"><!--加一个禁止输入特殊符号的限制-->
-								<input type="text" class="form-control"  onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" id="idcard"  value="370123199303031012" placeholder="请输入会员身份证"  style="width:250px;" >
+								<input type="text" class="form-control"  onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" id="idcard"  value="" placeholder="请输入会员身份证号码"  style="width:250px;" >
 							</div>
 						</div>
 					</fieldset>
@@ -130,7 +130,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>真实姓名</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" value="子轩" id="username" placeholder="请输入真实姓名"    style="width:250px;">
+								<input type="text" class="form-control" value="" id="username" placeholder="请输入真实姓名"    style="width:250px;">
 							</div>
 						</div>
 					</fieldset>
@@ -147,7 +147,7 @@
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>开户卡号</label>
 
 							<div class="col-sm-10">	<!--加一个禁止输入特殊符号的限制-->				
-								<input type="text" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" class="form-control" value="1238980480480" id="bankno" placeholder="请输入开户卡号"  style="width:250px;">
+								<input type="text" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" class="form-control" value="" id="bankno" placeholder="请输入开户卡号"  style="width:250px;">
 							</div>
 						</div>
 					</fieldset>
@@ -155,7 +155,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered" >*</label>开户地址</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" value="北京朝阳区"  id="bankname" placeholder="请输入开户地址"    style="width:250px;">
+								<input type="text" class="form-control" value=""  id="bankname" placeholder="请输入开户地址"    style="width:250px;">
 							</div>
 						</div>
 					</fieldset>
@@ -163,7 +163,7 @@
 						<div class="form-group">
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>开户姓名</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" value="你还" id="bankuser" placeholder="请输入开户姓名 "    style="width:250px;">
+								<input type="text" class="form-control" value="" id="bankuser" placeholder="请输入开户姓名 "    style="width:250px;">
 							</div>
 						</div>
 					</fieldset>
@@ -173,7 +173,7 @@
 
 							<label class="col-sm-2 control-label"><label style="color:orangered">*</label>手机号</label >
 							<div class="col-sm-10"><!--加一个禁止输入特殊符号的限制-->
-								<input type="text" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" class="form-control" value="" id="moblie" style="width:250px;">
+								<input type="text" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" class="form-control" value="" id="moblie" style="width:250px;" placeholder="请输入11位有效电话号码 ">
 
 							</div>
 						</div>

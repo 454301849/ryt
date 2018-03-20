@@ -54,12 +54,9 @@
             <fieldset>
                 <div class="form-group">
                     <label class="col-sm-2 control-label" >转账金额</label>
-                    <div class="col-sm-2">	<!--加一个禁止输入特殊符号的限制-->
+                    <div class="col-sm-2" style="width:280px;">	<!--加一个禁止输入特殊符号的限制-->
                         <input type="text" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"  class="form-control input-sm" id="money" placeholder="扣率：0%">
-
-
-
-                    </div>
+					</div>
                 </div>
             </fieldset>
             <fieldset>

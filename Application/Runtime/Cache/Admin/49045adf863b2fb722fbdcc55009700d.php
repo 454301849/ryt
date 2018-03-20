@@ -94,7 +94,6 @@
 		</h3>
 		<div class="panel panel-default" style="margin-bottom:12px;">
 			<div class="input-group">
-
 				<input type="text" class="form-control" id="search_id" style="height:35px; width:250px;" value="<?php echo ($info["user_name"]); ?>" placeholder="请输入会员编号" >
 				<span class="input-group-btn">
             <button class="btn btn-default" onclick="pck.search()" style="z-index:2;border-radius:4px;height: 35px;  margin-right:70em; "  type="button">查询数据</button>

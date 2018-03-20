@@ -45,7 +45,7 @@ body {
 			  </ul>
 			  
 		 <!-- Tab panes -->
-	  <form class="form-horizontal" action="/Admin/Shop/goodadd.html" method="post" onsubmit="" enctype="multipart/form-data" >
+	  <form class="form-horizontal" action="/Admin/Shop/goodedit.html?good_id=14" method="post" onsubmit="" enctype="multipart/form-data" >
 	  <div class="tab-content well" style="margin-top:30px;border:1px solid #dddddd;padding:10px 2%;">
 	  
 		<div role="tabpanel" class="tab-pane active" id="home">

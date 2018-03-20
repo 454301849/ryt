@@ -81,10 +81,11 @@
 							<td class="td-title">状态：</td>
 							<td>
 								<select id="status" class="form-control">
-								<option value="0" <if condition="($withdraw_info.status eq 0)"> selected</if>>待审核</option>
-								<option value="1" <if condition="($withdraw_info.status eq 1)"> selected</if>>审核通过</option>
-								<option value="2" <if condition="($withdraw_info.status eq 2)"> selected</if>>审核失败</option>
-							</select></td>
+									<option value="0" <if condition="($withdraw_info.status eq 0)"> selected</if>>待审核</option>
+									<option value="1" <if condition="($withdraw_info.status eq 1)"> selected</if>>审核通过</option>
+									<option value="2" <if condition="($withdraw_info.status eq 2)"> selected</if>>审核失败</option>
+								</select>
+							</td>
 						</tr>
 						<if condition="($withdraw_info.handletime neq 0) ">
 						<tr>
