@@ -56,7 +56,7 @@ class RbacController extends ActionController {
     	}
     }
 
-    // 删除角色
+    // 删除角色sjinyanshenxing
     public function roledelete() {
         $id = I("get.id",0,'intval');
         if ($id == 1) {

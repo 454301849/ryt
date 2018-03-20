@@ -52,25 +52,26 @@
         }
     </style>
 
-<div class="list-group" style="margin-top:6px;">
-    <a class="list-group-item">会员编号：{$user_info.user_name}</a>
-    <a class="list-group-item">奖金积分：{$user_info.jjb}</a>
-    <a class="list-group-item">购物积分：{$user_info.gwb}</a>
-    <a class="list-group-item">转换比例：100%</a>
-    <a class="list-group-item">可转数量：{$user_info.jjb}</a>
+<div class="list-group" style="margin-top:6px;"  style="width:300px;">
+    <a class="list-group-item"  style="width:300px;">会员编号：{$user_info.user_name}</a>
+    <a class="list-group-item"  style="width:300px;">奖金积分：{$user_info.jjb}</a>
+    <a class="list-group-item"  style="width:300px;">购物积分：{$user_info.gwb}</a>
+    <a class="list-group-item"  style="width:300px;">转换比例：100%</a>
+    <a class="list-group-item"  style="width:300px;">可转数量：{$user_info.jjb}</a>
 </div>
 <div class="pg-form">
     <label class="control-label">转换金额</label>			<!--加一个禁止输入特殊符号的限制-->
-    <input id="number_" type="text" class="form-control" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder="转换金额">
+    <input id="number_" type="text" class="form-control" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder="转换金额" style="width:300px;">
     <label class="control-label">二级密码</label>
-    <input id="safeword_" type="password" class="form-control" placeholder="二级密码">
+    <input id="safeword_" type="password" class="form-control" placeholder="二级密码"  style="width:300px;">
 
     <div class="btn-group btn-group-justified" role="group" aria-label="...">
         <div class="btn-group" role="group">
-            <a id="btn_enter_" data-transition="pop" class="btn btn-default btn-danger">确认转换</a>
+            <a id="btn_enter_" data-transition="pop" class="btn btn-default btn-danger"  style="width:100px;">确认转换</a>
+			<a href="/User/Deal/convert" class="btn btn-default"  style="width:100px;float:left; margin-left:50px; border-ridius:3px;"  >返回</a>
         </div>
         <div class="btn-group" role="group">
-            <a href="/User/Deal/convert" class="btn btn-default">返回</a>
+            
         </div>
     </div>
 </div>
