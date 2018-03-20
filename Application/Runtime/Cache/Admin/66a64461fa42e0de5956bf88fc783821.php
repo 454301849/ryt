@@ -36,7 +36,7 @@ body {
 				  <div class="tab-content" style="margin-top:30px;border:1px solid #dddddd;padding:10px 2%;color:#fff;">
 				  
 					<div role="tabpanel" class="tab-pane active" id="home">
-					<form class="form-horizontal" action="/Admin/Shop/categreyadd.html?cate_id=1" method="post" onsubmit="return check();" enctype="multipart/form-data" >
+					<form class="form-horizontal" action="/Admin/Shop/categreyadd.html" method="post" onsubmit="return check();" enctype="multipart/form-data" >
 						<div class="form-group">
 							<label for="inputEmail3" class="col-sm-2 control-label">分类名称</label>
 							<div class="col-sm-3">

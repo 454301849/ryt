@@ -154,6 +154,7 @@ class IndexController extends Controller
 			if($members['shoptype']== '1' || $members['shoptype']== '2'){
 				$discount = 50;
 			}else{
+                //新增获得次数
 				//$discount = $members['discount']>$discount?$discount:$members['discount'];
 				$discount = $members['discount'];
 			}
@@ -284,6 +285,7 @@ class IndexController extends Controller
 			if($members['shoptype']== '1' || $members['shoptype']== '2'){
 				$discount = 0.5;
 			}else{
+			    //新增折扣
 				//$discount = $members['discount']>$discount?$discount:$members['discount'];
 				//$discount =$discount*0.1;
 				$discount = $members['discount'];

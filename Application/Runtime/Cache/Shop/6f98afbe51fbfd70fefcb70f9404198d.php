@@ -109,7 +109,7 @@ wx.ready(function(){
 			<ul style="list-style: none outside none; transition-duration: 500ms;">
 				<?php if(is_array($pic_url)): $k = 0; $__LIST__ = $pic_url;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($k % 2 );++$k;?><li>
 					<a onClick="return false;">
-						<img src="/<?php echo ($v["pic_url"]); ?>" alt="2" style="width:100%;">
+						<img src="/<?php echo ($v["pic_url"]); ?>" alt="2" style="width:30%;">
 					</a>
 				</li><?php endforeach; endif; else: echo "" ;endif; ?>   
 			</ul>
