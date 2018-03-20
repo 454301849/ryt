@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,12 +11,12 @@
 	<meta name="description" content="会员结算系统">
 
 	<title>移动结算平台</title>
-	<link href="__PUBLIC__/css/jquery.mobile.custom.structure.min.css"  rel="stylesheet" />
-	<link href="__PUBLIC__/bootstrap/css/bootstrap.min.css"  rel="stylesheet" />
-	<link href="__PUBLIC__/css/engine.css"  rel="stylesheet" />
+	<link href="/Public/css/jquery.mobile.custom.structure.min.css"  rel="stylesheet" />
+	<link href="/Public/bootstrap/css/bootstrap.min.css"  rel="stylesheet" />
+	<link href="/Public/css/engine.css"  rel="stylesheet" />
 
-	<script type="text/javascript" src="__PUBLIC__/js/mtopt-3.0-min.js" ></script>
-	<script type="text/javascript" src="__PUBLIC__/js/jquery-2.1.3.min.js" ></script>
+	<script type="text/javascript" src="/Public/js/mtopt-3.0-min.js" ></script>
+	<script type="text/javascript" src="/Public/js/jquery-2.1.3.min.js" ></script>
 	<script type="text/javascript">
         $.browser = $.browser || {};
         $.browser.msie = false;
@@ -31,7 +31,7 @@
         });
 	</script>
     <style type="text/css">
-        .pg-head{height:12em;background:url(__PUBLIC__/images/head.jpg);background-size:cover;color:#fff;position:relative;overflow:hidden;margin:0px -1em;margin-top:-0.6em;}
+        .pg-head{height:12em;background:url(/Public/images/head.jpg);background-size:cover;color:#fff;position:relative;overflow:hidden;margin:0px -1em;margin-top:-0.6em;}
         .pg-head-icon{width:6em;height:6em;position:absolute;left:1.8em;top:1em;border-radius:6em !important;border:3px solid #fff;}
         .pg-head-info{position:absolute;left:9em;top:1em;text-shadow: 0 0 3px #333;}
         .pg-head-info h5{margin:0px;padding:0px;}
@@ -48,16 +48,16 @@
         .pg-menu li a img{position:absolute;top:.7em;left:.7em;width:1.4em;height:1.4em}
         .pg-menu li p{margin-top:.5em;color:#666;font-size:0.9em;display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
     </style>
-	<script type="text/javascript" src="__PUBLIC__/js/jquery.mobile.custom.js" ></script>
-	<script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js" ></script>
-	<script type="text/javascript" src="__PUBLIC__/js/engine.js" ></script>
+	<script type="text/javascript" src="/Public/js/jquery.mobile.custom.js" ></script>
+	<script type="text/javascript" src="/Public/js/bootstrap.min.js" ></script>
+	<script type="text/javascript" src="/Public/js/engine.js" ></script>
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top mn-navbar-top" style="background:red;">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-close glyphicon glyphicon-log-out" data-ajax="false" href="/User/Center/api_cancel" style="color:#fff !important;border:0px none"></a>
-            <img style="width:35px;height:35px;margin-right:6px;position:absolute;left:10px;top:10px" src="__PUBLIC__/images/wap_logo.png" />
+            <img style="width:35px;height:35px;margin-right:6px;position:absolute;left:10px;top:10px" src="/Public/images/wap_logo.png" />
             <a class="navbar-brand"  style="position:absolute;top:3px;margin-left:32px;font-size:1.3em;">移动结算系统</a>
         </div>
     </div>
@@ -77,30 +77,27 @@
             <td>总额</td>
             <td>操作</td>
         </tr>
-            <volist name="info" id="vv" key="kk" >
-            <tr>
-                <td>{$vv.order_sn}</td>
+            <?php if(is_array($info)): $kk = 0; $__LIST__ = $info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($kk % 2 );++$kk;?><tr>
+                <td><?php echo ($vv["order_sn"]); ?></td>
 
 
                 <td>
-				<!--<if condition="($vv.state eq 2) ">已发货<else/>等待发货</if>-->
-				<if condition="($vv.state eq 1) OR ($name gt 100) "> 已发货
-				 <elseif condition="$vv.state eq 2"/>已收货
-				 <elseif condition="$vv.is_true eq 0"/> 未支付
-                 <else />等待发货
-				 </if>
+				<!--<?php if(($vv["state"] == 2) ): ?>已发货<?php else: ?>等待发货<?php endif; ?>-->
+				<?php if(($vv["state"] == 1) OR ($name > 100) ): ?>已发货
+				 <?php elseif($vv["state"] == 2): ?>已收货
+				 <?php elseif($vv["is_true"] == 0): ?> 未支付
+                 <?php else: ?>等待发货<?php endif; ?>
 				</td>
 
 
-                <td>{$vv.total_fee}</td>
+                <td><?php echo ($vv["total_fee"]); ?></td>
                 <td>
-                    <a class="btn btn-danger btn-xs" href="/User/Product/orderdetail?id={$vv.order_id}">详情</a>
+                    <a class="btn btn-danger btn-xs" href="/User/Product/orderdetail?id=<?php echo ($vv["order_id"]); ?>">详情</a>
                 </td>
-            </tr>
-           </volist>
+            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
     </tbody></table>
     <ul class="pager">
-            {$page}
+            <?php echo ($page); ?>
     </ul>
 </div>
 <!--隐藏域开始-->
@@ -178,7 +175,7 @@
 <script type="text/javascript">
 
     $("#shop").click(function(){
-        $.getScript( "__PUBLIC__/js/jquery-3.2.0.min.js" );
+        $.getScript( "/Public/js/jquery-3.2.0.min.js" );
 
         window.location.href ="/Shop/index/index";
 //        $.mobile.changePage("/Shop/index/index","pop", false, false);

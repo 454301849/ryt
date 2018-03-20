@@ -1,32 +1,32 @@
-<link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet" />
-<link href="__PUBLIC__/admin/css/iosOverlay.css" rel="stylesheet" />
-<link href="__PUBLIC__/admin/css/simple-line-icons.css" rel="stylesheet" />
-<link href="__PUBLIC__/admin/css/animate.min.css" rel="stylesheet" />
-<link href="__PUBLIC__/admin/css/font-awesome.min.css" rel="stylesheet" />
-<link href="__PUBLIC__/admin/css/engine.css" rel="stylesheet" />
-<link rel="stylesheet" href="__PUBLIC__/admin/css/bootstrap.min.css">
-<link rel="stylesheet" href="__PUBLIC__/css/font-awesome.min.css">
-<link rel="stylesheet" href="__PUBLIC__/css/weui.min.css">
-<link rel="stylesheet" href="__PUBLIC__/admin/css/base.css">
-<link href="__PUBLIC__/admin/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+<?php if (!defined('THINK_PATH')) exit();?><link href="/Public/admin/css/bootstrap.css" rel="stylesheet" />
+<link href="/Public/admin/css/iosOverlay.css" rel="stylesheet" />
+<link href="/Public/admin/css/simple-line-icons.css" rel="stylesheet" />
+<link href="/Public/admin/css/animate.min.css" rel="stylesheet" />
+<link href="/Public/admin/css/font-awesome.min.css" rel="stylesheet" />
+<link href="/Public/admin/css/engine.css" rel="stylesheet" />
+<link rel="stylesheet" href="/Public/admin/css/bootstrap.min.css">
+<link rel="stylesheet" href="/Public/css/font-awesome.min.css">
+<link rel="stylesheet" href="/Public/css/weui.min.css">
+<link rel="stylesheet" href="/Public/admin/css/base.css">
+<link href="/Public/admin/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
 
 <style>
 .btn-default{background:#44b549;color:#fff;}
 .form-group1:hover{background:#fff;}
 body {
-	background-image:url('__PUBLIC__/images/max.jpg');
+	background-image:url('/Public/images/max.jpg');
 	background-repeat:no-repeat;background-attachment:fixed;
-	background-size:cover;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='__PUBLIC__/images//max.jpg',sizingMethod='scale');}
+	background-size:cover;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Public/images//max.jpg',sizingMethod='scale');}
 	.well{
 	color:#fff;
-	background-image:url('__PUBLIC__/images/max.jpg');
+	background-image:url('/Public/images/max.jpg');
 	background-repeat:no-repeat;background-attachment:fixed;
-	background-size:cover;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='__PUBLIC__/images//max.jpg',sizingMethod='scale');}
+	background-size:cover;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Public/images//max.jpg',sizingMethod='scale');}
 	table th{
 	color:#fff;
-	background-image:url('__PUBLIC__/images/max.jpg');
+	background-image:url('/Public/images/max.jpg');
 	background-repeat:no-repeat;background-attachment:fixed;
-	background-size:cover;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='__PUBLIC__/images//max.jpg',sizingMethod='scale');}
+	background-size:cover;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Public/images//max.jpg',sizingMethod='scale');}
 </style>
 	
 <section>
@@ -51,23 +51,21 @@ body {
 			<th>排序 <input type="text" class="form-control" style="width:70px;text-align:center;margin-top:10px;"id="code" value="50">[改变排序值*点击对应保存]</th>
 			<th>操作</th>
 			<div style="clear:both"></div>
-			<volist name="bannar" id="vv" key="kk" empty="$empty">
-			  <tr>
-				<td>{$kk}</td>
-				<td ><img src="/{$vv.pic_url}" onclick="yulan(this)" style="width:50%;"></td>
+			<?php if(is_array($bannar)): $kk = 0; $__LIST__ = $bannar;if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($kk % 2 );++$kk;?><tr>
+				<td><?php echo ($kk); ?></td>
+				<td ><img src="/<?php echo ($vv["pic_url"]); ?>" onclick="yulan(this)" style="width:50%;"></td>
 				<td><!--修改排序-->
-					<div class="code" data-toggle="tooltip" data-placement="bottom">{$vv.code}</div>
+					<div class="code" data-toggle="tooltip" data-placement="bottom"><?php echo ($vv["code"]); ?></div>
 					<div class="form-inline" style="display:block;">
-						<button class="btn btn-success btn-sm savecode" onclick="update(this,'{$vv.id}','bannar')" data="{$vv.id}" alt="bannar" title="点击修改排序">保存</button>
+						<button class="btn btn-success btn-sm savecode" onclick="update(this,'<?php echo ($vv["id"]); ?>','bannar')" data="<?php echo ($vv["id"]); ?>" alt="bannar" title="点击修改排序">保存</button>
 					</div>
 				</td>
 				<td class="text-right">
-				<button class="btn btn-danger btn-sm" onclick="del(this,'{$vv.id}','bannar')">删除</button>
+				<button class="btn btn-danger btn-sm" onclick="del(this,'<?php echo ($vv["id"]); ?>','bannar')">删除</button>
 				</td>
-			  </tr>
-			</volist>
+			  </tr><?php endforeach; endif; else: echo "$empty" ;endif; ?>
 			</table>
-			<form action="__SELF__" method="post"  enctype="multipart/form-data">
+			<form action="/Admin/Shop/setting.html" method="post"  enctype="multipart/form-data">
 			
 			  <div class="form-group" style="margin-top:30px;">	
 				<label for="inputPassword3" class="col-sm-2 control-label" >添加新幻灯片</label>
@@ -91,31 +89,29 @@ body {
 			<th>排序 <input type="text" class="form-control" style="width:70px;text-align:center;margin-top:10px;"id="ad" value="50">[改变排序值*点击对应保存]</th>
 			<th>操作</th>
 			<div style="clear:both"></div>
-			<volist name="ad" id="vv" key="kk" empty="$empty">
-			  <tr>
-				<td>{$vv.id}</td>
-				<td ><img src="/{$vv.pic_url}" onclick="yulan(this)"></td>
-				<td style="white-space: normal;text-overflow:ellipsis;overflow:hidden;font-size:12px;text-decoration:underline;width:40%;">{$vv.link}</td>
+			<?php if(is_array($ad)): $kk = 0; $__LIST__ = $ad;if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$vv): $mod = ($kk % 2 );++$kk;?><tr>
+				<td><?php echo ($vv["id"]); ?></td>
+				<td ><img src="/<?php echo ($vv["pic_url"]); ?>" onclick="yulan(this)"></td>
+				<td style="white-space: normal;text-overflow:ellipsis;overflow:hidden;font-size:12px;text-decoration:underline;width:40%;"><?php echo ($vv["link"]); ?></td>
 				<td><!--修改排序-->
-					<!--<div class="code" data-toggle="tooltip" data-placement="bottom" title="点击修改排序" onclick="changeCode(this)">{$vv.code}</div>-->
-					<div class="code" data-toggle="tooltip" data-placement="bottom" style="color:#fff;">{$vv.code}</div>
+					<!--<div class="code" data-toggle="tooltip" data-placement="bottom" title="点击修改排序" onclick="changeCode(this)"><?php echo ($vv["code"]); ?></div>-->
+					<div class="code" data-toggle="tooltip" data-placement="bottom" style="color:#fff;"><?php echo ($vv["code"]); ?></div>
 					<div class="form-inline" style="display:block;">
-						<!--<input type="text" class="form-control" style="width:50px;" name="code" value="{$vv.code}">
-						<button class="btn btn-success btn-sm savecode" data="{$vv.id}" alt="ad">保存</button>-->
-						<button class="btn btn-success btn-sm savecode" onclick="updatead(this,'{$vv.id}','ad')" data="{$vv.id}" alt="ad" title="点击修改排序">保存</button>
+						<!--<input type="text" class="form-control" style="width:50px;" name="code" value="<?php echo ($vv["code"]); ?>">
+						<button class="btn btn-success btn-sm savecode" data="<?php echo ($vv["id"]); ?>" alt="ad">保存</button>-->
+						<button class="btn btn-success btn-sm savecode" onclick="updatead(this,'<?php echo ($vv["id"]); ?>','ad')" data="<?php echo ($vv["id"]); ?>" alt="ad" title="点击修改排序">保存</button>
 					</div>
 					</td>
 				<td class="text-right">
-				<button class="btn btn-danger btn-sm" onclick="edit('{$vv.id}','{$vv.link}')">修改</button>
-				<button class="btn btn-danger btn-sm" onclick="del(this,'{$vv.id}','ad')">删除</button>
+				<button class="btn btn-danger btn-sm" onclick="edit('<?php echo ($vv["id"]); ?>','<?php echo ($vv["link"]); ?>')">修改</button>
+				<button class="btn btn-danger btn-sm" onclick="del(this,'<?php echo ($vv["id"]); ?>','ad')">删除</button>
 				</td>
-			  </tr>
-			</volist>
+			  </tr><?php endforeach; endif; else: echo "$empty" ;endif; ?>
 			</table>
 			 <div class="col-sm-12 text-center" id="ad-notice" style="margin-top:30px;border-top:2px solid #f6f6f6;line-height:50px;display:none;">
 			 <button class="btn btn-link">修改下方信息后，点击保存完成修改流程，如果不更换广告图片无需重复上传图片</button>
 			 </div>
-			<form class="form-horizontal" action="__SELF__" method="post"  enctype="multipart/form-data">
+			<form class="form-horizontal" action="/Admin/Shop/setting.html" method="post"  enctype="multipart/form-data">
 			  <div class="form-group" style="margin-top:30px;">	
 				 <label for="inputPassword3" class="col-sm-2 control-label">添加广告</label>
 				<div class="col-sm-10">					     
@@ -142,14 +138,14 @@ body {
 	</div>
 
 			<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-			<script src="__PUBLIC__/admin/js/bootstrap.min.js"></script>
-			<script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+			<script src="/Public/admin/js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="/Public/ueditor/ueditor.config.js"></script>
 			    <!-- 编辑器源码文件 -->
-			<script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.js"></script>
-			<script src="__PUBLIC__/admin/js/fileinput.js" type="text/javascript"></script>
-			<script src="__PUBLIC__/admin/js/fileinput_locale_zh.js" type="text/javascript"></script>
-			<script src="__PUBLIC__/admin/layer/layer.js"></script>
-			<script src="__PUBLIC__/admin/js/ajaxfileupload.js"></script>
+			<script type="text/javascript" src="/Public/ueditor/ueditor.all.js"></script>
+			<script src="/Public/admin/js/fileinput.js" type="text/javascript"></script>
+			<script src="/Public/admin/js/fileinput_locale_zh.js" type="text/javascript"></script>
+			<script src="/Public/admin/layer/layer.js"></script>
+			<script src="/Public/admin/js/ajaxfileupload.js"></script>
 			<script>
 			$(document).ready(function(){
 			/*
@@ -168,7 +164,7 @@ body {
 				var data = $(this).attr('data_id');//alert(data);
 				$.ajax({
 					type:'post',
-					url:"{:U('change_categrey_type')}",
+					url:"<?php echo U('change_categrey_type');?>",
 					dataType:'json',
 					data:{'id':id,"type":type,'data':data},
 					success:function(json){
@@ -215,7 +211,7 @@ body {
 				}, function(){
 				  $.ajax({
 						type:'post',
-						url:"{:U('del_shop_bannar')}",
+						url:"<?php echo U('del_shop_bannar');?>",
 						dataType:'json',
 						data:{'id':id,'type':type},
 						success:function(){
@@ -239,7 +235,7 @@ body {
 				}, function(){
 				  $.ajax({
 						type:'post',
-						url:"{:U('change_shop_bannar')}",
+						url:"<?php echo U('change_shop_bannar');?>",
 						dataType:'json',
 						data:{'id':id,'type':type,'code':a},
 						success:function(){
@@ -264,7 +260,7 @@ body {
 				}, function(){
 				  $.ajax({
 						type:'post',
-						url:"{:U('change_shop_bannar')}",
+						url:"<?php echo U('change_shop_bannar');?>",
 						dataType:'json',
 						data:{'id':id,'type':type,'code':a},
 						success:function(){
