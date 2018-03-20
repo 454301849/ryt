@@ -46,7 +46,7 @@
 <div class="mn-content ui-page ui-page-theme-a ui-page-active" data-role="page" data-url="/User/Product/orderdetail?id=<?php echo ($info["order_id"]); ?>" data-external-page="true" tabindex="0" style="min-height: 510.2px;">
     <style type="text/css">
         .list-group-item{position:relative;}
-        .list-group-item-icon{height:auto;position:absolute;height:70px;width:104px;left:2px;top:2px;}
+        .list-group-item-icon{height:auto;position:absolute;width:65px;left:2px;top:2px;}
         .list-group-item-div{margin-left:15%;}
     </style>
 <?php $kuaidi = array( 'ems'=>'邮政', 'huitongkuaidi'=>'百世汇通', 'youzhengguonei'=>'包裹/平邮/挂号信', 'debangwuliu'=>'德邦物流', 'huitongkuaidi'=>'汇通快运', 'guotongkuaidi'=>'国通快递', 'jiajiwuliu'=>'佳吉物流', 'shunfeng'=>'顺丰', 'shenghuiwuliu'=>'盛辉物流', 'tiantian'=>'天天快递', 'yuantong'=>'圆通速递', 'yunda'=>'韵达快运', 'zhongtong'=>'中通速递', 'zhaijisong'=>'宅急送', ); ?>

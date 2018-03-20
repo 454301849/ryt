@@ -2779,3 +2779,346 @@ INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000563s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000611s ]
 
+[ 2018-03-20T14:10:24+08:00 ] ::1 /Shop/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `wx_shop_categrey` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `wx_shop_goods` [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `wx_good_pic` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wx_shop_categrey` WHERE (  pid = 0 and is_show = 1  ) ORDER BY code desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_shop_goods` WHERE (  cate_gid = '5' and is_true = 1  ) ORDER BY code desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT `pic_url` FROM `wx_good_pic` WHERE `good_id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pic_url` FROM `wx_good_pic` WHERE `good_id` = 17 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_goods` WHERE (  cate_gid = '1' and is_true = 1  ) ORDER BY code desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT `pic_url` FROM `wx_good_pic` WHERE `good_id` = 14 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pic_url` FROM `wx_good_pic` WHERE `good_id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_shop_bannar` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `wx_shop_bannar` ORDER BY code desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_shop_ad` [ RunTime:0.0293s ]
+SQL: SELECT * FROM `wx_shop_ad` ORDER BY code desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_temp` [ RunTime:0.0122s ]
+SQL: SELECT SUM(good_num) AS tp_sum FROM `wx_shop_order_temp` WHERE (  user_id = '2'  ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 31 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 32 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 33 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 34 行.
+NOTIC: [8] Undefined variable: share_url D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 58 行.
+NOTIC: [8] Undefined variable: share_url D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 70 行.
+NOTIC: [8] Undefined variable: share_type D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 86 行.
+NOTIC: [8] Use of undefined constant good - assumed 'good' D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 176 行.
+NOTIC: [8] Use of undefined constant good - assumed 'good' D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 176 行.
+NOTIC: [8] Use of undefined constant good - assumed 'good' D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 176 行.
+NOTIC: [8] Use of undefined constant good - assumed 'good' D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000875s ]
+
+[ 2018-03-20T14:10:26+08:00 ] ::1 /Shop/Index/good.html?good_id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+SQL: SHOW COLUMNS FROM `wx_shop_goods` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `wx_shop_goods` WHERE `good_id` = 15 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wx_good_pic` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `wx_good_pic` WHERE (  good_id = '15'  )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_temp` [ RunTime:0.0121s ]
+SQL: SELECT SUM(good_num) AS tp_sum FROM `wx_shop_order_temp` WHERE (  user_id = '2'  ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 21 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 22 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 23 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 24 行.
+NOTIC: [8] Undefined variable: share_url D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 48 行.
+NOTIC: [8] Undefined variable: share_url D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045381s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2018-03-20T14:10:29+08:00 ] ::1 /Shop/Index/addcategrey.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_temp` [ RunTime:0.0165s ]
+SQL: SELECT * FROM `wx_shop_order_temp` WHERE `good_id` = 15 AND `user_id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `wx_shop_order_temp` (`good_id`,`user_id`) VALUES ('15','2') [ RunTime:0.0382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2018-03-20T14:10:31+08:00 ] ::1 /Shop/Index/categrey.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0479s ]
+SQL: SHOW COLUMNS FROM `wx_address` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `wx_address` WHERE (  user_id = '2' AND state =1  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_temp` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `wx_shop_order_temp` WHERE (  user_id = '2'  ) ORDER BY order_id desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_shop_goods` [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `wx_good_pic` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `wx_shop_goods` WHERE `good_id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pic_url` FROM `wx_good_pic` WHERE `good_id` = 15 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0197s ]
+SQL: SELECT u.*,m.discount FROM wx_users u INNER JOIN wx_memberlevel m ON u.level=m.id  WHERE ( u.user_id = '2' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Use of undefined constant del_categrey - assumed 'del_categrey' D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\b010df294b2c0c7a7532d8100feaac76.php 第 232 行.
+NOTIC: [8] Use of undefined constant change_categrey - assumed 'change_categrey' D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\b010df294b2c0c7a7532d8100feaac76.php 第 269 行.
+NOTIC: [8] Use of undefined constant change_categrey - assumed 'change_categrey' D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\b010df294b2c0c7a7532d8100feaac76.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2018-03-20T14:10:35+08:00 ] ::1 /Shop/Index/good.html?good_id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `wx_shop_goods` [ RunTime:0.0346s ]
+SQL: SELECT * FROM `wx_shop_goods` WHERE `good_id` = 15 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_good_pic` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `wx_good_pic` WHERE (  good_id = '15'  )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_temp` [ RunTime:0.0118s ]
+SQL: SELECT SUM(good_num) AS tp_sum FROM `wx_shop_order_temp` WHERE (  user_id = '2'  ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 21 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 22 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 23 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 24 行.
+NOTIC: [8] Undefined variable: share_url D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 48 行.
+NOTIC: [8] Undefined variable: share_url D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2018-03-20T14:10:38+08:00 ] ::1 /Shop/Index/addcategrey.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_temp` [ RunTime:0.0162s ]
+SQL: SELECT * FROM `wx_shop_order_temp` WHERE `good_id` = 15 AND `user_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wx_shop_order_temp` SET `good_num`=good_num+1 WHERE (  order_id = '103'  ) [ RunTime:0.0334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000652s ]
+
+[ 2018-03-20T14:10:39+08:00 ] ::1 /Shop/Index/categrey.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0261s ]
+SQL: SHOW COLUMNS FROM `wx_address` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `wx_address` WHERE (  user_id = '2' AND state =1  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_temp` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `wx_shop_order_temp` WHERE (  user_id = '2'  ) ORDER BY order_id desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_shop_goods` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `wx_good_pic` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `wx_shop_goods` WHERE `good_id` = 15 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `pic_url` FROM `wx_good_pic` WHERE `good_id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0136s ]
+SQL: SELECT u.*,m.discount FROM wx_users u INNER JOIN wx_memberlevel m ON u.level=m.id  WHERE ( u.user_id = '2' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Use of undefined constant del_categrey - assumed 'del_categrey' D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\b010df294b2c0c7a7532d8100feaac76.php 第 232 行.
+NOTIC: [8] Use of undefined constant change_categrey - assumed 'change_categrey' D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\b010df294b2c0c7a7532d8100feaac76.php 第 269 行.
+NOTIC: [8] Use of undefined constant change_categrey - assumed 'change_categrey' D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\b010df294b2c0c7a7532d8100feaac76.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2018-03-20T14:10:42+08:00 ] ::1 /Shop/Index/order_sure.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_temp` [ RunTime:0.0402s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_detail` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wx_good_pic` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wx_shop_goods` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `wx_shop_order_temp` WHERE (  user_id = '2'  )  [ RunTime:0.0002s ]
+SQL: SELECT `pic_url` FROM `wx_good_pic` WHERE `good_id` = 15 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_shop_goods` WHERE `good_id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `wx_shop_order_detail` (`order_sn`,`pay_id`,`user_id`,`user_name`,`good_id`,`address_id`,`good_name`,`good_price`,`good_profit`,`pic_url`,`good_num`,`time`) VALUES ('201811911521526242','89','2','M00000002','15','13','oppo r11','2599.00','0.00','Uploads/20180319/5aaf61eb82628.png','2','1521526242') [ RunTime:0.0425s ]
+SQL: DELETE FROM `wx_shop_order_temp` WHERE (  order_id = '103'  ) [ RunTime:0.0280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2018-03-20T14:10:43+08:00 ] ::1 /Shop/Index/order_pay?pay_id=89
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0179s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_detail` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE `pay_id` = 89 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0163s ]
+SQL: SELECT * FROM `wx_users` WHERE ( user_id = '2' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0143s ]
+SQL: SELECT u.*,m.discount FROM wx_users u INNER JOIN wx_memberlevel m ON u.level=m.id  WHERE ( u.user_id = '2' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wx_shop_order_detail` WHERE (  pay_id = '89'  )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_shop_goods` [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `wx_good_pic` [ RunTime:0.0118s ]
+SQL: SELECT `openid` FROM `wx_users` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `wx_shop_order` (`pay_id`,`order_sn`,`total_fee`,`time`,`user_id`,`address_id`,`user_name`,`prepay_id`) VALUES ('89','201811911521526242','2599','1521526242','2','13','M00000002','') [ RunTime:0.0376s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2018-03-20T14:10:49+08:00 ] ::1 /Shop/Index/api_report_submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+SQL: SHOW COLUMNS FROM `wx_users` [ RunTime:0.0188s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_detail` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `wx_users` WHERE ( user_name= 'M00000002'  ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wx_shop_order` WHERE `pay_id` = 89 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `wx_users` SET `gwb`=gwb-2599.00 WHERE ( user_id ='2' ) [ RunTime:0.0395s ]
+SQL: UPDATE `wx_shop_order` SET `is_true`='1',`pay_time`='1521526249' WHERE (  pay_id = '89'  ) [ RunTime:0.0215s ]
+
+[ 2018-03-20T14:11:38+08:00 ] ::1 /Shop/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000519s ]
+
+[ 2018-03-20T14:11:38+08:00 ] ::1 /Shop/Index/good.html?good_id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001156s ]
+
+[ 2018-03-20T14:11:38+08:00 ] ::1 /Shop/Index/categrey.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000747s ]
+
+[ 2018-03-20T14:11:38+08:00 ] ::1 /Shop/Index/order_pay?pay_id=89
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000529s ]
+
