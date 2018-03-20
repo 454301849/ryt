@@ -1,0 +1,202 @@
+[ 2018-03-20T11:03:13+08:00 ] ::1 /Shop/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `wx_shop_categrey` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `wx_shop_goods` [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `wx_good_pic` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `wx_shop_categrey` WHERE (  pid = 0 and is_show = 1  ) ORDER BY code desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_shop_goods` WHERE (  cate_gid = '1' and is_true = 1  ) ORDER BY code desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT `pic_url` FROM `wx_good_pic` WHERE `good_id` = 14 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pic_url` FROM `wx_good_pic` WHERE `good_id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_goods` WHERE (  cate_gid = '2' and is_true = 1  ) ORDER BY code desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_goods` WHERE (  cate_gid = '3' and is_true = 1  ) ORDER BY code desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_shop_bannar` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `wx_shop_bannar` ORDER BY code desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_shop_ad` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `wx_shop_ad` ORDER BY code desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_temp` [ RunTime:0.0143s ]
+SQL: SELECT SUM(good_num) AS tp_sum FROM `wx_shop_order_temp` WHERE (  user_id = '4'  ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 31 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 32 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 33 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 34 行.
+NOTIC: [8] Undefined variable: share_url D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 58 行.
+NOTIC: [8] Undefined variable: share_url D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 70 行.
+NOTIC: [8] Undefined variable: share_type D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 86 行.
+NOTIC: [8] Use of undefined constant good - assumed 'good' D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 176 行.
+NOTIC: [8] Use of undefined constant good - assumed 'good' D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 176 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 158 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001006s ]
+
+[ 2018-03-20T11:03:17+08:00 ] ::1 /Shop/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `wx_shop_categrey` [ RunTime:0.0318s ]
+SQL: SHOW COLUMNS FROM `wx_shop_goods` [ RunTime:0.0116s ]
+SQL: SHOW COLUMNS FROM `wx_good_pic` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `wx_shop_categrey` WHERE (  pid = 0 and is_show = 1  ) ORDER BY code desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_shop_goods` WHERE (  cate_gid = '1' and is_true = 1  ) ORDER BY code desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT `pic_url` FROM `wx_good_pic` WHERE `good_id` = 14 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pic_url` FROM `wx_good_pic` WHERE `good_id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_goods` WHERE (  cate_gid = '2' and is_true = 1  ) ORDER BY code desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_goods` WHERE (  cate_gid = '3' and is_true = 1  ) ORDER BY code desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_shop_bannar` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `wx_shop_bannar` ORDER BY code desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_shop_ad` [ RunTime:0.0358s ]
+SQL: SELECT * FROM `wx_shop_ad` ORDER BY code desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_temp` [ RunTime:0.0118s ]
+SQL: SELECT SUM(good_num) AS tp_sum FROM `wx_shop_order_temp` WHERE (  user_id = '4'  ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 31 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 32 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 33 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 34 行.
+NOTIC: [8] Undefined variable: share_url D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 58 行.
+NOTIC: [8] Undefined variable: share_url D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 70 行.
+NOTIC: [8] Undefined variable: share_type D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 86 行.
+NOTIC: [8] Use of undefined constant good - assumed 'good' D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 176 行.
+NOTIC: [8] Use of undefined constant good - assumed 'good' D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 176 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 158 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2018-03-20T11:03:19+08:00 ] ::1 /Shop/Index/good.html?good_id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `wx_shop_goods` [ RunTime:0.0185s ]
+SQL: SELECT * FROM `wx_shop_goods` WHERE `good_id` = 14 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_good_pic` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `wx_good_pic` WHERE (  good_id = '14'  )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_temp` [ RunTime:0.0113s ]
+SQL: SELECT SUM(good_num) AS tp_sum FROM `wx_shop_order_temp` WHERE (  user_id = '4'  ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 21 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 22 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 23 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 24 行.
+NOTIC: [8] Undefined variable: share_url D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 48 行.
+NOTIC: [8] Undefined variable: share_url D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-03-20T11:03:24+08:00 ] ::1 /Shop/Index/good.html?good_id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `wx_shop_goods` [ RunTime:0.0199s ]
+SQL: SELECT * FROM `wx_shop_goods` WHERE `good_id` = 15 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wx_good_pic` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `wx_good_pic` WHERE (  good_id = '15'  )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_temp` [ RunTime:0.0114s ]
+SQL: SELECT SUM(good_num) AS tp_sum FROM `wx_shop_order_temp` WHERE (  user_id = '4'  ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 21 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 22 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 23 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 24 行.
+NOTIC: [8] Undefined variable: share_url D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 48 行.
+NOTIC: [8] Undefined variable: share_url D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\6f98afbe51fbfd70fefcb70f9404198d.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2018-03-20T11:03:28+08:00 ] ::1 /Shop/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `wx_shop_categrey` [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `wx_shop_goods` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `wx_good_pic` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `wx_shop_categrey` WHERE (  pid = 0 and is_show = 1  ) ORDER BY code desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wx_shop_goods` WHERE (  cate_gid = '1' and is_true = 1  ) ORDER BY code desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT `pic_url` FROM `wx_good_pic` WHERE `good_id` = 14 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `pic_url` FROM `wx_good_pic` WHERE `good_id` = 15 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_goods` WHERE (  cate_gid = '2' and is_true = 1  ) ORDER BY code desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wx_shop_goods` WHERE (  cate_gid = '3' and is_true = 1  ) ORDER BY code desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_shop_bannar` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `wx_shop_bannar` ORDER BY code desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_shop_ad` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `wx_shop_ad` ORDER BY code desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wx_shop_order_temp` [ RunTime:0.0115s ]
+SQL: SELECT SUM(good_num) AS tp_sum FROM `wx_shop_order_temp` WHERE (  user_id = '4'  ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 31 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 32 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 33 行.
+NOTIC: [8] Undefined variable: signPackage D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 34 行.
+NOTIC: [8] Undefined variable: share_url D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 58 行.
+NOTIC: [8] Undefined variable: share_url D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 70 行.
+NOTIC: [8] Undefined variable: share_type D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 86 行.
+NOTIC: [8] Use of undefined constant good - assumed 'good' D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 176 行.
+NOTIC: [8] Use of undefined constant good - assumed 'good' D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 176 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 158 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\slh\Application\Runtime\Cache\Shop\2c6b2a5091935ef5552425c0ed01e864.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000835s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000897s ]
+
